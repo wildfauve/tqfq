@@ -1,0 +1,330 @@
+Level,Name,SAP Mapping
+BA,Reference Data,
+BD,Party,
+SD,Party Data Management,Y
+SD,Party Profile,Y
+BD,External Agency,Y
+SD,Information Provider Administration,Y
+SD,Syndicate Management,Y
+SD,Interbank Relationship Management,Y
+SD,Correspondent Bank Relationship Management,Y
+SD,Correspondent Bank Data Management,Y
+SD,Sub Custodian Agreement,Y
+SD,Product Service Agency,Y
+SD,Product Broker Agreement,Y
+SD,Contractor/ Supplier Agreement,Y
+BD,Market Data,Y
+SD,Information Provider Operation,Y
+SD,Market Information Management,Y
+SD,Financial Market Analysis,Y
+SD,Financial Market Research,Y
+SD,Quantitative Analysis,Y
+SD,Market Data Dissemination Administration,Y
+SD,Market Data Dissemination Operation,Y
+SD,Financial Instrument Reference Data Management,Y
+SD,Counterparty Administration,Y
+SD,Reference/Directory Management,Y
+SD,Location Data Management,Y
+BD,Product Management,
+SD,Product Design,Y
+SD,Product Combination,Y
+SD,Product Deployment,Y
+SD,Product Training,Y
+SD,Product Quality Assurance,Y
+SD,Product Pricing Facility,Y
+BA,Sales & Services,Y
+BD,Channel Specific,Y
+SD,Branch Location Management,Y
+SD,Call Center Management,Y
+SD,Branch Network Management,Y
+SD,E-Branch Management,Y
+SD,Advanced Voice Services Management,Y
+SD,ATM Network Management,Y
+SD,Call Center Operations,Y
+SD,Branch Location Operations,Y
+SD,E-Branch Operations,Y
+SD,Advanced Voice Services Operations,Y
+SD,ATM Network Operations,Y
+SD,Branch Currency Management,Y
+SD,Branch Currency Distribution,Y
+SD,Product Inventory Item Management,Y
+SD,Product Inventory Distribution,Y
+BD,Cross Channel,Y
+SD,Party Authentication,Y
+SD,Transaction Authorization,Y
+SD,Servicing Position (to be renamed to Point of Service in later release),Y
+SD,Servicing Event History,Y
+SD,Servicing Activity Analysis,Y
+SD,Contact Routing,Y
+SD,Contact Dialogue,Y
+SD,Interactive Help,Y
+BD,Marketing,
+SD,Business Development Policies,Y
+SD,Business Development,Y
+SD,Brand Management,Y
+SD,Advertising,Y
+SD,Promotional Events,Y
+SD,Prospect Campaign Management,Y
+SD,Prospect Campaign Design,Y
+SD,Customer Campaign Management,Y
+SD,Customer Campaign Design,Y
+SD,Customer Surveys,Y
+BD,Sales,Y
+SD,Prospect Campaign Execution,Y
+SD,Prospect Management,Y
+SD,Lead/Opportunity Management,Y
+SD,Customer Campaign Execution,Y
+SD,Offer Management,Y
+SD,Sales Planning,Y
+SD,Underwriting,Y
+SD,Commission Agreement,Y
+SD,Commission Transaction,Y
+SD,Product Matching,Y
+SD,Product Expert Sales Support,Y
+SD,Specialist Resources,Y
+SD,Sales Product,Y
+BD,Customer Management,Y
+SD,Customer Relationship Management,Y
+SD,Customer Eligibility Profile,Y
+SD,Customer Agreement,Y
+SD,Sales Product Agreement,Y
+SD,Customer Access Entitlement,Y
+SD,Customer Behavioral Insights,Y
+SD,Customer Credit Rating,Y
+SD,Account Recovery,Y
+SD,Customer Event History,Y
+BD,Servicing,Y
+SD,Servicing Issue,Y
+SD,Case Management,Y
+SD,Case Resolution Analysis,Y
+SD,Customer Case,Y
+SD,Card Case,Y
+SD,Customer Order,Y
+SD,Payment Order,Y
+BA,Operations & Execution Consumer Products,
+BD,Customer Insurance,
+SD,Policy Administration,N
+SD,Claims Management,N
+BD,Customer Loans & Deposits,Y
+SD,Loan,Y
+SD,Leasing,Y
+SD,Current Account,Y
+SD,Deposit Account,Y
+BD,Cards,N
+SD,Card Facility,N
+SD,Card Authorization,N
+SD,Card Capture,N
+SD,Card Billing & Payments,N
+SD,Merchant Relations,N
+BD,Consumer Services,Y
+SD,Trust Services,Y
+SD,Remittance Services,Y
+SD,Currency Exchange,Y
+SD,Bank Drafts & Travelers Checks,Y
+SD,Brokered Product,Y
+SD,Consumer Investments,Y
+SD,Consumer Tax Handling,Y
+BA,Operations & Execution Financial Markets,
+BD,Investment Management,
+SD,Investment Portfolio Planning,N
+SD,Investment Portfolio Analysis,N
+SD,Investment Portfolio Management,N
+SD,eTrading Workbench,N
+BD,Wholesale Trading,N
+SD,Trading Book Oversight,N
+SD,Trading Model Management,N
+SD,Dealer Workbench,N
+SD,Quote Management,N
+SD,Suitability Checking,N
+SD,Credit Risk Operations,N
+SD,Market Making,N
+SD,Assisted Trading - DELETED,
+SD,ECM/DCM,N
+SD,Program Trading,N
+SD,Trade Management,N
+SD,Order Management,N
+SD,Order Execution,N
+BD,Market Operations,N
+SD,Mutual Fund Administration,N
+SD,Hedge Fund Administration,N
+SD,Unit Trust Administration,N
+SD,Trade Confirmation Matching,N
+SD,Order Allocation,N
+SD,Settlement Obligation Management,N
+SD,Delivery & Receipt Management,N
+SD,Securities Fails Processing,N
+SD,Trade/Price Reporting,N
+SD,Custody Administration,N
+SD,Corporate Event Handling,N
+SD,Financial Instrument Valuation,N
+BA,Operations & Execution Corporate Products,Y
+BD,Trade Finance,Y
+SD,Letter of Credit,Y
+SD,Bank Guarantee,Y
+SD,Trade Finance Services,Y
+BD,Corporate Banking Products,
+SD,Credit Management,Y
+SD,Credit Facility,Y
+SD,Corporate Current Account,Y
+SD,Project Finance Services,Y
+SD,Limit & Exposure Management,Y
+SD,Syndicated Loan,Y
+SD,Cash Management & Account Services,Y
+SD,Direct Debit Mandate Management,Y
+SD,Direct Debit Fulfillment,Y
+SD,Cheque Lock Box,Y
+SD,Factoring,Y
+BD,Corporate Financing and Advisory Services,Y
+SD,Corporate Finance Services,Y
+SD,M&A Advisory Services,Y
+SD,Corporate Tax Advisory Services,Y
+SD,Public Offering,Y
+SD,Private Placement,Y
+BA,Operations & Execution Cross Product Operations,
+BD,Payments,
+SD,Payments Execution,Y
+SD,Financial Message Analysis,Y
+SD,Financial Message Gateway,Y
+SD,Correspondent Bank Fulfillment,Y
+SD,Cheque Processing,Y
+SD,Central Cash Holding,Y
+BD,Collateral Administration,Y
+SD,Collateral Management,Y
+SD,Collateral Asset Administration,Y
+SD,Collections,Y
+BD,Account Management,Y
+SD,Position Keeping,Y
+SD,Reward Points Account,Y
+SD,Accounts Receivable,Y
+SD,Account Reconciliation,Y
+SD,Counterparty Risk,Y
+SD,Position Management,Y
+SD,Fraud Detection,Y
+SD,Transaction Engine,Y
+BD,Operational Services,Y
+SD,Token Inventory,Y
+SD,Token Tracking,Y
+SD,Disbursement,Y
+SD,Open Item Management,Y
+SD,Leasing Item Administration,Y
+SD,Dunning,Y
+SD,Billing Services,Y
+SD,Rewards Points Administration,Y
+SD,Consolidated Customer Activity,Y
+BA,Risk & Compliance,
+BD,Bank Portfolio & Treasury,
+SD,Treasury Management,Y
+SD,Treasury Administration,Y
+SD,Asset Securitization,Y
+SD,Asset & Liability Management,Y
+SD,Bank Portfolio Analysis,Y
+SD,Bank Portfolio Administration,Y
+SD,Stock Lending/Repos,Y
+BD,Models,Y
+SD,Market Risk Models,Y
+SD,Financial Instrument Valuation Models,Y
+SD,Gap Analysis,Y
+SD,Credit Risk Models,Y
+SD,Liquidity Risk Models,Y
+SD,Economic Capital,Y
+SD,Business Risk Models,Y
+SD,Customer Behavior Models,Y
+SD,Fraud Models,Y
+SD,Credit/Margin Policies,Y
+SD,Production Risk Models,Y
+SD,Operational Risk Models,Y
+SD,Contribution Models,Y
+BD,Business Analysis,Y
+SD,Segment Plan,Y
+SD,Product Portfolio,Y
+SD,Customer Portfolio,Y
+SD,Branch Portfolio,Y
+SD,Channel Portfolio,Y
+SD,Competitor Analysis,Y
+SD,Market Research,Y
+SD,Market Analysis,Y
+SD,Contribution Analysis,Y
+BD,Regulations & Compliance,Y
+SD,Guideline Compliance,Y
+SD,Regulatory Compliance,Y
+SD,Compliance Reporting,Y
+SD,Regulatory Reporting,Y
+SD,Fraud/AML Resolution,Y
+SD,Financial Accounting,Y
+BA,Business Support,
+BD,IT Management,
+SD,IT Policies & Plan,
+SD,IT Architecture Standards & Guidelines,
+SD,Systems Administration,
+SD,Development Environment,
+SD,System Development,
+SD,Production Release,
+SD,System Deployment,
+SD,Systems Operations,
+SD,Platform Operations,
+SD,Systems Help Desk,
+SD,Systems Assurance,
+SD,Internal Network Operation,
+BD,Non IT & HR Enterprise Services,
+SD,Legal Assurance,
+SD,Internal Audit,
+SD,Security Services,
+SD,Security Assurance,
+SD,Supplier Management,
+SD,Procurement,
+SD,Company Billing & Payments,
+SD,Fixed Asset Register,
+BD,Buildings Equipment and Facilities,
+SD,Property Portfolio,
+SD,Site Operations,
+SD,Site Administration,
+SD,Equipment Administration,
+SD,Equipment Maintenance,
+SD,Utilities Administration,
+SD,Building Maintenance,
+BD,Business Command & Control,
+SD,Organizational Model,
+SD,Business Unit Budget,
+SD,Business Unit Financial Analysis,
+SD,Business Unit Financial Operations,
+SD,Business Unit Accounting,
+SD,Business Unit Management,
+SD,Business Unit Operations,
+BD,Finance,
+SD,Financial Statements,
+SD,Financial Control,
+SD,Financial Compliance Resolution,
+SD,Tax Administration,
+BD,Human Resource Management,
+SD,HR Policies & Plan,
+SD,Employee Assignment,
+SD,Employee Record,
+SD,Employee/ Contractor Contract,
+SD,Employee Certification,
+SD,Employee Assessment,
+SD,Employee Payroll & Incentives,
+SD,Travel & Expenses,
+SD,Employee Access Profile,
+SD,Employee Benefits,
+SD,Workforce Training,
+SD,Recruitment,
+BD,Knowledge & Intellectual Property  Management,
+SD,Management Manual,
+SD,Intellectual Property Portfolio,
+SD,Knowledge Exchange,
+BD,Corporate Relations,
+SD,Corporate Communications,
+SD,Corporate Alliance/Stake Holder,
+SD,Corporate Relationship,
+SD,Regulatory & Legal Authority,
+SD,Investor Relations,
+BD,Business Direction,
+SD,Corporate Strategy,
+SD,Corporate Policies,
+SD,Product & Service Policies,
+SD,Business Architecture,
+SD,Continuity Planning,
+BD,Document Management & Archive,
+SD,Document Services,
+SD,Archive Services,
+SD,Correspondence,

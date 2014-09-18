@@ -1,0 +1,19 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>Systems</h3>
+</div>
+
+<table class="table" id="systems-list">
+   <thead>
+     <tr>
+       <th>Name</th>
+       <th>TQ/FQ Quad</th>       
+       <th>Pace Layer</th>  
+       <th>Actions</th>                   
+     </tr>
+   </thead>
+   <tbody>
+      <% for system in @systems %>
+         <%= render partial: 'q_summary', locals: {system: system} %>
+      <% end %>
+   </tbody>
+</table>

@@ -1,0 +1,12 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>Upload System Schema</h3>
+</div>
+
+
+<%= form_tag(imports_path, :multipart => true ) do  %>
+  <p><%= file_field_tag :import, :class => "button"%></p>
+  </p>
+  <div class="actions">
+    <%= submit_tag "Run Load", :class => "btn btn-default" %>
+  </div>
+<% end %>

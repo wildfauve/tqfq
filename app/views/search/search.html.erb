@@ -1,0 +1,27 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>Search</h3>
+   <h4>Property: <%= @results.property.name %> in <%= link_to @results.property.table.name, system_table_path(@results.orig_table.system, @results.orig_table), class: "btn btn-default" %></h4>
+   <h4><%= @results.properties.count %> Hits </h4>   
+</div>
+
+
+<table class="table">
+   <thead>
+     <tr>
+       <th>Name</th>
+       <th>Actions</th>      
+     </tr>
+   </thead>
+   <tbody>
+      <% for table in @results.tables %>         
+         <tr>
+            <td>
+               <%= link_to table.name, system_table_path(table.system, table)%>
+            </td>
+            <td>
+               <%= link_to "Show",  system_table_path(table.system, table), class: "btn btn-default"%>
+            </td>
+         </tr>
+      <% end %>
+   </tbody>
+</table>

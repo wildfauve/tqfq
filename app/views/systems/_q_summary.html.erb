@@ -1,0 +1,15 @@
+<tr>
+   <td>
+      <%= link_to system.name, system_path(system)%>
+   </td>
+   <td>
+      <%= system.tq_fq_quadrant %>
+   </td>
+   <td>
+      <%= system.pace_layer %>
+   </td>
+   <td>
+      <%= link_to "Show",  system_path(system), class: "btn btn-default"%>
+      <%= link_to "Edit",  edit_system_path(system), class: "btn btn-default"%>               
+   </td>
+</tr>

@@ -1,0 +1,554 @@
+BD,Party,,
+SD,Party Data Management,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Instinct
+ International Desktop Application
+ Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Base 2000 
+ Heaps
+ Lips
+ Quest
+ ServiceView
+ Third Party Exports
+ ValueQ7"
+SD,Party Profile,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Instinct
+ International Desktop Application
+ Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Base 2000 
+ Heaps
+ Lips
+ Quest
+ ServiceView
+ Third Party Exports
+ ValueQ7"
+BD,External Agency,,
+SD,Information Provider Administration,,
+SD,Syndicate Management,,
+SD,Interbank Relationship Management,,
+SD,Correspondent Bank Relationship Management,,
+SD,Correspondent Bank Data Management,,
+SD,Sub Custodian Agreement,,
+SD,Product Service Agency,,
+SD,Product Broker Agreement,,
+SD,Contractor/ Supplier Agreement,,
+BD,Market Data,,
+SD,Information Provider Operation,,
+SD,Market Information Management,,
+SD,Financial Market Analysis,,
+SD,Financial Market Research,,
+SD,Quantitative Analysis,,
+SD,Market Data Dissemination Administration,,
+SD,Market Data Dissemination Operation,,
+SD,Financial Instrument Reference Data Management,,
+SD,Counterparty Administration,,
+SD,Reference/Directory Management,,
+SD,Location Data Management,,
+BD,Product Management,,
+SD,Product Design,Y,"Corporate Product Database
+ ValueQ7"
+SD,Product Combination,Y,"Ultracs
+ ValueQ7"
+SD,Product Deployment,Y,"Ultracs
+ Corporate Product Database
+ ValueQ7"
+SD,Product Training,Y,
+SD,Product Quality Assurance,Y,
+SD,Product Pricing Facility,Y,Corporate Product Database
+BA,Sales & Services,,
+BD,Channel Specific,,
+SD,Branch Location Management,Y,
+SD,Call Center Management,Y,
+SD,Branch Network Management,Y,
+SD,E-Branch Management,Y,
+SD,Advanced Voice Services Management,Y,IVR
+SD,ATM Network Management,Y,
+SD,Call Center Operations,Y,
+SD,Branch Location Operations,Y,
+SD,E-Branch Operations,Y,
+SD,Advanced Voice Services Operations,Y,IVR
+SD,ATM Network Operations,Y,
+SD,Branch Currency Management,Y,
+SD,Branch Currency Distribution,Y,
+SD,Product Inventory Item Management,Y,
+SD,Product Inventory Distribution,Y,
+BD,Cross Channel,,
+SD,Party Authentication,Y,"Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Heaps
+ IVR
+ Text Banking"
+SD,Transaction Authorization,Y,"Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Heaps
+ IVR
+ Text Banking"
+SD,Servicing Position (to be renamed to Point of Service in later release),Y,
+SD,Servicing Event History,Y,In-Touch
+SD,Servicing Activity Analysis,Y,
+SD,Contact Routing,Y,
+SD,Contact Dialogue,Y,"Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Quest"
+SD,Interactive Help,Y,"Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Heaps
+ Mobile Top Up
+ Quest"
+BD,Marketing,,
+SD,Business Development Policies,Y,
+SD,Business Development,Y,
+SD,Brand Management,Y,
+SD,Advertising,Y,
+SD,Promotional Events,Y,
+SD,Prospect Campaign Management,Y,
+SD,Prospect Campaign Design,Y,
+SD,Customer Campaign Management,Y,
+SD,Customer Campaign Design,Y,
+SD,Customer Surveys,Y,
+BD,Sales,,
+SD,Prospect Campaign Execution,Y,
+SD,Prospect Management,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ In-Touch
+ Appointment Manager
+ Heaps
+ Lips
+ Quest
+ ValueQ7"
+,Lead/Opportunity Management,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Internet Banking
+ In-Touch
+ Appointment Manager
+ Heaps
+ Quest"
+SD,Customer Campaign Execution,Y,
+SD,Offer Management,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Lips
+ Quest
+ ValueQ7"
+SD,Sales Planning,Y,
+SD,Underwriting,Y,ActivateBB
+ ActivateKB
+ ActivatePL
+SD,Commission Agreement,?,
+SD,Commission Transaction,?,
+SD,Product Matching,Y,"Internet Banking
+ In-Touch
+ Lips
+ Quest
+ ValueQ7"
+SD,Product Expert Sales Support,Y,
+SD,Specialist Resources,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ In-Touch
+ Lips
+ Quest
+ ValueQ7"
+SD,Sales Product,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Lips
+ Quest
+ ValueQ7"
+BD,Customer Management,,
+SD,Customer Relationship Management,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Base 2000 
+ Internet Banking
+ In-Touch
+ Appointment Manager
+ ServiceView"
+SD,Customer Eligibility Profile,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Base 2000 
+ Internet Banking
+ In-Touch
+ ServiceView"
+SD,Customer Agreement,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Base 2000 
+ AOA Generator
+ In-Touch
+ Propel
+ ServiceView"
+SD,Sales Product Agreement,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Base 2000 
+ In-Touch
+ Propel
+ ServiceView"
+SD,Customer Access Entitlement,Y,"Internet Banking
+ In-Touch
+ KBMAC"
+SD,Customer Behavioral Insights,Y,
+SD,Customer Credit Rating,Y,ActivateBB
+ ActivateKB
+ ActivatePL
+SD,Account Recovery,Y,
+SD,Customer Event History,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ In-Touch"
+BD,Servicing,,
+SD,Servicing Issue,Y,In-Touch
+SD,Case Management,Y,Tieback
+SD,Case Resolution Analysis,Y,
+SD,Customer Case,Y,Tieback
+SD,Card Case,Y,Tieback
+SD,Customer Order,Y,"Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Mobile Top Up"
+SD,Payment Order,Y,"Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ Mobile Top Up"
+BA,Operations & Execution,,
+BA,Consumer Products,,
+BD,Customer Loans & Deposits,,
+SD,Loan,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Base 2000 
+ Fixed Rate Break Calculator 
+ Moodys
+ Propel
+ ServiceView"
+SD,Leasing,,
+SD,Current Account,Y,"Internet Banking
+ In-Touch
+ KBMAC
+ Text Banking
+ Ultracs"
+SD,Deposit Account,Y,"Internet Banking
+ In-Touch
+ KBMAC
+ Text Banking
+ Ultracs"
+BD,Customer Insurance,,
+SD,Policy Administration,Y,"Lips
+ Quest
+ ValueQ7"
+SD,Claims Management,Y,ValueQ7
+BD,Cards,,
+SD,Card Facility,,"Internet Banking
+ In-Touch
+ KBMAC
+ Base 2000 
+ CSLinkage
+ ServiceView
+ Visa Processing System"
+SD,Card Authorization,Y,"EFTPOS
+ Base 2000 
+ CSLinkage
+ Mobile Top Up
+ ServiceView
+ Visa Processing System"
+SD,Card Capture,Y,"EFTPOS
+ Base 2000 
+ CSLinkage
+ Mobile Top Up
+ ServiceView
+ Visa Processing System"
+SD,Card Billing & Payments,Y,"EFTPOS
+ Base 2000 
+ CSLinkage
+ ServiceView
+ Visa Processing System"
+SD,Merchant Relations,,
+BD,Consumer Services,,
+SD,Trust Services,,
+SD,Remittance Services,Y,"International Desktop Application
+ Voyager"
+SD,Currency Exchange,Y,"International Desktop Application
+ Travelex
+ Voyager"
+SD,Bank Drafts & Travelers Checks,Y,"International Desktop Application
+ Travelex"
+SD,Brokered Product,,
+SD,Consumer Investments,,
+SD,Consumer Tax Handling,Y,International Desktop Application
+BA,Financial Markets,,
+BD,Investment Management,,
+SD,Investment Portfolio Planning,,
+SD,Investment Portfolio Analysis,,
+SD,Investment Portfolio Management,,
+SD,eTrading Workbench,,
+BD,Wholesale Trading,,
+SD,Trading Book Oversight,,
+SD,Trading Model Management,,
+SD,Dealer Workbench,,
+SD,Quote Management,,
+SD,Suitability Checking,,
+SD,Credit Risk Operations,,
+SD,Market Making,,
+SD,Assisted Trading - DELETED,,
+SD,ECM/DCM,,
+SD,Program Trading,,
+SD,Trade Management,Y,MarkitWire
+SD,Order Management,Y,MarkitWire
+SD,Order Execution,Y,MarkitWire
+BD,Market Operations,,
+SD,Mutual Fund Administration,,
+SD,Hedge Fund Administration,,
+SD,Unit Trust Administration,,
+SD,Trade Confirmation Matching,,
+SD,Order Allocation,,
+SD,Settlement Obligation Management,,
+SD,Delivery & Receipt Management,,
+SD,Securities Fails Processing,,
+SD,Trade/Price Reporting,,
+SD,Custody Administration,,
+SD,Corporate Event Handling,,
+SD,Financial Instrument Valuation,,
+BA,Corporate Products,,
+BD,Trade Finance,,
+SD,Letter of Credit,,
+SD,Bank Guarantee,,
+SD,Trade Finance Services,Y,MarkitWire
+BD,Corporate Banking Products,,
+SD,Credit Management,Y,"ActivateBB
+ ActivateKB
+ ActivatePL
+ Moodys"
+SD,Credit Facility,Y,ActivateBB
+ ActivateKB
+ ActivatePL
+SD,Corporate Current Account,Y,"In-Touch
+ Internet Banking
+ Text Banking
+ Ultracs"
+SD,Project Finance Services,,
+SD,Limit & Exposure Management,Y,ActivateBB
+ ActivateKB
+ ActivatePL
+SD,Syndicated Loan,,
+SD,Cash Management & Account Services,Y,Ultracs
+SD,Direct Debit Mandate Management,Y,"In-Touch
+ Ultracs"
+SD,Direct Debit Fulfillment,Y,"In-Touch
+ Ultracs"
+SD,Cheque Lock Box,N,
+SD,Factoring,Y(?),
+BD,Corporate Financing and Advisory Services,,
+SD,Corporate Finance Services,,
+SD,M&A Advisory Services,,
+SD,Corporate Tax Advisory Services,,
+SD,Public Offering,,
+SD,Private Placement,,
+BA,Cross Product Operations,,
+BD,Payments,,
+SD,Payments Execution,Y,"EFTPOS
+ Internet Banking
+ In-Touch
+ KBMAC
+ Mobile Banking
+ BNZ PC Banking
+ CitiDirect 
+ Flo2Cash
+ Musicida
+ Third Party Exports
+ Voyager"
+SD,Financial Message Analysis,Y,"Flo2Cash
+ Western Union - Reconciliation"
+SD,Financial Message Gateway,Y,"EFTPOS
+ Flo2Cash
+ Voyager"
+SD,Correspondent Bank Fulfillment,,
+SD,Cheque Processing,Y,"In-Touch
+ KBMAC"
+SD,Central Cash Holding,Y,
+BD,Collateral Administration,,
+SD,Collateral Management,,
+SD,Collateral Asset Administration,,
+SD,Collections,,
+BD,Account Management,,
+SD,Position Keeping,,
+SD,Reward Points Account,,
+SD,Accounts Receivable,,
+SD,Account Reconciliation,,
+SD,Counterparty Risk,,
+SD,Position Management,,
+SD,Fraud Detection,Y,
+SD,Transaction Engine,,
+BD,Operational Services,,
+SD,Token Inventory,,
+SD,Token Tracking,Y,Tieback
+SD,Disbursement,,
+SD,Open Item Management,,
+SD,Leasing Item Administration,,
+SD,Dunning,,
+SD,Billing Services,,
+SD,Rewards Points Administration,,
+SD,Consolidated Customer Activity,,
+BA,Risk & Compliance,,
+BD,Bank Portfolio & Treasury,,
+SD,Treasury Management,Y,"Treasury Management System
+ Autobahn
+ Barx
+ CitiDirect 
+ Liquidity
+ Velocity"
+SD,Treasury Administration,Y,"Treasury Management System
+ CitiDirect 
+ Liquidity
+ Velocity"
+SD,Asset Securitization,Y,"Treasury Management System
+ Velocity"
+SD,Asset & Liability Management,Y,"Treasury Management System
+ Velocity"
+SD,Bank Portfolio Analysis,Y,"Treasury Management System
+ Liquidity
+ Velocity"
+SD,Bank Portfolio Administration,Y,"Treasury Management System
+ Velocity"
+SD,Stock Lending/Repos,Y,"Treasury Management System
+ Velocity"
+BD,Models,,
+SD,Market Risk Models,,
+SD,Financial Instrument Valuation Models,,
+SD,Gap Analysis,,
+SD,Credit Risk Models,Y,"GDS Swaps Reporting
+ Moodys"
+SD,Liquidity Risk Models,,
+SD,Economic Capital,,
+SD,Business Risk Models,,
+SD,Customer Behavior Models,,
+SD,Fraud Models,,
+SD,Credit/Margin Policies,,
+SD,Production Risk Models,,
+SD,Operational Risk Models,,
+SD,Contribution Models,,
+BD,Business Analysis,,
+SD,Segment Plan,,
+SD,Product Portfolio,,Visa Card Reporting
+SD,Customer Portfolio,Y,Visa Card Reporting
+SD,Branch Portfolio,,
+SD,Channel Portfolio,,
+SD,Competitor Analysis,,
+SD,Market Research,,
+SD,Market Analysis,,
+SD,Contribution Analysis,,
+BD,Regulations & Compliance,,
+SD,Guideline Compliance,Y,
+SD,Regulatory Compliance,Y,
+SD,Compliance Reporting,Y,
+SD,Regulatory Reporting,Y,
+SD,Fraud/AML Resolution,Y,"Instinct
+ Tieback"
+SD,Financial Accounting,,
+BA,Business Support,,
+BD,IT Management,,
+SD,IT Policies & Plan,,
+SD,IT Architecture Standards & Guidelines,,
+SD,Systems Administration,,
+SD,Development Environment,,
+SD,System Development,,
+SD,Production Release,,
+SD,System Deployment,,
+SD,Systems Operations,,
+SD,Platform Operations,,
+SD,Systems Help Desk,,
+SD,Systems Assurance,,
+SD,Internal Network Operation,,
+BD,Non IT & HR Enterprise Services,,
+SD,Legal Assurance,,
+SD,Internal Audit,,
+SD,Security Services,,
+SD,Security Assurance,,
+SD,Supplier Management,,
+SD,Procurement,,
+SD,Company Billing & Payments,,
+SD,Fixed Asset Register,,
+BD,"Buildings, Equipment and Facilities",,
+SD,Property Portfolio,,
+SD,Site Operations,,
+SD,Site Administration,,
+SD,Equipment Administration,,
+SD,Equipment Maintenance,,
+SD,Utilities Administration,,
+SD,Building Maintenance,,
+BD,Business Command & Control,,
+SD,Organizational Model,,
+SD,Business Unit Budget,,
+SD,Business Unit Financial Analysis,,
+SD,Business Unit Financial Operations,,
+SD,Business Unit Accounting,,
+SD,Business Unit Management,,
+SD,Business Unit Operations,,
+BD,Finance,,
+SD,Financial Statements,,
+SD,Financial Control,,
+SD,Financial Compliance Resolution,,
+SD,Tax Administration,,
+BD,Human Resource Management,,
+SD,HR Policies & Plan,,
+SD,Employee Assignment,,
+SD,Employee Record,,
+SD,Employee/ Contractor Contract,,
+SD,Employee Certification,,
+SD,Employee Assessment,,
+SD,Employee Payroll & Incentives,,
+SD,Travel & Expenses,,
+SD,Employee Access Profile,,
+SD,Employee Benefits,,
+SD,Workforce Training,,
+SD,Recruitment,,
+BD,Knowledge & Intellectual Property Management,,
+SD,Management Manual,,
+SD,Intellectual Property Portfolio,,
+SD,Knowledge Exchange,,
+BD,Corporate Relations,,
+SD,Corporate Communications,,
+SD,Corporate Alliance/Stake Holder,,
+SD,Corporate Relationship,,
+SD,Regulatory & Legal Authority,,
+SD,Investor Relations,,
+BD,Business Direction,,
+SD,Corporate Strategy,,
+SD,Corporate Policies,,
+SD,Product & Service Policies,,
+SD,Business Architecture,,
+SD,Continuity Planning,,
+BD,Document Management & Archive,,
+SD,Document Services,,
+SD,Archive Services,,
+SD,Correspondence,,
