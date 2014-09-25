@@ -14,6 +14,7 @@ SD,Party Data Management,Y,"ActivateBB
  Quest
  ServiceView
  Third Party Exports
+ SDT
  ValueQ7"
 SD,Party Profile,Y,"ActivateBB
  ActivateKB
@@ -28,6 +29,7 @@ SD,Party Profile,Y,"ActivateBB
  Heaps
  Lips
  Quest
+ SDT
  ServiceView
  Third Party Exports
  ValueQ7"
@@ -55,15 +57,19 @@ SD,Reference/Directory Management,,
 SD,Location Data Management,,
 BD,Product Management,,
 SD,Product Design,Y,"Corporate Product Database
+ SDT
  ValueQ7"
 SD,Product Combination,Y,"Ultracs
+ SDT
  ValueQ7"
 SD,Product Deployment,Y,"Ultracs
+ SDT
  Corporate Product Database
  ValueQ7"
 SD,Product Training,Y,
 SD,Product Quality Assurance,Y,
-SD,Product Pricing Facility,Y,Corporate Product Database
+SD,Product Pricing Facility,Y,"Corporate Product Database
+ SDT"
 BA,Sales & Services,,
 BD,Channel Specific,,
 SD,Branch Location Management,Y,

@@ -1,0 +1,124 @@
+Name,TQ,FQ,Group,Branch
+DIA Intranet (1840) & CMS,2,3,Communications,SSB
+www.dia.govt.nz & CMS,2,3,Communications,SSB
+SAP,4,4,Finance,SSB
+Financial subsidiary systems,3,3,Finance,SSB
+FMIS - ADI,,,Finance,SSB
+FMIS - CFIS,,,Finance,SSB
+FMIS - Deskbank,,,Finance,SSB
+FMIS - Discoverer,,,Finance,SSB
+FMIS - J'initiator Desktop Xclient,,,Finance,SSB
+FMIS - Journal Viewer,,,Finance,SSB
+FMIS - MYOB Accounting,,,Finance,SSB
+FMIS - Oracle Financials,,,Finance,SSB
+FMIS - Desktop Client,,,Finance,SSB
+Oracle EIW,,,Finance,SSB
+SpeedScan,,,Finance,SSB
+HRIS and related systems less Yourself,3,4,Human Resources,SSB
+HRMIS - Cognos,,,Human Resources,SSB
+HRMIS - PS Enterprise,,,Human Resources,SSB
+HRIS - Yourself,2,3,Human Resources,SSB
+HRMIS - SQL Reporting Server,,,Human Resources,SSB
+Totara Learning Management System (LMS Ilearn),,,Human Resources,SSB
+Moodle,,,Human Resources,SSB
+Staff CV,,,Human Resources,SSB
+Ministerial and Secretariat Services Systems,2,4,Ministerial & Secretariat Services,SSB
+Web - www.beehive.govt.nz,,,Ministerial & Secretariat Services,SSB
+ARS - EGS General,,,Ministerial & Secretariat Services,SSB
+ARS - Ministerial Services,,,Ministerial & Secretariat Services,SSB
+Document One DMS,,,Ministerial & Secretariat Services,SSB
+EGS Mobile X,,,Ministerial & Secretariat Services,SSB
+Executive Diary,,,Ministerial & Secretariat Services,SSB
+Ministerial Databases Ð Notes,,,Ministerial & Secretariat Services,SSB
+ARS Ð VIP,,,Ministerial & Secretariat Services,SSB
+ARS - VCO,,,Ministerial & Secretariat Services,SSB
+Property support systems,4,3,Operations,SSB
+File Scheduler Tool,2,2,,SDO
+Adoptions,2,2,,SDO
+BDM Birth Notices Online,2,3,,SDO
+BDM Death Notices Online,2,3,,SDO
+BDM Images,4,3,,SDO
+BDM Online,2,3,,SDO
+Business Forms,2,2,,SDO
+COGS,1,1,,SDO
+COGS Business Process Manual,1,1,,SDO
+COS (Citizenship Operations System),1,2,,SDO
+Ceres,,2,,SDO
+Charities Register,2,2,,SDO
+Citizenship DAL Viewer,2,2,,SDO
+Citizenship by Birth (CBB),2,2,,SDO
+Congratulatory Message Service,,,,SDO
+Customer Service Interface (CSI),1,1,,SDO
+DAL,2,2,,SDO
+DCS (Determinations Confirmation System),2,2,,SDO
+Data Validation Service,2,2,,SDO
+Grant and Client Management System,4,5,,SDO
+Grants Online - GOL,2,2,,SDO
+IVR,3,3,,SDO
+Lifedata,2,2,,SDO
+Lingo,2,2,,SDO
+Marriage Celebrants,2,2,,SDO
+Monet,4,4,,SDO
+NOTIFI (National Ops Team Info & Funding Interface),2,2,,SDO
+National Dogs Database (NDD),3,3,,SDO
+On-line Life Event Verification System (OLEV),2,2,,SDO
+Online Calculation Tool,2,2,,SDO
+Operational Policy and Procedures Online - OPPO,2,2,,SDO
+Order Tracking System (SDO),1,2,,SDO
+POS (Point of Sale),2,2,,SDO
+Passport Data Services,2,2,,SDO
+Passport Processing System (PPTS),2,2,,SDO
+Passports - Kiwi,3,3,,SDO
+Quantate,4,5,,SDO
+Queue Management System - QMS,2,2,,SDO
+RMAS (Regional Movement Alert System),2,3,,SDO
+Rates Rebates,2,2,,SDO
+RealMe Identity Verification Service - IVS,4,4,,SDO
+RealMe login service,4,4,,SDO
+Referral Workbench,2,2,,SDO
+SDO SID (Security Intelligence Database),2,2,,SDO
+Tracking 2000,1,1,,SDO
+Travel and Related Document Information System (TARDIS),2,2,,SDO
+VisaView,2,3,,SDO
+Vitalware Viewer,2,3,,SDO
+Voice Recording,3,3,,SDO
+Solidus eCare,3,3,,SDO
+uPerform,2,2,,SDO
+ALF (Archives Location Finder),4,3,ANZ,IKS
+ANZ Public Web Site,3,3,ANZ,IKS
+Archway Public,3,2,ANZ,IKS
+Archway Staff,2,2,ANZ,IKS
+CV - Collections Valuation DB,1,1,ANZ,IKS
+Ingestor (Ingest Tool),3,2,ANZ,IKS
+Preservation Database,2,1,ANZ,IKS
+Public records Audit Tool (aka Audit or CSAA),2,3,ANZ,IKS
+ARS - NZ Gazette,3,3,GIS,IKS
+CLIO (DMS),3,3,GIS,IKS
+Common Web Platform (CWP),5,5,GIS,IKS
+Document Management System (DMS),3,1,GIS,IKS
+Domain Name Service (DNS),,,GIS,IKS
+Gazette Online,5,5,GIS,IKS
+Objective (EDRMS),2,3,GIS,IKS
+Shared Workspace (SWS),3,,GIS,IKS
+data.govt.nz,5,3,GIS,IKS
+Govt.nz,,,GIS,IKS
+jobs.govt.nz,,,GIS,IKS
+Koha,4,,GIS,IKS
+Public Sector Intranet (PSI),,,GIS,IKS
+Digital New Zealand Suite,4,5,NLNZ,IKS
+Indigo (NDHA ingest tool),4,1,NLNZ,IKS
+Public Lending Rights (PLR),3,2,NLNZ,IKS
+RefTracker,3,4,NLNZ,IKS
+Rosetta aka NDHA,3,1,NLNZ,IKS
+Saleslogix CRM,5,3,NLNZ,IKS
+TAPUHI - unpublished collections management system,1,2,NLNZ,IKS
+Veridian,3,4,NLNZ,IKS
+Voyager,5,3,NLNZ,IKS
+Content Aggregator,3,3,NLNZ,IKS
+ISBN Database,2,3,NLNZ,IKS
+NDHA Wiki,3,3,NLNZ,IKS
+OCLC Connexion Client,4,5,NLNZ,IKS
+Osmosis,4,5,NLNZ,IKS
+Web Curator Tool,4,1,NLNZ,IKS
+Natlib.govt.nz website,4,5,NLNZ,IKS
+Digital New Zealand website,4,5,NLNZ,IKS

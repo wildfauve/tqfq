@@ -13,46 +13,42 @@ class ReferenceModel
   
   embeds_many :properties
   
-  def self.create_or_update_me(level: nil, ref: nil, parent: nil, tokens: nil)
-    model_name = ref[1]
+  
+  def self.create_or_update_me(ref: nil, parent: nil)
     id = parent.id if parent
-    rms = self.where(name: model_name)
+    rms = self.where(name: ref[:name])
     if rms.count == 0
-      rm = self.new.update_attrs(name: model_name, level: level, parent_id: id, tokens: tokens, ref: ref)      
+      rm = self.new
     elsif rms.count > 1
-      raise
+      binding.pry
     else
       rm = rms.first
-      rm.update_attrs(name: model_name, level: level, parent_id: id, tokens: tokens, ref: ref)
     end
+    rm.update_attrs(ref: ref, parent_id: id)
     rm
   end
   
-  def update_attrs(name: nil, level: nil, parent_id: nil, tokens: nil, ref: nil)
-    tokens.delete(:name)
-    tokens.delete(:level)
-    self.level = level
-    ref.shift
-    self.name = ref.shift
+    
+  
+  def update_attrs(ref: nil, parent_id: nil)
+    self.name = ref[:name]
     self.parent_id = parent_id
-    self.add_props(tokens: tokens, ref: ref)
+    self.level = ref[:level]
+    self.add_props(properties:  ref[:properties])
     #binding.pry if self.level == :service_domain
     self.save
     publish(:successful_save_event, self)
     self
   end
   
-  def add_props(tokens: nil, ref: nil)
-    ref.each do |prop|
-      prop_name = tokens.shift
-      if !prop.nil?
-        p = self.properties.where(name: prop_name).first
-        if p
-          p.add_attrs(name: prop_name, value: prop)
-        else
-          p = Property.new.add_attrs(name: prop_name, value: prop)
-          self.properties << p
-        end
+  def add_props(properties: nil)
+    properties.each do |k, v|
+      p = self.properties.where(name: k).first
+      if p
+        p.add_attrs(name: k, value: v)
+      else
+        p = Property.new.add_attrs(name: k, value: v)
+        self.properties << p
       end
     end
   end

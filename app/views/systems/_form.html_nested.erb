@@ -1,0 +1,12 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>System</h3>
+</div>
+
+<%= simple_form_for set_up_system(@system),  html: { class: 'form-horizontal' } do |f| %>
+   <%= f.input :name, label: "Name" %>
+   <%= f.simple_fields_for :properties do |props| %>
+      <%= props.input :name, as: :hidden%>
+         <%= props.input :value, label: props.object.name %>      
+   <% end %>
+   <%= f.button :submit, "Submit" %>
+<% end %>

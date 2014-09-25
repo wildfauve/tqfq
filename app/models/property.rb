@@ -12,7 +12,7 @@ class Property
   embedded_in :system
   embedded_in :reference_model
 
-  @@tokenise_props = [:criticality, :tq_fq_quadrant, :pace_layer]
+  @@tokenise_props = [:asset_type, :criticality, :tq_fq_quadrant, :pace_layer]
     
   def self.imported_props
     @@props

@@ -1,0 +1,29 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3><%= @system.name %></h3>
+</div>
+
+<table class="table">
+   <tbody>
+        <% for prop in @system.properties %>
+           <tr>
+             <td><%=prop.name %></td>
+             <td><%=prop.value %></td>
+             </tr>
+      <% end %>
+   </tbody>
+</table>
+
+<%= link_to "Edit",  edit_system_path(@system), class: "btn btn-default"%>               
+
+
+<table class="table"> 
+   <tbody> 
+      <% for  ref in @system.reference_models %> 
+         <tr> 
+            <td><%=ref.name %></td> 
+            <td><%=ref.token  %></td> 
+         </tr> 
+      <% end %>
+   </tbody> 
+</table>
+

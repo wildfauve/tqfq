@@ -1,9 +1,7 @@
-require 'csv'
-
 namespace :admin do
   desc "Load Systems from CSV"
   task system_load: :environment do
-    System.all.delete
+    #System.all.delete
     systems = CSV.read('lib/tasks/systems_2.csv')
     handler = SystemImportHandler.new(systems: systems)
     handler.process
@@ -22,8 +20,9 @@ namespace :admin do
     ref_bindings = CSV.read('lib/tasks/bian_mapping.csv')
     handler = SystemImportHandler.new
     handler.add_ref_binding(refs: ref_bindings, dummy: false)
-    #binding.pry
     puts "Exceptions: #{handler.exceptions.count}"
+    handler.exceptions.map {|e| e[:system]}.uniq.each {|es| puts "System not in Systems Register: #{es} "}
+    handler.exceptions.map {|e| e[:ref_model]}.uniq.each {|er| puts "Reference Model Name Not found: #{er} "}
   end
   
   desc "BIAN to System Matrix"
@@ -41,6 +40,11 @@ namespace :admin do
   task replace: :environment do
     compare = Comparison.new.replacements
     compare.to_csv(file: "replacements")
+  end
+  
+  task tq_fq_point: :environment do
+    compare = Comparison.new.tq_fq_point_ct
+    compare.to_csv(file: "tq_fq_points")
   end
 
 

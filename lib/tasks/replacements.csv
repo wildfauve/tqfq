@@ -1,61 +1,37 @@
 System,Pace Layer,TQ/FQ,Target,SAP Coverage,BIAN Mapping Count,Timeframe
-ActivatePL,sor,replace,SAP,100,14,medium
-AOA Generator,sor,replace,SAP,100,1,medium
-Appointment Manager,sod,replace,New,100,3,medium
-Autobahn,sor,keep,SAP,100,1,long
-Barx,sor,keep,SAP,100,1,long
-BNZ PC Banking,sor,keep,SAP,100,1,long
-CitiDirect,sor,keep,SAP,100,3,long
-Corporate Product Database,sod,replace,New,100,3,medium
-DealControl,,,more info,100,0,more info
-Eftpos,sor,keep,SAP,100,0,long
-EndofDay,,,more info,100,0,more info
-EndofMonth,,,more info,100,0,more info
-EndofYear,,,more info,100,0,more info
-Fixed Rate Break Calculator,sor,,SAP,100,1,long
-Lips,,,more info,12.5,8,more info
-MarkitWire,sor,keep,SAP,75.0,4,long
-CSLinkage,,,more info,100.0,4,more info
-Base 2000,sor,keep,SAP,36.36363636363637,11,long
-SAP,,,more info,100,0,more info
-Ultracs,,,more info,100,8,more info
-360T,,,more info,100,0,more info
-360T-TradeImporter,,,more info,100,0,more info
-ActivateBB,sor,refactor,SAP,100,18,long
-ActivateKB,sor,refactor,SAP,100,14,long
-Funds Transfer Pricing,,,more info,100,0,more info
-GDS Swaps Reporting,,,more info,100,1,more info
-Liquidity,,,more info,100,3,more info
-Prepaid,,,more info,100,0,more info
-Quantum,sor,keep,SAP,100,0,long
-Quest,sod,keep,Keep,9.090909090909092,11,
-Third Party Exports,sod,replace,New,100,3,medium
-Treasury Management System,sor,?,SAP,100,7,long
-Travelex,,replace,New,100,2,medium
-ValueQ7,sor,enhance,SAP,16.666666666666664,12,long
-Velocity,sor,keep,SAP,100,7,long
-Visa Card Reporting,sor,replace,SAP,100,2,medium
-Visa Processing System,sor,keep,SAP,100.0,4,long
-Websign,sod,replace,New,100,0,medium
-Western Union - Reconciliation,sor,replace,SAP,100,1,medium
-WestpacAUD,sor,keep,SAP,100,0,long
-Xero,sod,keep,Keep,100,0,
-IVR,sod,keep,Keep,100,4,
-Musicida,sor,keep,SAP,100,1,long
-Voyager,sor,keep,SAP,100,4,long
-Flo2Cash,sor,keep,SAP,100,3,long
-Heaps,sod,enhance/replace,Keep,100,7,
-Instinct,sor,refactor,SAP,100,3,long
-International Desktop Application,sor,refactor,SAP,100,6,long
-Internet Banking,sod,refactor,Keep,5.0,20,
-In-Touch,sod,,Keep,3.3333333333333335,30,
-KBMAC,sod,replace,New,6.25,16,medium
-Mobile Banking,sod,replace,New,100,11,medium
-Mobile Top Up,sod,keep,Keep,40.0,5,
-Moodys,sor,keep,SAP,100,3,long
-OnlineCreditCardApp,,,more info,100,0,more info
-OnlineHomeLoanApp,,replace,New,100,0,medium
-Outbound,sor,keep,SAP,100,0,long
-Propel,sod,replace,New,100,3,medium
-PublicInternet,sod,replace,New,100,0,medium
-Tieback,sor,enhance,SAP,100,5,long
+Prepaid,,,more info,1,0,more info
+Voyager,sor,keep,SAP,1,4,T2
+SDT,sor,replace,SAP,1,6,T1
+EFTPOS,sor,refactor,SAP,0.6,5,T2
+Fixed Rate Break Calculator,sor,replace,SAP,1,1,T1
+Funds Transfer Pricing,,,more info,1,0,more info
+GDS Swaps Reporting,,,more info,1,1,more info
+Instinct,sor,refactor,SAP,1,3,T2
+IVR,sod,keep,Keep,1,4,
+Moodys,sor,keep,SAP,1,3,T2
+Musicida,sor,keep,SAP,1,1,T2
+Propel,sod,replace,New,1,3,T1
+PublicInternet,sod,replace,New,1,0,T1
+Quest,sod,keep,Keep,0.09090909090909091,11,
+Third Party Exports,sod,replace,New,1,3,T1
+Travelex,sor,replace,SAP,1,2,T1
+Velocity,sor,keep,SAP,1,7,T2
+Internet Banking,sod,refactor,Keep,0.05,20,
+Text Banking,sor,replace,SAP,1,5,T1
+ValueQ7,sor,enhance,SAP,0.16666666666666666,12,T2
+Liquidity,"","",Keep,1,3,
+Base 2000,sor,keep,SAP,0.36363636363636365,11,T2
+Ultracs,sor,replace,SAP,1,8,T1
+ActivateBB,sor,refactor,SAP,1,18,T2
+ActivateKB,sor,refactor,SAP,1,14,T2
+ActivatePL,sor,replace,SAP,1,14,T1
+AOA Generator,sor,replace,SAP,1,1,T1
+Appointment Manager,sod,replace,New,1,3,T1
+Heaps,sod,enhance,Keep,1,7,
+International Desktop Application,sor,refactor,SAP,1,6,T2
+Mobile Banking,sod,replace,New,1,11,T1
+Outbound,sor,keep,SAP,1,0,T2
+Tieback,sor,enhance,SAP,1,5,T2
+Treasury Management System,sor,keep,SAP,1,7,T2
+Visa Card Reporting,sor,replace,SAP,1,2,T1
+In-Touch,sod,replace,New,0.03333333333333333,30,T1

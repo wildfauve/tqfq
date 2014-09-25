@@ -9,7 +9,7 @@ class Comparison
   def bian_system
     @matrix = []
     y_axis_input = ReferenceModel.where(level: :service_domain).sort {|a,b| a.token <=> b.token}  # TODO Sort by Parent and Parent
-    x_axis_input = System.all
+    x_axis_input = System.system_type
     @matrix << x_axis_input.map(&:name).unshift(" ") 
     parent = nil
     y_axis_input.each do |bian|
@@ -27,14 +27,14 @@ class Comparison
   end
   
   def tqfq_dimension
-    systems = System.all
+    quad = ["replace", "refactor", "keep", "enhance"]
+    layers = ["sor", "sod", "soi"]
+    systems = System.system_type
     pace = systems.map(&:pace_layer).uniq
-    #dim = sys.each_with_object(Hash.new(0)) { |tqfq,counts| counts[tqfq] += 1 }
-    no_sys = systems.count
-    #percent = dim.inject({}) {|ct, (k, v)| ct[k] = v/(no_sys.to_f); ct}
-    
+    total_sys = systems.count
+    assessed_sys = systems.map(&:tq_fq_quadrant).count {|q| quad.include?(q)} 
     dim = systems.each_with_object(Hash.new(0)) do |system, counts|
-      system.tq_fq_quadrant.nil? ? tqfq = "Not Assessed" : tqfq = system.tq_fq_quadrant
+      quad.include?(system.tq_fq_quadrant) ? tqfq = system.tq_fq_quadrant :  tqfq = "Not Assessed"
       if counts[tqfq] != 0
         counts[tqfq][:ct] += 1
       else
@@ -42,11 +42,11 @@ class Comparison
       end
       counts[tqfq][system.pace_layer] ? counts[tqfq][system.pace_layer] += 1 : counts[tqfq][system.pace_layer] = 1
     end
-    dim.each {|k, v| dim[k][:percent] = dim[k][:ct] / no_sys.to_f }  
-    @matrix = [["TQFQ Quadrant", "Ct", "%"]]
-    pace.each {|p| p ? @matrix[0] << p : @matrix[0] << "Not Assessed"}
+    dim.each {|k, v| dim[k][:percent_total] = dim[k][:ct] / total_sys.to_f ; dim[k][:percent_assessed] = dim[k][:ct] / assessed_sys.to_f }  
+    @matrix = [["TQFQ Quadrant", "Ct", "% of total", "% of assessed"]]
+    pace.each {|p| layers.include?(p) ? @matrix[0] << p : @matrix[0] << "Not Assessed"}
     dim.each do |k, v| 
-      row = [k, v[:ct], v[:percent]]
+      row = [k, v[:ct], v[:percent_total], v[:percent_assessed]]
       pace.each {|p| v[p] ? row << v[p] : row << ""}
       @matrix << row
     end
@@ -61,10 +61,9 @@ class Comparison
     # Determine how many are replaced by SAP
     repl = []
     # determine the SAP Replacement
-    repl << coverage(systems: System.all)
+    repl << coverage(systems: System.system_type)
     #repl << coverage(systems: part[1])
     @result = repl.flatten
-    
     @matrix = [["System", "Pace Layer", "TQ/FQ", "Target", "SAP Coverage", "BIAN Mapping Count", "Timeframe"]]
     @result.each {|sys| @matrix << [sys[:system], sys[:pace], sys[:tqfq], sys[:target], sys[:covered], sys[:map_ct], sys[:timeframe]]}
     self
@@ -77,7 +76,7 @@ class Comparison
       mapping = sys.reference_models.map(&:sap_mapping)
       map_ct = mapping.count
       mapping.delete("Y")
-      mapping.empty? ? covered = 100 : covered =  (mapping.count.to_f / map_ct) * 100
+      mapping.empty? ? covered = 1   : covered =  (mapping.count.to_f / map_ct)
       cover << {system: sys.name, pace: sys.pace_layer, tqfq: sys.tq_fq_quadrant, 
                 covered: covered, map_ct: map_ct, target: decision[:target], timeframe: decision[:timeframe] }
     end
@@ -87,7 +86,7 @@ class Comparison
   def replace_decision(sys: nil)
     return {target: "more info", timeframe: "more info"} if sys.tq_fq_quadrant.nil? && sys.pace_layer.nil?
     if sys.tq_fq_quadrant == "replace"
-      timeframe = "medium"
+      timeframe = "T1"
       if sys.pace_layer == "sor"
         target = "SAP"
       else
@@ -96,19 +95,41 @@ class Comparison
     elsif sys.tq_fq_quadrant == "keep"
       if sys.pace_layer == "sor"
         target = "SAP"
-        timeframe = "long"
+        timeframe = "T2"
       else
         target = "Keep"
       end
     else
       if sys.pace_layer == "sor"
         target = "SAP"
-        timeframe = "long"
+        timeframe = "T2"
       else
         target = "Keep"
       end
     end
     {target: target, timeframe: timeframe}
+  end
+  
+  def tq_fq_point_ct
+    systems = System.system_type
+    system_points = systems.map(&:tq_fq_point)
+    points = system_points.uniq
+    total = system_points.count
+    assessed = systems.inject(0) {|ct, sys| ct += 1 if sys.assessed?; ct}
+    ct = {}
+    system_points.each do |sp|
+      if ct[sp]
+        ct[sp][:ct] += 1
+        ct[sp][:percent] = ct[sp][:ct] / assessed.to_f
+      else
+        ct[sp] = {ct: 1, percent: 0}
+      end
+    end
+    @matrix = [["Point", "Count", "Percentage"]]
+    ct.each do |point, calc|
+      @matrix << [point, calc[:ct], calc[:percent]]
+    end
+    self
   end
   
   def to_csv(file: nil)
