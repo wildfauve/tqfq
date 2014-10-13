@@ -2,6 +2,14 @@
    <h3>Systems</h3>
 </div>
 
+<div class="jumbotron">
+  <h1>Counts</h1>
+  <p><%= "Total Systems: #{System.system_count}"%></p>
+  <p><%= "Total Systems Assessed: #{System.assessed_count}" %></p>  
+  <p><%= "Total Core: #{System.core(type: :all).count}"%></p>
+  <p><%= "Total Core Assessed: #{System.core(type: :assessed).count}"%></p>
+</div>
+
 <table class="table" id="systems-list">
    <thead>
      <tr>
@@ -9,6 +17,8 @@
        <th>Type</th>       
        <th>TQ/FQ Quad</th>       
        <th>Pace Layer</th>  
+       <th>Criticality</th>
+       <th>SAP Cover</th>         
        <th>Actions</th>                   
      </tr>
    </thead>

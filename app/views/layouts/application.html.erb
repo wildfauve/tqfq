@@ -30,8 +30,22 @@
                 <li><%= link_to "List", systems_path %></li>
                 <li><%= link_to "New", new_system_path %></li>
                 <li><%= link_to "Load", new_import_path %></li>
+                <li><%= link_to "CSV", csv_systems_path %></li>
+                <li><%= link_to "Update SAP Coverage", sap_coverage_systems_path, method: :put %></li>
               </ul>
             </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reference Models <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "All", reference_models_path %></li>
+              </ul>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Comparisons <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "TQ/FQ", tqfq_comparisons_path %></li>
+              </ul>
+            </li>            
           </ul>
       </div>
     </div>

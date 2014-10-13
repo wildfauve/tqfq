@@ -1,0 +1,53 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>TQFQ</h3>
+</div>
+
+<% quads = @compare.tqfq %>
+
+<div class="row">
+   <div class="col-md-6">
+      <% pos = quads.position(:top_left) %>
+      <%= render partial: 'quad', locals: {pos: pos}%>
+   </div>
+   <div class="col-md-6">
+      <% pos = quads.position(:top_right) %>
+      <%= render partial: 'quad', locals: {pos: pos}%>
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-6">
+      <% pos = quads.position(:bottom_left) %>
+      <%= render partial: 'quad', locals: {pos: pos}%>
+   </div>
+   <div class="col-md-6">
+      <% pos = quads.position(:bottom_right) %>      
+      <%= render partial: 'quad', locals: {pos: pos}%>
+   </div>
+</div>
+
+
+<table class="table" >
+   <thead>
+     <tr>
+       <th>Quadrant</th>
+       <th>Count</th>
+       <th>% of Total</th>
+       <th>% of Assessed</th>
+     </tr>
+   </thead>
+   <tbody>
+      <% for quad in @compare.tqfq.quads%>
+         <tr>         
+            <td><%= quad.position%></td>
+            <td><%= quad.ct%></td>
+            <td><%= quad.tot_percent%></td>            
+            <td><%= quad.assess_percent%></td>                        
+         </tr>            
+      <% end %>
+      <tr>
+         <td></td>
+         <td><%= @compare.tqfq.total_count%></td>         
+      </tr>
+   </tbody>
+</table>
+

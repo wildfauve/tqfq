@@ -1,6 +1,6 @@
-TQFQ Quadrant,Ct,% of total,% of assessed,Not Assessed,sor,sod,Not Assessed
-Not Assessed,4,0.1111111111111111,0.125,3,"","",1
-keep,9,0.25,0.28125,"",7,2,""
-replace,14,0.3888888888888889,0.4375,"",8,6,""
-refactor,6,0.16666666666666666,0.1875,"",5,1,""
-enhance,3,0.08333333333333333,0.09375,"",2,1,""
+TQFQ Quadrant,Ct,% of total,% of assessed
+replace,15,46.875,46.875,sod,6,sor,9
+refactor,6,18.75,18.75,sor,5,sod,1
+keep,8,25.0,25.0,sor,6,sod,2
+enhance,3,9.375,9.375,sod,1,sor,2
+not_assessed,0,0.0,0.0

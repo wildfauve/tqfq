@@ -12,7 +12,14 @@
       <%= system.pace_layer %>
    </td>
    <td>
+      <%= system.criticality %>
+   </td>
+   <td>
+      <%= number_to_percentage(system.sap_coverage) %>
+   </td>
+   <td>
       <%= link_to "Show",  system_path(system), class: "btn btn-default"%>
       <%= link_to "Edit",  edit_system_path(system), class: "btn btn-default"%>               
+      <%= link_to "Delete",  system_path(system), method: :delete, class: "btn btn-default"%>                     
    </td>
 </tr>

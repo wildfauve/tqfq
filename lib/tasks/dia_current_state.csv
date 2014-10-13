@@ -89,36 +89,60 @@ ANZ Public Web Site,3,3,ANZ,IKS
 Archway Public,3,2,ANZ,IKS
 Archway Staff,2,2,ANZ,IKS
 CV - Collections Valuation DB,1,1,ANZ,IKS
+Fedora Commons,4,3,ANZ,IKS
+Gallery,3,3,ANZ,IKS
 Ingestor (Ingest Tool),3,2,ANZ,IKS
+Performance Stats,2,1,ANZ,IKS
 Preservation Database,2,1,ANZ,IKS
 Public records Audit Tool (aka Audit or CSAA),2,3,ANZ,IKS
+The Community Archive,4,2,ANZ,IKS
+War Art,4,3,ANZ,IKS
+ARS Ð Authentications,3,3,GIS,IKS
 ARS - NZ Gazette,3,3,GIS,IKS
+ARS Ð Translations,3,2,GIS,IKS
 CLIO (DMS),3,3,GIS,IKS
 Common Web Platform (CWP),5,5,GIS,IKS
-Document Management System (DMS),3,1,GIS,IKS
-Domain Name Service (DNS),,,GIS,IKS
-Gazette Online,5,5,GIS,IKS
-Objective (EDRMS),2,3,GIS,IKS
-Shared Workspace (SWS),3,,GIS,IKS
 data.govt.nz,5,3,GIS,IKS
-Govt.nz,,,GIS,IKS
-jobs.govt.nz,,,GIS,IKS
-Koha,4,,GIS,IKS
-Public Sector Intranet (PSI),,,GIS,IKS
+Document Management System (DMS),3,1,GIS,IKS
+Domain Name Service (DNS),4,4,GIS,IKS
+Gazette Online,5,5,GIS,IKS
+Govt.nz,5,5,GIS,IKS
+jobs.govt.nz,3,3,GIS,IKS
+Koha,4,4,GIS,IKS
+Objective (EDRMS),2,3,GIS,IKS
+Public Sector Intranet (PSI),2,3,GIS,IKS
+Shared Workspace (SWS),3,3,GIS,IKS
+ Webcat,4,5,NLNZ,IKS
+Cocoon,1,1,NLNZ,IKS
+Content Aggregator,3,3,NLNZ,IKS
 Digital New Zealand Suite,4,5,NLNZ,IKS
+Digital New Zealand website,4,5,NLNZ,IKS
 Indigo (NDHA ingest tool),4,1,NLNZ,IKS
+ISBN Database,2,3,NLNZ,IKS
+Manuscripts and Pictorial,2,1,NLNZ,IKS
+Metalib,4,3,NLNZ,IKS
+MultiTES,2,3,NLNZ,IKS
+Natlib.govt.nz website,4,5,NLNZ,IKS
+NDHA Wiki,3,3,NLNZ,IKS
+OCLC Connexion Client,4,5,NLNZ,IKS
+Osmosis,4,5,NLNZ,IKS
 Public Lending Rights (PLR),3,2,NLNZ,IKS
 RefTracker,3,4,NLNZ,IKS
 Rosetta aka NDHA,3,1,NLNZ,IKS
 Saleslogix CRM,5,3,NLNZ,IKS
+Search Stations,3,5,NLNZ,IKS
+SFX,4,1,NLNZ,IKS
+Sound Conservation / Digitisation,4,3,NLNZ,IKS
+Spine Label Printing,5,4,NLNZ,IKS
 TAPUHI - unpublished collections management system,1,2,NLNZ,IKS
+Verde,4,1,NLNZ,IKS
 Veridian,3,4,NLNZ,IKS
 Voyager,5,3,NLNZ,IKS
-Content Aggregator,3,3,NLNZ,IKS
-ISBN Database,2,3,NLNZ,IKS
-NDHA Wiki,3,3,NLNZ,IKS
-OCLC Connexion Client,4,5,NLNZ,IKS
-Osmosis,4,5,NLNZ,IKS
 Web Curator Tool,4,1,NLNZ,IKS
-Natlib.govt.nz website,4,5,NLNZ,IKS
-Digital New Zealand website,4,5,NLNZ,IKS
+AML/CFT Metric Stream,4,4,,PREA
+CloudMark GSMA Spam Reporting Service,3,4,,PREA
+CubeBuilder,2,2,,PREA
+Integrated Gambling Platform,4,3,,PREA
+License Track,2,2,,PREA
+Run The Red SMS Gateway,4,4,,PREA
+Secure Intelligence DB,2,2,,PREA

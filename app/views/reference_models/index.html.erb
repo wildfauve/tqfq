@@ -1,0 +1,23 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>Reference Models</h3>
+</div>
+
+<% ba = @ref.where(level: :business_area) %>
+<div class="panel-group" id="accordion-ba">
+   <% ba.each do |lvl1| %>
+      <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion-ba" href="#<%= lvl1.id%>">
+             Business Domain: <%= lvl1.name %>
+           </a>
+         </h4>
+       </div>
+       <div id="<%= lvl1.id%>" class="panel-collapse collapse">
+         <div class="panel-body">
+            <%= render partial: 'business_domain', locals: {bd: lvl1}%>
+         </div>
+       </div>
+      </div>
+  <% end %>
+</div>

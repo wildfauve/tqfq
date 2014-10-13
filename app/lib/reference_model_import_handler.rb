@@ -14,8 +14,11 @@ class ReferenceModelImportHandler
         ba = ReferenceModel.create_or_update_me(ref:  add_props(props: elem, level: :business_area), parent: nil)
       elsif elem[0] == "BD"
         bd = ReferenceModel.create_or_update_me(ref:  add_props(props: elem, level: :business_domain), parent: ba)
-      else
+      elsif elem[0] == "SD" 
         ReferenceModel.create_or_update_me(ref:  add_props(props: elem, level: :service_domain), parent: bd)
+      else
+        binding.pry
+        raise
       end
     end
   end  
@@ -46,6 +49,7 @@ class ReferenceModelImportHandler
       end
       ct += 1
     end
+    #binding.pry if input_hash[:properties][:type] == "SD"
     input_hash
   end
   

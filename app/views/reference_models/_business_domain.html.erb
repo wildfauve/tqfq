@@ -1,0 +1,18 @@
+<div class="panel-group" id="accordion-bd">
+   <% bd.children.each do |lvl2| %>
+      <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion-bd" href="#<%= lvl2.id%>">
+             Business Area: <%= lvl2.name %>
+           </a>
+         </h4>
+       </div>
+       <div id="<%= lvl2.id%>" class="panel-collapse collapse">
+         <div class="panel-body">
+            <%= render partial: 'service_domain', locals: {ba: lvl2}%>
+         </div>
+       </div>
+      </div>
+  <% end %>
+</div>

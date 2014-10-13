@@ -3,13 +3,14 @@ namespace :admin do
   task system_load: :environment do
     #System.all.delete
     systems = CSV.read('lib/tasks/systems_2.csv')
+    #systems = CSV.read('lib/tasks/dia_current_state.csv')    
     handler = SystemImportHandler.new(systems: systems)
     handler.process
   end
 
   desc "Load BIAN Reference Model"
   task bian_load: :environment do
-    elements = CSV.read('lib/tasks/bian.csv')
+    elements = CSV.read('lib/tasks/bian_features.csv')
     #ReferenceModel.all.delete
     handler = ReferenceModelImportHandler.new(ref: elements)
     handler.process
@@ -33,18 +34,22 @@ namespace :admin do
   end
   
   task tq_fq_rate: :environment do
-    compare = Comparison.new.tqfq_dimension
-    compare.to_csv(file: "tqfq")
+    #compare = Comparison.new.tqfq_dimension(prepare_csv: true)
+    compare = Comparison.new.tqfq_dimension.prepare_tqfq_csv.to_csv(file: "tqfq")
   end
 
   task replace: :environment do
-    compare = Comparison.new.replacements
-    compare.to_csv(file: "replacements")
+    compare = Comparison.new.replacements.to_csv(file: "replacements")
   end
   
   task tq_fq_point: :environment do
     compare = Comparison.new.tq_fq_point_ct
     compare.to_csv(file: "tq_fq_points")
+  end
+
+  task tq_fq_point_to_quad: :environment do
+    compare = Comparison.new.tq_fq_point_ct(grain: :quad)
+    compare.to_csv(file: "tq_fq_quad")
   end
 
 

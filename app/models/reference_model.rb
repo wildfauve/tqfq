@@ -61,6 +61,10 @@ class ReferenceModel
     end
   end
   
+  def children
+    ReferenceModel.where(parent_id: self.id)
+  end
+  
   def token
     tokens = [self.name]
     parent = self.parent

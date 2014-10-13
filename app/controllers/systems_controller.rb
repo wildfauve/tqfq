@@ -28,12 +28,25 @@ class SystemsController < ApplicationController
     system.update_attrs(system: params[:system])
   end
 
+  def destroy
+    system = System.find(params[:id])
+    system.subscribe(self)
+    system.destroy
+  end
   
   def successful_save_event(system)
     redirect_to systems_path
   end
   
+  def csv
+    System.to_csv
+    redirect_to systems_path
+  end
   
   
+  def sap_coverage
+    System.sap_coverage
+    redirect_to systems_path
+  end
   
 end

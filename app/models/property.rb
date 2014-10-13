@@ -24,13 +24,13 @@ class Property
     
   def add_attrs(name: nil, value: nil)
     self.name = name
-    self.value = determine_tokenise(value: value, name: name)
+    self.value = determine_tokenise(name: name, value: value)
     self
   end
     
   def determine_tokenise(name: nil, value: nil)
     return nil if value.nil?
-    if @@tokenise_props.include? name 
+    if @@tokenise_props.include? name.to_sym 
       self.tokenised = true
       value.downcase.gsub(" ", "_")
     else
