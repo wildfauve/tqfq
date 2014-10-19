@@ -4,17 +4,30 @@
        <div class="panel-heading">
          <h4 class="panel-title">
            <a data-toggle="collapse" data-parent="#accordion-sd" href="#<%= lvl3.id%>">
-             Service Domain: <%= lvl3.name %>
+              <ul class="nav nav-pills nav-stacked">
+             Service Domain: <span class="label label-default"><%= lvl3.name %> </span>
            </a>
+           <ul class="nav nav-pills">
+             <li class="active">
+               <%= link_to "#" do %>
+                   Systems<span class="badge pull-right"><%= lvl3.systems.count%></span>
+               <% end%>
+             </li>
+             <li class="active">
+               <%= link_to "#" do %>
+                   Projects<span class="badge pull-right"><%= lvl3.projects.count%></span>
+               <% end %>
+             </li>
+           </ul>
          </h4>
        </div>
        <div id="<%= lvl3.id%>" class="panel-collapse collapse">
          <div class="panel-body">
-            <% for prop in lvl3.properties %>
-            <%= "#{prop.name} #{prop.value}"%><br/>
-            <% end %>
+            <%= render partial: 'prop_table', locals: {sd: lvl3}%>
+            <%= render partial: 'system_list', locals: {sd: lvl3}%>            
          </div>
        </div>
       </div>
   <% end %>
 </div>
+

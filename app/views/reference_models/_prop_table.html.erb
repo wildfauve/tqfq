@@ -1,0 +1,20 @@
+<table class="table" id="prop-list">
+   <thead>
+     <tr>
+       <th>Name</th>
+       <th>Value</th>       
+     </tr>
+   </thead>
+   <tbody>
+      <% sd.properties.each do |prop| %>
+         <tr>
+            <td>
+               <%= prop.name%>
+            </td>
+            <td>
+               <%= prop.value%>
+            </td>
+         </tr>
+      <% end %>
+   </tbody>
+</table>

@@ -1,0 +1,258 @@
+Business Support:Buildings~ Equipment and Facilities
+Business Support:Business Command & Control
+Business Support:Business Direction
+Business Support:Corporate Relations
+Business Support:Document Management & Archive
+Business Support:Finance
+Business Support:Human Resource Management
+Business Support:IT Management
+Business Support:Knowledge & Intellectual Property  Management
+Business Support:Non IT & HR Enterprise Services
+Consumer Products:Cards
+Card Authorization,EFTPOS,refactor
+"",Base 2000,keep
+Card Billing & Payments,EFTPOS,refactor
+"",Base 2000,keep
+Card Capture,EFTPOS,refactor
+"",Base 2000,keep
+Card Facility,Internet Banking,refactor
+"",In-Touch,replace
+"",Base 2000,keep
+Consumer Products:Consumer Services
+Bank Drafts & Travelers Checks,International Desktop Application,refactor
+Consumer Tax Handling,International Desktop Application,refactor
+Currency Exchange,International Desktop Application,refactor
+Remittance Services,International Desktop Application,refactor
+Consumer Products:Customer Loans & Deposits
+Current Account,Internet Banking,refactor
+"",Text Banking,replace
+"",In-Touch,replace
+"",Ultracs,replace
+Deposit Account,Internet Banking,refactor
+"",Text Banking,replace
+"",In-Touch,replace
+"",Ultracs,replace
+Loan,ActivateBB,refactor
+"",Moodys,keep
+"",Propel,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+"",Base 2000,keep
+Corporate Products:Corporate Banking Products
+Cash Management & Account Services,Ultracs,replace
+Corporate Current Account,Internet Banking,refactor
+"",Text Banking,replace
+"",In-Touch,replace
+"",Ultracs,replace
+Credit Facility,ActivateBB,refactor
+Credit Management,ActivateBB,refactor
+"",Moodys,keep
+"",ActivateKB,refactor
+"",ActivatePL,replace
+Direct Debit Fulfillment,In-Touch,replace
+"",Ultracs,replace
+Direct Debit Mandate Management,In-Touch,replace
+"",Ultracs,replace
+Limit & Exposure Management,ActivateBB,refactor
+Corporate Products:Corporate Financing and Advisory Services
+Corporate Products:Trade Finance
+Cross Product Operations:Account Management
+Cross Product Operations:Collateral Administration
+Cross Product Operations:Operational Services
+Token Tracking,Tieback,enhance
+Cross Product Operations:Payments
+Cheque Processing,In-Touch,replace
+Financial Message Gateway,EFTPOS,refactor
+Payments Execution,EFTPOS,refactor
+"",Internet Banking,refactor
+"",Mobile Banking,replace
+"",Musicida,keep
+"",Third Party Exports,replace
+"",In-Touch,replace
+Financial Markets:Investment Management
+Financial Markets:Market Operations
+Financial Markets:Wholesale Trading
+Operations & Execution Consumer Products:Customer Insurance
+Claims Management,ValueQ7,enhance
+Policy Administration,Quest,keep
+"",ValueQ7,enhance
+Reference Data:External Agency
+Reference Data:Market Data
+Reference Data:Party
+Party Data Management,ActivateBB,refactor
+"",Heaps,enhance
+"",Instinct,refactor
+"",International Desktop Application,refactor
+"",Internet Banking,refactor
+"",Mobile Banking,replace
+"",Quest,keep
+"",Third Party Exports,replace
+"",ValueQ7,enhance
+"",SDT - Core Customer,replace
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+"",Base 2000,keep
+Party Profile,ActivateBB,refactor
+"",Heaps,enhance
+"",Instinct,refactor
+"",International Desktop Application,refactor
+"",Internet Banking,refactor
+"",Mobile Banking,replace
+"",Quest,keep
+"",Third Party Exports,replace
+"",ValueQ7,enhance
+"",SDT - Core Customer,replace
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+"",Base 2000,keep
+Reference Data:Product Management
+Product Combination,ValueQ7,enhance
+"",SDT - Core Customer,replace
+"",Ultracs,replace
+Product Deployment,ValueQ7,enhance
+"",SDT - Core Customer,replace
+"",Ultracs,replace
+Product Design,ValueQ7,enhance
+"",SDT - Core Customer,replace
+Product Pricing Facility,SDT - Core Customer,replace
+Risk & Compliance:Bank Portfolio & Treasury
+Asset & Liability Management,Treasury Management System,keep
+"",Velocity,keep
+Asset Securitization,Treasury Management System,keep
+"",Velocity,keep
+Bank Portfolio Administration,Treasury Management System,keep
+"",Velocity,keep
+Bank Portfolio Analysis,Treasury Management System,keep
+"",Velocity,keep
+Stock Lending/Repos,Treasury Management System,keep
+"",Velocity,keep
+Treasury Administration,Treasury Management System,keep
+"",Velocity,keep
+Treasury Management,Treasury Management System,keep
+"",Velocity,keep
+Risk & Compliance:Business Analysis
+Customer Portfolio,Visa Card Reporting,replace
+Product Portfolio,Visa Card Reporting,replace
+Risk & Compliance:Models
+Credit Risk Models,Moodys,keep
+Risk & Compliance:Regulations & Compliance
+Fraud/AML Resolution,Instinct,refactor
+"",Tieback,enhance
+Sales & Services:Channel Specific
+Advanced Voice Services Management,IVR,keep
+Advanced Voice Services Operations,IVR,keep
+Sales & Services:Cross Channel
+Contact Dialogue,Internet Banking,refactor
+"",Mobile Banking,replace
+"",Quest,keep
+"",In-Touch,replace
+Interactive Help,Heaps,enhance
+"",Internet Banking,refactor
+"",Mobile Banking,replace
+"",Quest,keep
+"",In-Touch,replace
+Party Authentication,Heaps,enhance
+"",Internet Banking,refactor
+"",IVR,keep
+"",Mobile Banking,replace
+"",Text Banking,replace
+"",In-Touch,replace
+Servicing Event History,In-Touch,replace
+Transaction Authorization,Heaps,enhance
+"",Internet Banking,refactor
+"",IVR,keep
+"",Mobile Banking,replace
+"",Text Banking,replace
+"",In-Touch,replace
+Sales & Services:Customer Management
+Customer Access Entitlement,Internet Banking,refactor
+"",In-Touch,replace
+Customer Agreement,ActivateBB,refactor
+"",AOA Generator,replace
+"",Propel,replace
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+"",Base 2000,keep
+Customer Credit Rating,ActivateBB,refactor
+Customer Eligibility Profile,ActivateBB,refactor
+"",Internet Banking,refactor
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+"",Base 2000,keep
+Customer Event History,ActivateBB,refactor
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+Customer Relationship Management,ActivateBB,refactor
+"",Appointment Manager,replace
+"",Internet Banking,refactor
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+"",Base 2000,keep
+Sales Product Agreement,ActivateBB,refactor
+"",Propel,replace
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+"",Base 2000,keep
+Sales & Services:Marketing
+Sales & Services:Sales
+Lead/Opportunity Management,ActivateBB,refactor
+"",Appointment Manager,replace
+"",Heaps,enhance
+"",Internet Banking,refactor
+"",Quest,keep
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+Offer Management,ActivateBB,refactor
+"",Internet Banking,refactor
+"",Mobile Banking,replace
+"",Quest,keep
+"",ValueQ7,enhance
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+Product Matching,Internet Banking,refactor
+"",Quest,keep
+"",ValueQ7,enhance
+"",In-Touch,replace
+Prospect Management,ActivateBB,refactor
+"",Appointment Manager,replace
+"",Heaps,enhance
+"",Quest,keep
+"",ValueQ7,enhance
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+Sales Product,ActivateBB,refactor
+"",Internet Banking,refactor
+"",Mobile Banking,replace
+"",Quest,keep
+"",ValueQ7,enhance
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+Specialist Resources,ActivateBB,refactor
+"",Quest,keep
+"",ValueQ7,enhance
+"",In-Touch,replace
+"",ActivateKB,refactor
+"",ActivatePL,replace
+Underwriting,ActivateBB,refactor
+Sales & Services:Servicing
+Card Case,Tieback,enhance
+Case Management,Tieback,enhance
+Customer Case,Tieback,enhance
+Customer Order,Internet Banking,refactor
+"",Mobile Banking,replace
+"",In-Touch,replace
+Payment Order,Internet Banking,refactor
+"",Mobile Banking,replace
+"",In-Touch,replace
+Servicing Issue,In-Touch,replace

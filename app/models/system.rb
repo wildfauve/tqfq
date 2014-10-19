@@ -59,11 +59,11 @@ class System
   end
   
   def self.property_names
-    self.all.map(&:properties).flatten.map(&:name).uniq
+    @all_props || @all_props = self.all.map(&:properties).flatten.map(&:name).uniq
   end
 
   def self.core(type: nil)
-    s = self.system_type
+    s = self.system_type 
     core = s.select {|sys| sys.criticality == "tier_1" || sys.criticality == "tier_2" || sys.criticality == "core" }
     if type == :all
       core
@@ -106,7 +106,11 @@ class System
   def update_attrs(system: nil)
     self.name = system[:name]
     self.add_props(properties: system[:properties])
-    self.type = self.determine_type
+    if system[:type]
+      self.type = symbolise(system[:type])
+    else
+      self.type = self.determine_type
+    end
     self.save
     publish(:successful_save_event, self)
     self
@@ -159,7 +163,7 @@ class System
       return :component
     elsif self.asset_type == "actor"
       return :external
-    elsif ["core_application", "lob_application", "reporting_application"].include? self.asset_type
+    elsif ["core_application", "lob_application", "reporting_application", "enterprise_application"].include? self.asset_type
       return :system
     else
       return :not_determined
@@ -234,6 +238,10 @@ class System
     
   def bian_map_ct
     self.reference_models.count
+  end
+  
+  def symbolise(str)
+    str.downcase.gsub(" ", "_").to_sym
   end
     
   

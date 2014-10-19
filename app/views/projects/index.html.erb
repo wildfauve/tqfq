@@ -1,0 +1,25 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>Projects</h3>
+</div>
+
+
+<table class="table" id="proejcts-list">
+   <thead>
+     <tr>
+       <th>Name</th>
+       <th>Referene Model Count</th>
+       <th>Actions</th>                   
+     </tr>
+   </thead>
+   <tbody>
+      <% @projects.each do |project| %>
+         <tr>
+            <td><%= link_to project.name, project_path(project) %></td>
+            <td><%= project.rm_count%></td>
+            <td>
+               <%= link_to 'Show', project_path(project), class: "btn btn-default"%>
+            </td>
+         </tr>
+      <% end %>
+   </tbody>
+</table>

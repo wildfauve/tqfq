@@ -64,6 +64,8 @@ class SystemImportHandler
     @input_tokens[:tokens].each do |t|
       if t == :name
         input_hash[:name] = system[ct]
+      elsif t == :type
+        input_hash[:type] = system[ct]
       else
         input_hash[:properties][t] = system[ct]
       end

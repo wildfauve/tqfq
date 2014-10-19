@@ -1,0 +1,16 @@
+<table class="table" id="sys-list">
+   <thead>
+     <tr>
+       <th>System Name</th>
+     </tr>
+   </thead>
+   <tbody>
+      <% sd.systems.each do |sys| %>
+         <tr>
+            <td>
+               <%= sys.name%>
+            </td>
+         </tr>
+      <% end %>
+   </tbody>
+</table>

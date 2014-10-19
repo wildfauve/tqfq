@@ -1,33 +1,246 @@
 System,Pace Layer,TQ/FQ,Target,SAP Coverage,BIAN Mapping Count,Timeframe
-PublicInternet,sod,replace,New,0,0,T1
-Third Party Exports,sod,replace,New,100,3,T1
-Velocity,sor,keep,SAP,100,7,T2
-Quote Service,sor,replace,SAP,0,0,T1
-EFTPOS,sor,refactor,SAP,40,5,T2
-Funds Transfer Pricing,sor,replace,SAP,0,0,T1
-Instinct,sor,refactor,SAP,100,3,T2
-IVR,sod,keep,Keep,100,4,
-Kiwisaver,sor,replace,SAP,0,0,T1
-Moodys,sor,keep,SAP,100,3,T2
-Musicida,sor,keep,SAP,100,1,T2
-Propel,sod,replace,New,100,3,T1
-Quest,sod,keep,Keep,90,11,
-Base 2000,sor,keep,SAP,63,11,T2
-Ultracs,sor,replace,SAP,100,8,T1
-ActivateBB,sor,refactor,SAP,100,18,T2
-ActivateKB,sor,refactor,SAP,100,14,T2
-ActivatePL,sor,replace,SAP,100,14,T1
-AOA Generator,sor,replace,SAP,100,1,T1
-Appointment Manager,sod,replace,New,100,3,T1
-Heaps,sod,enhance,Keep,100,7,
-International Desktop Application,sor,refactor,SAP,100,6,T2
-Internet Banking,sod,refactor,Keep,95,20,
-Mobile Banking,sod,replace,New,100,11,T1
-Outbound,sor,keep,SAP,0,0,T2
-Tieback,sor,enhance,SAP,100,5,T2
-Treasury Management System,sor,keep,SAP,100,7,T2
-Visa Card Reporting,sor,replace,SAP,100,2,T1
-Text Banking,sor,replace,SAP,100,5,T1
-SDT - Core Customer,sor,replace,SAP,100,6,T1
-ValueQ7,sor,enhance,SAP,83,12,T2
-In-Touch,sod,replace,New,96,30,T1
+YieldBroker,,,Keep,,0,
+Text Banking,sor,replace,SAP,,5,T1
+Unknown-EIS,,,Keep,,0,
+Unknown-Fetch,,,Keep,,0,
+Unknown-IDVA,,,Keep,,0,
+Unknown-Microsoft,,,Keep,,0,
+Unknown-Other,,,Keep,,0,
+Unknown-OtherSys,,,Keep,,0,
+Unknown-Storage,,,Keep,,0,
+Unknown-TCL,,,Keep,,0,
+Unknown-WIP,,,Keep,,0,
+Veda,,,Keep,,0,
+Verisign,,,Keep,,0,
+VPS,,,Keep,,0,
+WebPerformance,,,Keep,,0,
+WhereScape,,,Keep,,0,
+WholesaleTermDeposit,,,Keep,,0,
+Worldlink Payment Services,,,Keep,,0,
+Imprint,,,Keep,,0,
+Infolog,,,Keep,,0,
+InfoSphere,,,Keep,,0,
+International Middleware,,,Keep,,0,
+Jadestar,,,Keep,,0,
+JNBridgePro,,,Keep,,0,
+JPMorgan,,,Keep,,0,
+K2,,,Keep,,0,
+Kallidus,,,Keep,,0,
+Kofax,,,Keep,,0,
+Kompass,,,Keep,,0,
+Lex,,,Keep,,0,
+Mastercard,,,Keep,,0,
+MelbIT,,,Keep,,0,
+MIS,,,Keep,,0,
+Move-Peripheral,,,Keep,,0,
+Move-Printers,,,Keep,,0,
+Move-Server,,,Keep,,0,
+Multi Purpose Transactions (MPT),,,Keep,,0,
+MusicCallCentre,,,Keep,,0,
+MusicOnHold,,,Keep,,0,
+Navigo,,,Keep,,0,
+NCC,,,Keep,,0,
+Onix,,,Keep,,0,
+OnlineSecurity,,,Keep,,0,
+Outlook,,,Keep,,0,
+Paymark,,,Keep,,0,
+Phishlabs,,,Keep,,0,
+Pluralsight,,,Keep,,0,
+Postilion Office,,,Keep,,0,
+PrimeTrade,,,Keep,,0,
+Proactive Risk Manager  (PRM),,,Keep,,0,
+Proactive,,,Keep,,0,
+Procash,,,Keep,,0,
+Prognosis,,,Keep,,0,
+PromApp,,,Keep,,0,
+Proview,,,Keep,,0,
+Pulse,,,Keep,,0,
+QRisk,,,Keep,,0,
+Qualys,,,Keep,,0,
+RateSnapper,,,Keep,,0,
+RedRocks,,,Keep,,0,
+Rightnow,,,Keep,,0,
+SalesForce,,,Keep,,0,
+SAP,,,Keep,,0,
+SAS,,,Keep,,0,
+SCOM,,,Keep,,0,
+ScriptingIT,,,Keep,,0,
+SelfPassword,,,Keep,,0,
+ServiceView,,,Keep,,11,
+SIPN,,,Keep,,0,
+SnapHire,,,Keep,,0,
+Solveit,,,Keep,,0,
+Solvency,,,Keep,,0,
+Special Answers,,,Keep,,0,
+SpecialAnswerRobot,,,Keep,,0,
+Spectrum,,,Keep,,0,
+SQLBackupPro,,,Keep,,0,
+STB,,,Keep,,0,
+Tallyman,,,Keep,,0,
+Task,,,Keep,,0,
+ThirdPartyExports,,,Keep,,0,
+TNS,,,Keep,,0,
+TouchDown,,,Keep,,0,
+Trade Position Keeper,,,Keep,,0,
+Trade Watcher,,,Keep,,0,
+TradeBook,,,Keep,,0,
+Unknown-ATM,,,Keep,,0,
+Unknown-Channels,,,Keep,,0,
+Unknown-Customer,,,Keep,,0,
+IVR,sod,keep,Keep,,4,
+KBMAC,sod,replace,New,,16,T1
+Kiwisaver,,,Keep,,0,
+Lips,,,Keep,,8,
+Liquidity,,,Keep,,3,
+MarkitWire,sor,keep,SAP,,4,T2
+Mobile Banking,sod,replace,New,,11,T1
+Moodys,sor,keep,SAP,,3,T2
+Musicida,sor,keep,SAP,,1,T2
+Prepaid,,,Keep,,0,
+Propel,sod,replace,New,,3,T1
+PublicInternet,sod,replace,New,,0,T1
+Quantum,sor,keep,SAP,,0,T2
+Third Party Exports,sod,replace,New,,3,T1
+Travelex,,replace,New,,2,T1
+Visa Card Reporting,sor,replace,SAP,,2,T1
+Voyager,sor,keep,SAP,,4,T2
+Websign,sod,replace,New,,0,T1
+Western Union - Reconciliation,sor,replace,SAP,,1,T1
+WestpacAUD,sor,keep,SAP,,0,T2
+Xero,sod,keep,Keep,,0,
+Quoting Tool,,,Keep,,0,
+In-Touch,sod,,Keep,,30,
+CRM Prompts,,,Keep,,0,
+DocManager,,,Keep,,0,
+InternetBanking,,,Keep,,0,
+InTouch,,,Keep,,0,
+Pharos,,,Keep,,0,
+ProfitStars,,,Keep,,0,
+RatesEngine,,,Keep,,0,
+360T-TradeImporter,,,Keep,,0,
+3dSecure,,,Keep,,0,
+ACLDesktop,,,Keep,,0,
+Activate,,,Keep,,0,
+Alliance,,,Keep,,0,
+AmbitFocus,,,Keep,,0,
+Ansarada,,,Keep,,0,
+AOAGenerator,,,Keep,,0,
+AppointmentManager,,,Keep,,0,
+Ask Me,,,Keep,,0,
+ATMPro,,,Keep,,0,
+AustinLoanPricing,,,Keep,,0,
+B2K,,,Keep,,0,
+Banklink,,,Keep,,0,
+Barcap,,,Keep,,0,
+BBLoanPricing,,,Keep,,0,
+Berl,,,Keep,,0,
+Biztalk,,,Keep,,0,
+Blackpearl,,,Keep,,0,
+Bloomberg,,,Keep,,0,
+BNZPCBanking,,,Keep,,0,
+Behavioural Scoring (delivered by Project BOSS),,,Keep,,0,
+PROactive Reconciliation and Investigation (Broadridge is the vendor),,,Keep,,0,
+Calculator,,,Keep,,0,
+CallManager,,,Keep,,0,
+CaseBook,,,Keep,,0,
+Catalyst,,,Keep,,0,
+CBS,,,Keep,,0,
+CFG,,,Keep,,0,
+Cognos,,,Keep,,0,
+CompaniesOffice,,,Keep,,0,
+ComplianceLink,,,Keep,,0,
+Corporate Product Database (CPD),,,Keep,,0,
+CreditManagement,,,Keep,,0,
+CSB,,,Keep,,0,
+Daon,,,Keep,,0,
+DataInsight,,,Keep,,0,
+Datam,,,Keep,,0,
+DIMS,,,Keep,,0,
+Dishonours,,,Keep,,0,
+DMO,,,Keep,,0,
+DocCollect,,,Keep,,0,
+Docushare,,,Keep,,0,
+E2trains,,,Keep,,0,
+Electronic Dishonour Database (EDD),,,Keep,,0,
+Eftpos,,,Keep,,0,
+EnterpriseTelephony,,,Keep,,0,
+ESAS-RTGS,,,Keep,,0,
+E-Text,,,Keep,,0,
+Eunexus,,,Keep,,0,
+Experian,,,Keep,,0,
+Fair Value,,,Keep,,0,
+Financial Crime Risk Management System (FCRM),,,Keep,,0,
+Fetch,,,Keep,,0,
+FileSharing,,,Keep,,0,
+FinMessaging,,,Keep,,0,
+FinMetrics,,,Keep,,0,
+Flexicare,,,Keep,,0,
+FMS,,,Keep,,0,
+Fusion,,,Keep,,0,
+FX-Panalysis,,,Keep,,0,
+GE-Q Special Answers,,,Keep,,0,
+gRobot,,,Keep,,0,
+HarvardMentor,,,Keep,,0,
+Hotlink,,,Keep,,0,
+HSM8-SE Units,,,Keep,,0,
+InternationalDesktop,,,Keep,,0,
+Intranet,,,Keep,,0,
+Landonline,,,Keep,,0,
+Lexlegal,,,Keep,,0,
+MobileBanking,,,Keep,,0,
+MobileTopUp,,,Keep,,0,
+NzClear,,,Keep,,0,
+OBRProcessing,,,Keep,,0,
+OnlineCreditCardApp,,,Keep,,0,
+OnlineHomeLoanApp,,replace,New,,0,T1
+Prepaid Application Processing System  (PAPS),,,Keep,,0,
+PinAtStore,,,Keep,,0,
+PrimeClear,,,Keep,,0,
+Prosper,,,Keep,,0,
+RateChanger,,,Keep,,0,
+Reuters,,,Keep,,0,
+Rightfax,,,Keep,,0,
+Scanning And image Management System (SAMS),,,Keep,,0,
+SBI Monitor Application,,,Keep,,0,
+SecureMail,,,Keep,,0,
+SwiftAllianceAccess,,,Keep,,0,
+Tabatha,,,Keep,,0,
+TextAlert,,,Keep,,0,
+TextBanking,,,Keep,,0,
+TMS,,,Keep,,0,
+VisaCardreporting,,,Keep,,0,
+Visitor Management System,,,Keep,,0,
+Voltron,,,Keep,,0,
+VRetrieve,,,Keep,,0,
+Base 2000,sor,keep,SAP,,11,T2
+Ultracs,sor,replace,SAP,,8,T1
+360T,,,Keep,,0,
+ActivateBB,sor,refactor,SAP,,18,T2
+ActivateKB,sor,refactor,SAP,,14,T2
+ActivatePL,sor,replace,SAP,,14,T1
+AOA Generator,sor,replace,SAP,,1,T1
+Appointment Manager,sod,replace,New,,3,T1
+Autobahn,sor,keep,SAP,,1,T2
+Barx,sor,keep,SAP,,1,T2
+CitiDirect,sor,keep,SAP,,3,T2
+CSLinkage,,,Keep,,4,
+DealControl,,,Keep,,0,
+Di's Quote Service,sor,replace,SAP,,0,T1
+EFTPOS,sor,refactor,SAP,,5,T2
+EndofDay,,,Keep,,0,
+EndofMonth,,,Keep,,0,
+EndofYear,,,Keep,,0,
+Fixed Rate Break Calculator,sor,,SAP,,1,T2
+Flo2Cash,sor,keep,SAP,,3,T2
+Funds Transfer Pricing,,,Keep,,0,
+GDS Swaps Reporting,,,Keep,,1,
+Heaps,sod,enhance/replace,Keep,,7,
+Instinct,sor,refactor,SAP,,3,T2
+International Desktop Application,sor,refactor,SAP,,6,T2
+Internet Banking,sod,refactor,Keep,,20,
+Outbound,sor,keep,SAP,,0,T2
+Quest,sod,keep,Keep,,11,
+Tieback,sor,enhance,SAP,,5,T2
+Treasury Management System,sor,?,SAP,,7,T2
+ValueQ7,sor,enhance,SAP,,12,T2
+Velocity,sor,keep,SAP,,7,T2

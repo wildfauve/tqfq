@@ -8,11 +8,11 @@ class Comparison
     self
   end
   
-  def bian_system
+  def bian_system(matrix: true)
     @matrix = []
     y_axis_input = ReferenceModel.where(level: :service_domain).sort {|a,b| a.token <=> b.token}  # TODO Sort by Parent and Parent
     x_axis_input = System.system_type
-    @matrix << x_axis_input.map(&:name).unshift(" ") 
+    @matrix << x_axis_input.map(&:name).unshift(" ") if matrix
     parent = nil
     y_axis_input.each do |bian|
       if parent.nil? || parent != bian.parent
@@ -21,43 +21,22 @@ class Comparison
       end
       row = [bian.name]
       x_axis_input.each do |sys|
-        sys.associated_with_model?(model: bian) ? row << "X" : row << ""
+        if matrix
+          sys.associated_with_model?(model: bian) ? row << "X" : row << ""
+        else
+          if sys.associated_with_model?(model: bian)
+            row << sys.name
+            row << sys.tq_fq_quadrant
+            @matrix << row
+            row = [""]
+          end
+        end
       end
-      @matrix << row
+      @matrix << row if matrix
     end
     self
   end
-=begin  
-  def tqfq_dimension(prepare_csv: false)
-    quad = ["replace", "refactor", "keep", "enhance"]
-    layers = ["sor", "sod", "soi"]
-    systems = System.system_type
-    pace = systems.map(&:pace_layer).uniq
-    total_sys = systems.count
-    assessed_sys = systems.map(&:tq_fq_quadrant).count {|q| quad.include?(q)} 
-    @tqfq = systems.each_with_object(Hash.new(0)) do |system, counts|
-      quad.include?(system.tq_fq_quadrant) ? tqfq = system.tq_fq_quadrant :  tqfq = "Not Assessed"
-      if counts[tqfq] != 0
-        counts[tqfq][:ct] += 1
-      else
-        counts[tqfq] = {ct: 1}
-      end
-      counts[tqfq][system.pace_layer] ? counts[tqfq][system.pace_layer] += 1 : counts[tqfq][system.pace_layer] = 1
-    end
-    @tqfq.each {|k, v| @tqfq[k][:percent_total] = @tqfq[k][:ct] / total_sys.to_f ; @tqfq[k][:percent_assessed] = @tqfq[k][:ct] / assessed_sys.to_f }  
-    if prepare_csv
-      @matrix = [["TQFQ Quadrant", "Ct", "% of total", "% of assessed"]]
-      pace.each {|p| layers.include?(p) ? @matrix[0] << p : @matrix[0] << "Not Assessed"}
-      @tqfq.each do |k, v| 
-        row = [k, v[:ct], v[:percent_total], v[:percent_assessed]]
-        pace.each {|p| v[p] ? row << v[p] : row << ""}
-        @matrix << row
-      end
-    end
-    publish(:tq_fq_dimension_done, self)
-    self
-  end
-=end
+
   def tqfq_dimension
     @tqfq = Quality.new(systems: System.core(type: :all))
     @tqfq.process

@@ -23,6 +23,16 @@ class ReferenceModelImportHandler
     end
   end  
   
+  def process_projects
+    @input_tokens = tokenise(@ref.shift)
+    @ref.select {|r| r[0] == "SD"}.each do |sd|
+      props = add_props(props: sd)
+      ref = ReferenceModel.where(name: props[:name]).first
+      raise if !ref
+      ref.add_projects(ref: props)
+    end
+  end
+  
   def tokenise(header)
     token_header = header.inject([]) {|out, h| out << h.downcase.gsub(" ", "_").to_sym}
     token_hash = token_header.inject({ properties: {} }) do  |out, token|

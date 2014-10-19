@@ -2,6 +2,8 @@
    <h3><%= @system.name %></h3>
 </div>
 
+<%= link_to "Edit",  edit_system_path(@system), class: "btn btn-default"%>               
+
 <table class="table">
    <tbody>
         <% for prop in @system.properties %>
@@ -12,8 +14,6 @@
       <% end %>
    </tbody>
 </table>
-
-<%= link_to "Edit",  edit_system_path(@system), class: "btn btn-default"%>               
 
 
 <table class="table"> 

@@ -1,5 +1,6 @@
 Name,Asset Type,Parent System,Description Use,Technologies,Business Process,Criticality,PACE Layer,TQ FQ Quadrant,Strategy Support,Initiatives,Roadmap 2016,Roadmap 2018,Notes
 Base 2000,Core Application,,"Credit Card management system hosted by FIS. Includes transaction authorisation, statement generation, card issuance, customer services etc",,Monitoring for Fraud,Core,SoR,Keep,,,,,
+SDT - Core Customer,LOB Application,,,,,Tier 1,SoR,,,,,,
 Ultracs,Core Application,,"Ultracs is kiwibanks core banking system. It processes all transactions, accounts, fees and GL functions and is the authoritive source for essential customer information.",,Bank Liquidity Management (incl. Cash Forecasting & Funding),Core,SoR,Replace,,,,,
 360T,System Component,TMS,"Integrates various trading systems into one front end view where traders commit to a deal.  Contains connectors; Connector to global 360T platform, passes deals onto Quantum",,Wholesale FX trading,Tier 1,,,,,,,
 ActivateBB,LOB application,,"Business banking Loan application, decisioning and processing",,"Business Markets loan Origination - Retail, retail SME & Wholesale",Tier 1,SoR,Refactor,,,,,

@@ -2,7 +2,8 @@ namespace :admin do
   desc "Load Systems from CSV"
   task system_load: :environment do
     #System.all.delete
-    systems = CSV.read('lib/tasks/systems_2.csv')
+    systems = CSV.read('lib/tasks/ent_systems.csv')
+    #systems = CSV.read('lib/tasks/systems_2.csv')    
     #systems = CSV.read('lib/tasks/dia_current_state.csv')    
     handler = SystemImportHandler.new(systems: systems)
     handler.process
@@ -16,6 +17,14 @@ namespace :admin do
     handler.process
   end
 
+  desc "Add Projects to BIAN Services"
+  task bian_projects: :environment do
+    elements = CSV.read('lib/tasks/bian_projects.csv')
+    handler = ReferenceModelImportHandler.new(ref: elements)
+    handler.process_projects
+  end
+
+
   desc "Load Mapping of Systems to BIAN"
   task bian_system: :environment do
     ref_bindings = CSV.read('lib/tasks/bian_mapping.csv')
@@ -28,10 +37,16 @@ namespace :admin do
   
   desc "BIAN to System Matrix"
   task matrix_bian_system: :environment do
-    compare = Comparison.new.bian_system
+    compare = Comparison.new.bian_system(matrix: true)
     compare.to_csv(file: "system_to_service_domain")
-    puts compare.inspect
   end
+
+  desc "BIAN to System Mapping with TQFQ"
+  task map_bian_system: :environment do
+    compare = Comparison.new.bian_system(matrix: false)
+    compare.to_csv(file: "mapping_system_to_service_domain")
+  end
+
   
   task tq_fq_rate: :environment do
     #compare = Comparison.new.tqfq_dimension(prepare_csv: true)
@@ -51,6 +66,19 @@ namespace :admin do
     compare = Comparison.new.tq_fq_point_ct(grain: :quad)
     compare.to_csv(file: "tq_fq_quad")
   end
+
+  task customer_systems: :environment do
+    s = System.all.select {|v| v.maintain_customer == "Y"}
+    CSV.open("lib/tasks/customer_systems.csv", 'w') do |csv|
+      s.each do |system|
+        row = [system.name, system.description_use]
+        csv << row
+      end
+    end
+    
+  end
+  
+  
 
 
   

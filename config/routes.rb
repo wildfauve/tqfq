@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   
   resources :reference_models
   
+  resources :projects
+  
   resources :imports
   
   resources :search

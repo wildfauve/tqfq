@@ -10,6 +10,7 @@ class ReferenceModel
   field :parent_id, type: BSON::ObjectId
   
   has_and_belongs_to_many :systems
+  has_and_belongs_to_many :projects
   
   embeds_many :properties
   
@@ -27,7 +28,6 @@ class ReferenceModel
     rm.update_attrs(ref: ref, parent_id: id)
     rm
   end
-  
     
   
   def update_attrs(ref: nil, parent_id: nil)
@@ -39,6 +39,15 @@ class ReferenceModel
     self.save
     publish(:successful_save_event, self)
     self
+  end
+  
+  def add_projects(ref: nil)
+    ref[:properties].each do |proj, in_clude|
+      in_clude = "n" if in_clude.nil?
+      binding.pry unless ["n", "y", "p"].include? in_clude.downcase
+      determine_project(proj: proj, in_clude: in_clude)
+      self.save
+    end
   end
   
   def add_props(properties: nil)
@@ -73,6 +82,19 @@ class ReferenceModel
       parent = parent.parent
     end
     tokens.reverse.join(":")
+  end
+  
+  def determine_project(proj: nil, in_clude: nil)
+    p = Project.where(name: proj).first
+    if p
+      if !self.project_ids.include? p.id
+        self.projects << p if in_clude.downcase == "y" || in_clude.downcase == "p"
+      end
+    else
+      p = Project.new.create_me(name: proj)
+      self.projects << p if in_clude.downcase == "y" || in_clude.downcase == "p"
+    end
+    return p
   end
   
   def method_missing(meth, *args, &block)
