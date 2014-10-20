@@ -1,0 +1,6 @@
+<%= link_to toggle_reference_model_path(class: "systems"), remote: true do %>
+   <span class="glyphicon glyphicon-remove">
+<% end %>
+<% @child.systems.each do |system|%>
+   <div class="alert <%= determine_alert_from_tqfq(system)%>" role="alert"><%= system.name %></div>
+<% end %>

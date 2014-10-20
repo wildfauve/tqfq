@@ -15,7 +15,17 @@ Rails.application.routes.draw do
     end
   end
   
-  resources :reference_models
+  resources :reference_models do
+    collection do
+      get 'panels'
+    end
+    member do
+      get 'systems'
+      get 'projects'
+      get 'toggle'
+    end
+  end
+  
   
   resources :projects
   

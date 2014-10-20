@@ -1,0 +1,48 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+      <ul class="nav nav-pills">
+         <li class="active"><%= link_to child.name, reference_model_path(child), remote: true%></li>
+         <% if !child.leaf? %>         
+            <li >
+               <%= link_to "#" do %>
+                   Children<span class="badge pull-right"><%= child.children.count%></span>
+               <% end%>
+            </li>
+         <% end %>
+         <% if child.capability_to_deliver_the_business_service %>
+            <li>
+               <%= link_to "#" do %>
+                  Business Maturity<span class="badge pull-right success">
+                     <%= child.capability_to_deliver_the_business_service %>
+                  </span>
+               <% end %>
+            </li>
+         <% end %>
+         <% if child.leaf? %>
+            <li>
+               <%= link_to systems_reference_model_path(child), remote: true do %>
+                  Systems<span class="badge pull-right success">
+                     <%= child.systems.count %>
+                  </span>
+               <% end %>
+            </li>
+            <li>
+               <%= link_to projects_reference_model_path(child), remote: true do %>
+                  Projects<span class="badge pull-right success">
+                     <%= child.projects.count %>
+                  </span>
+               <% end %>
+            </li>
+         <% end %>         
+      </ul> 
+      <div class="child" id="<%= child.id%>"></div>
+      <div class="row">    
+         <div class="col-md-6">
+            <div class="systems" id="<%= child.id%>"></div>
+         </div>
+         <div class="col-md-6">
+            <div class="projects" id="<%= child.id%>"></div>            
+         </div>         
+      </div>
+  </div>
+</div>

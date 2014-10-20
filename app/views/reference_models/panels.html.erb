@@ -1,0 +1,17 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>Reference Models</h3>
+</div>
+
+<% @ba.each do |ba| %>
+   <div class="jumbotron">
+      <ul class="nav nav-pills">
+         <li class="active"><%= link_to ba.name, reference_model_path(ba), remote: true%></li>
+         <li >
+            <%= link_to "#" do %>
+                Children<span class="badge pull-right"><%= ba.children.count%></span>
+            <% end%>
+          </li>
+      </ul>
+      <div class="child" id="<%= ba.id%>"></div>
+   </div>
+<% end %>

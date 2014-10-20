@@ -45,7 +45,7 @@ gem 'jquery-datatables-rails'
 
 gem 'jquery-ui-rails'
 
-gem 'tablecloth-rails', '~> 1.0.101'
+#gem 'tablecloth-rails', '~> 1.0.101'
 
 gem 'simple_form', '~> 3.1.0.rc1'
 

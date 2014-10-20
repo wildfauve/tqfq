@@ -18,6 +18,9 @@ class System
   
   scope :system_type, -> {where(type: :system)}
     
+  @@types = {
+    description: {type: :long_text}
+  }
   
 
   def self.create_or_update(system: nil)
@@ -58,7 +61,7 @@ class System
     end
   end
   
-  def self.property_names
+  def self.all_property_names
     @all_props || @all_props = self.all.map(&:properties).flatten.map(&:name).uniq
   end
 
@@ -86,11 +89,7 @@ class System
     end
   end
   
-  
-  def self.system_count
-    self.system_type.count
-  end
-  
+    
   def self.assessed_count
     s = self.system_type
     s.count {|sys| sys.assessed_quad?}
@@ -243,6 +242,13 @@ class System
   def symbolise(str)
     str.downcase.gsub(" ", "_").to_sym
   end
-    
+  
+  def property_type(prop: nil)
+    if @@types[prop]
+      @@types[prop][:type]
+    else
+      nil
+    end
+  end
   
 end

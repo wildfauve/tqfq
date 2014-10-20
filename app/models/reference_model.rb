@@ -74,6 +74,10 @@ class ReferenceModel
     ReferenceModel.where(parent_id: self.id)
   end
   
+  def leaf?
+    self.children.count == 0 ? true : false
+  end
+  
   def token
     tokens = [self.name]
     parent = self.parent

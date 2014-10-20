@@ -7,5 +7,15 @@ module ApplicationHelper
     sys
   end
   
+  def determine_alert_from_tqfq(system)
+    case system.tq_fq_quadrant
+    when "replace"
+      "alert-danger"
+    when "keep"
+      "alert-success"
+    else
+      "alert-warning"
+    end 
+  end
   
 end

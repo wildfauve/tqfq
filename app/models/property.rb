@@ -13,11 +13,12 @@ class Property
   embedded_in :reference_model
 
   @@tokenise_props = [:asset_type, :criticality, :tq_fq_quadrant, :pace_layer]
-    
+      
   def self.imported_props
     @@props
   end
-    
+   
+   
   def self.find_prop_from_import(prop)
     @@props.find {|p| p.name == prop}
   end
