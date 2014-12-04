@@ -25,6 +25,21 @@ namespace :admin do
   end
 
 
+  desc "Load Info Model"
+  task info_model: :environment do
+    elements = CSV.read('lib/tasks/info_model.csv')
+    handler = InfoModelImportHandler.new(info: elements)
+    handler.process
+  end
+
+  desc "CRUD Assessment"
+  task crud_mapping: :environment do
+    elements = CSV.read('lib/tasks/info_model_crud.csv')
+    handler = InfoModelImportHandler.new(info: elements)
+    handler.crud_mapping
+  end
+
+
   desc "Load Mapping of Systems to BIAN"
   task bian_system: :environment do
     ref_bindings = CSV.read('lib/tasks/bian_mapping.csv')

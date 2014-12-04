@@ -7,6 +7,9 @@ Rails.application.routes.draw do
       get 'csv'
       put 'sap_coverage'
     end
+    member do
+      get 'summary'
+    end
   end
   
   resources :comparisons do
@@ -26,6 +29,13 @@ Rails.application.routes.draw do
     end
   end
   
+
+  resources :info_models do
+    member do
+      get 'toggle'
+      get 'systems'
+    end
+  end
   
   resources :projects
   

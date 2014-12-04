@@ -25,12 +25,12 @@ class ReferenceModel
     else
       rm = rms.first
     end
-    rm.update_attrs(ref: ref, parent_id: id)
+    rm.update_attrs(info: ref, parent_id: id)
     rm
   end
     
   
-  def update_attrs(ref: nil, parent_id: nil)
+  def update_attrs(info: nil, parent_id: nil)
     self.name = ref[:name]
     self.parent_id = parent_id
     self.level = ref[:level]

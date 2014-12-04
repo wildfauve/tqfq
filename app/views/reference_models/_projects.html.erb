@@ -1,8 +1,12 @@
-<%= link_to toggle_reference_model_path(class: "projects"), remote: true do %>
-   <span class="glyphicon glyphicon-remove">
-<% end %>
-<% @child.projects.each do |proj|%>
-   <div class="alert alert-info" role="alert">
-      <%= proj.name %>
+<div class="panel panel-default">
+  <div class="panel-body">
+      <%= link_to toggle_reference_model_path(@child, class: "projects"), remote: true do %>
+         <span class="glyphicon glyphicon-remove"></scan>
+      <% end %>
+      <% @child.projects.each do |proj|%>
+         <div class="alert alert-info" role="alert">
+            <%= proj.name %>
+         </div>
+      <% end %>
    </div>
-<% end %>
+</div>

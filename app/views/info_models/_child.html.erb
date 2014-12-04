@@ -1,11 +1,11 @@
 <div class="toggle-child" id="<%= child.id %>">
    <div class="panel panel-default">
      <div class="panel-body">
-         <%= link_to toggle_reference_model_path(child, class: "child"), remote: true do %>
+         <%= link_to toggle_info_model_path(child, class: "child"), remote: true do %>
             <span class="glyphicon glyphicon-remove"></span>
          <% end %>     
          <ul class="nav nav-pills">
-            <li class="active"><%= link_to child.name, reference_model_path(child), remote: true%></li>
+            <li class="active"><%= link_to child.name, info_model_path(child), remote: true%></li>
             <% if !child.leaf? %>         
                <li >
                   <%= link_to "#" do %>
@@ -13,26 +13,11 @@
                   <% end%>
                </li>
             <% end %>
-            <% if child.capability_to_deliver_the_business_service %>
-               <li>
-                  <%= link_to "#" do %>
-                     <span class="label label-<%= determine_alert_from_business_maturity(child) %>">Business Maturity</span>
-                  <% end %>
-               </li>
-
-            <% end %>
             <% if child.leaf? %>
                <li>
-                  <%= link_to systems_reference_model_path(child), remote: true do %>
+                  <%= link_to systems_info_model_path(child), remote: true do %>
                      Systems<span class="badge pull-right success">
-                        <%= child.systems.count %>
-                     </span>
-                  <% end %>
-               </li>
-               <li>
-                  <%= link_to projects_reference_model_path(child), remote: true do %>
-                     Projects<span class="badge pull-right success">
-                        <%= child.projects.count %>
+                        <%= child.crud_relationships.count %>
                      </span>
                   <% end %>
                </li>

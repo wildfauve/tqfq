@@ -49,4 +49,8 @@ class SystemsController < ApplicationController
     redirect_to systems_path
   end
   
+  def summary
+    @system = System.find(params[:id])
+  end
+  
 end

@@ -1,0 +1,17 @@
+<div class='alert alert-info fade in' data-alert='alert'>
+   <h3>Info Models</h3>
+</div>
+
+<% @info.each do |entity| %>
+   <div class="jumbotron">
+      <ul class="nav nav-pills">
+         <li class="active"><%= link_to entity.name, info_model_path(entity), remote: true%></li>
+         <li >
+            <%= link_to "#" do %>
+                Children<span class="badge pull-right"><%= entity.children.count%></span>
+            <% end%>
+          </li>
+      </ul>
+      <div class="child" id="<%= entity.id%>"></div>
+   </div>
+<% end %>

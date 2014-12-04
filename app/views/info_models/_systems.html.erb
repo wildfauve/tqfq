@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+      <%= link_to toggle_info_model_path(@child, class: "systems"), remote: true do %>
+         <span class="glyphicon glyphicon-remove"></span>
+      <% end %>
+      <% @child.crud_relationships.each do |rel|%>
+         <div class="alert <%= determine_alert_from_tqfq(rel.relation)%>" role="alert">
+            <ul class="nav nav-pills">
+               <li class="active"><%= link_to rel.relation.name, system_path(rel.relation) %></li>
+               <li>
+                     <span class="badge pull-right success">
+                        <%= rel.tokenise %>
+                     </span>
+               </li>
+               
+            </ul>
+            <div id="<%= rel.relation.id %>"></div>
+         </div>
+      <% end %>
+   </div>
+</div>

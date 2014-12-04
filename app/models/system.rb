@@ -1,6 +1,5 @@
 class System
   
-  
   include Wisper::Publisher
   
   include Mongoid::Document
@@ -11,6 +10,7 @@ class System
   field :sap_coverage, type: Integer
   
   embeds_many :properties
+  embeds_many :crud_relationships
   has_and_belongs_to_many :reference_models
   
   #
@@ -127,6 +127,19 @@ class System
     end
   end
   
+  def crud_relationship(crud: nil, info: nil)
+    rel = self.crud_relationships.where(rel: info.id).first
+    if rel
+      rel.update_attrs(crud: crud)
+    else
+      self.crud_relationships << CrudRelationship.create_me(crud: crud, rel: info)
+    end
+    self.save
+    publish(:successful_save_event, self)
+    self
+  end
+  
+  
   def destroy
     self.delete
     publish(:successful_save_event, self)    
@@ -162,7 +175,7 @@ class System
       return :component
     elsif self.asset_type == "actor"
       return :external
-    elsif ["core_application", "lob_application", "reporting_application", "enterprise_application"].include? self.asset_type
+    elsif ["core_application", "lob_application", "reporting_application", "enterprise_application", "marketing_application"].include? self.asset_type
       return :system
     else
       return :not_determined

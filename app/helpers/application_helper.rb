@@ -18,4 +18,15 @@ module ApplicationHelper
     end 
   end
   
+  def determine_alert_from_business_maturity(ref)
+    case ref.capability_to_deliver_the_business_service
+    when "1"
+      "danger"
+    when "2"
+      "warning"
+    else
+      "success"
+    end 
+  end
+  
 end
