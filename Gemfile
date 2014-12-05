@@ -43,6 +43,10 @@ gem 'wisper'
 
 gem 'jquery-datatables-rails'
 
+gem 'foundation-rails'
+gem 'foundation-icons-sass-rails'
+
+
 gem 'jquery-ui-rails'
 
 #gem 'tablecloth-rails', '~> 1.0.101'

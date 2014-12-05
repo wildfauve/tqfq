@@ -12,10 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap.min
+//= require foundation
 //= require turbolinks
 // provides tablecloth table js/css from gem 'tablecloth-rails':
 // require tablecloth-rails
 // require dataTables/jquery.dataTables
-// require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 //= require_tree .
+
+$(document).foundation();;

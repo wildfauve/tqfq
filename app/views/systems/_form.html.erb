@@ -1,21 +1,29 @@
-<div class='alert alert-info fade in' data-alert='alert'>
-   <h3>System</h3>
-</div>
-
-<%= simple_form_for (@system),  html: { class: 'form-horizontal' } do |f| %>
-   <%= f.input :name, label: "Name" %>
-   <%= f.simple_fields_for :properties do |props| %>
-      <% System.all_property_names.each do |p|%>
-         <p>
-               <%= props.label p %>
-
-               <% if @system.property_type(prop: p) == :long_text%>
-                  <%= props.input_field(p, as: :text, value: @system.send(p), option_html: { row: 10, col: 20 }) %>      
-               <% else %>
-                  <%= props.input_field(p, value: @system.send(p)) %>      
-               <% end %>
-         </p>
-      <% end %>
+<%= form_for(@system, html: { class: "custom"}) do |f| %>
+   <div class="row">
+     <div class="small-3 columns">
+       <%= f.label :name, class: "right inline" %>
+     </div>
+     <div class="small-9 columns">
+       <%= f.text_field :name %>
+     </div> 
+   </div>
+   <% System.all_property_names.each do |p|%>
+      <div class="row">
+         <div class="small-3 columns">
+            <%= label_tag p, nil, class: "right inline" %>
+         </div>
+         <div class="small-9 columns"> 
+            <% if @system.property_type(prop: p) == :long_text%>
+               <%= text_area_tag("properties[#{p}]", "#{@system.send(p)}", size: "10x30")%>      
+            <% else %>
+               <%= text_field_tag("properties[#{p}]", "#{@system.send(p)}") %>      
+            <% end %>               
+         </div>
+      </div>
    <% end %>
-   <%= f.button :submit, "Submit" %>
+   <div class="row">
+     <div class="small-9 small-offset-3 columns">
+       <%= f.submit 'Submit', :class => 'button small' %>
+     </div>
+   </div>
 <% end %>

@@ -1,0 +1,35 @@
+<li class="has-dropdown">
+   <a href="#">Systems</a>
+   <ul class="dropdown">
+      <li class="active"><%= link_to "List", systems_path %></li>
+      <li><%= link_to "New", new_system_path %></li>
+      <li><%= link_to "Load", new_import_path %></li>
+      <li><%= link_to "CSV", csv_systems_path %></li>
+      <li><%= link_to "Update SAP Coverage", sap_coverage_systems_path, method: :put %></li>
+   </ul>
+</li>
+<li class="has-dropdown">
+   <a href="#">Reference Models</a>
+   <ul class="dropdown">
+    <li class="active"><%= link_to "All", reference_models_path %></li>
+    <li><%= link_to "Panels", panels_reference_models_path %></li>
+   </ul>
+</li>
+<li class="has-dropdown">
+   <a href="#">Info Model</a>
+   <ul class="dropdown">
+     <li class="active"><%= link_to "All", info_models_path %></li>
+   </ul>
+</li>
+<li class="has-dropdown">
+   <a href="#">Projects</a>
+   <ul class="dropdown">
+     <li class="active"><%= link_to "List", projects_path %></li>
+   </ul>
+</li>
+<li class="has-dropdown">
+   <a href="#">Projects</a>
+   <ul class="dropdown">
+     <li class="active"><%= link_to "TQ/FQ", tqfq_comparisons_path %></li>
+   </ul>
+</li>

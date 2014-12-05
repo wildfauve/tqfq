@@ -6,7 +6,7 @@
       <%= system.type %>
    </td>   
    <td>
-      <%= system.tq_fq_quadrant %>
+      <div class="label"><%= system.tq_fq_quadrant %></div>
    </td>
    <td>
       <%= system.pace_layer %>
@@ -18,8 +18,8 @@
       <%= number_to_percentage(system.sap_coverage) %>
    </td>
    <td>
-      <%= link_to "Show",  system_path(system), class: "btn btn-default"%>
-      <%= link_to "Edit",  edit_system_path(system), class: "btn btn-default"%>               
-      <%= link_to "Delete",  system_path(system), method: :delete, class: "btn btn-default"%>                     
+      <%= link_to "Show",  system_path(system), class: "button tiny"%>
+      <%= link_to "Edit",  edit_system_path(system), class: "button tiny"%>               
+      <%= link_to "Delete",  system_path(system), method: :delete, class: "button tiny"%>                     
    </td>
 </tr>

@@ -11,7 +11,7 @@ class SystemsController < ApplicationController
   def create
     system = System.new
     system.subscribe(self)
-    system.create_me(system: params[:system])
+    system.create_me(system: params[:system], properties: params[:properties])
   end
   
   def show 
@@ -25,7 +25,7 @@ class SystemsController < ApplicationController
   def update
     system = System.find(params[:id])
     system.subscribe(self)
-    system.update_attrs(system: params[:system])
+    system.update_attrs(system: params[:system], properties: params[:properties])
   end
 
   def destroy

@@ -1,30 +1,33 @@
-<div class='alert alert-info fade in' data-alert='alert'>
-   <h3>Systems</h3>
+<div class="row">
+   <dl class="sub-nav">
+     <dt>Total Systems:</dt>
+     <dd class="active"><a href="#"><%= System.system_type.count %></a></dd>
+     <dt>Total Assessed:</dt>
+     <dd class="active"><a href="#"><%= System.system_type.count %></a></dd>
+     <dt>Total Core:</dt>
+     <dd class="active"><a href="#"><%= System.core(type: :all).count %></a></dd>     
+     <dt>Total Assessed Core:</dt>
+     <dd class="active"><a href="#"><%= System.core(type: :assessed).count %></a></dd>     
+   </dl>
 </div>
 
-<div class="jumbotron">
-  <h1>Counts</h1>
-  <p><%= "Total Systems: #{System.system_type.count}"%></p>
-  <p><%= "Total Systems Assessed: #{System.assessed_count}" %></p>  
-  <p><%= "Total Core: #{System.core(type: :all).count}"%></p>
-  <p><%= "Total Core Assessed: #{System.core(type: :assessed).count}"%></p>
+<div class="row">
+   <table class="table" id="systems-list">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>       
+          <th>TQ/FQ Quad</th>       
+          <th>Pace Layer</th>  
+          <th>Criticality</th>
+          <th>SAP Cover</th>         
+          <th>Actions</th>                   
+        </tr>
+      </thead>
+      <tbody>
+         <% for system in @systems %>
+            <%= render partial: 'q_summary', locals: {system: system} %>
+         <% end %>
+      </tbody>
+   </table>
 </div>
-
-<table class="table" id="systems-list">
-   <thead>
-     <tr>
-       <th>Name</th>
-       <th>Type</th>       
-       <th>TQ/FQ Quad</th>       
-       <th>Pace Layer</th>  
-       <th>Criticality</th>
-       <th>SAP Cover</th>         
-       <th>Actions</th>                   
-     </tr>
-   </thead>
-   <tbody>
-      <% for system in @systems %>
-         <%= render partial: 'q_summary', locals: {system: system} %>
-      <% end %>
-   </tbody>
-</table>

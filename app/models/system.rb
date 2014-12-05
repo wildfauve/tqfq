@@ -98,13 +98,13 @@ class System
   
   #{"name"=>"Quantum", "properties"=>{"asset_type"=>"LOB application", "description"=>"All Financial markets products - FX, MM, Securities, Derivatives", "business_process"=>"Financial Market Trade capture and settlement", "criticality"=>"tier_1", "pace_layer"=>"sor", "tq_fq_quadrant"=>"keep"}}
   
-  def create_me(system: nil)
-    self.update_attrs(system: system)
+  def create_me(system: nil, properties: nil)
+    self.update_attrs(system: system, properties: nil)
   end
   
-  def update_attrs(system: nil)
+  def update_attrs(system: nil, properties: nil)
     self.name = system[:name]
-    self.add_props(properties: system[:properties])
+    self.add_props(properties: properties)
     if system[:type]
       self.type = symbolise(system[:type])
     else
