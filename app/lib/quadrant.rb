@@ -19,17 +19,13 @@ class Quadrant
   
   def self.valid?(quad)
     return false if quad.nil?
-    @@valid_quads.include?(quad.to_sym) ? true : false
+    @@valid_quads.include?(quad.try(:value).to_sym) ? true : false
   end
   
   def self.get_name(quad)
     return :not_assessed if quad.nil?
-    q = quad.to_sym
-    if @@quads.has_key?(q)
-      q
-    else
-      :not_assessed
-    end
+    q = quad.value.to_sym
+    @@quads.has_key?(quad.value.to_sym) ? quad.value.to_sym : :not_assessed
   end
   
   def self.quad_dims

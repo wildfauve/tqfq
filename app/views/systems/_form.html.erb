@@ -7,16 +7,28 @@
        <%= f.text_field :name %>
      </div> 
    </div>
-   <% System.all_property_names.each do |p|%>
+   <div class="row">
+     <div class="small-3 columns">
+       <%= f.label :type, class: "right inline" %>
+     </div>
+     <div class="small-9 columns">
+       <%= select(:system, :type, System.system_types.collect {|t| [ t, t ] }, {include_blank: 'None'}) %>
+     </div> 
+   </div>
+   <% System.all_property_names.each do |pname|%>
       <div class="row">
          <div class="small-3 columns">
-            <%= label_tag p, nil, class: "right inline" %>
+            <%= label_tag pname, nil, class: "right inline" %>
          </div>
          <div class="small-9 columns"> 
-            <% if @system.property_type(prop: p) == :long_text%>
-               <%= text_area_tag("properties[#{p}]", "#{@system.send(p)}", size: "10x30")%>      
+            <% if @system.property_type(prop: pname) == :long_text%>
+               <%= text_area_tag("properties[#{pname}]", "#{@system.send(pname).try(:value)}", size: "10x30")%>      
             <% else %>
-               <%= text_field_tag("properties[#{p}]", "#{@system.send(p)}") %>      
+               <%if @system.send(pname).try(:has_select_options?)%>
+                  <%= select_tag("properties[#{pname}]", options_for_select(property_list_select(pname), @system.send(pname).value), :include_blank => true, :prompt => "Select Property", :class => "medium") %>
+               <% else%>
+                  <%= text_field_tag("properties[#{pname}]", "#{@system.send(pname).try(:value)}") %>      
+               <% end %>
             <% end %>               
          </div>
       </div>

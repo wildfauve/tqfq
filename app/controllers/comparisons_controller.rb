@@ -8,6 +8,7 @@ class ComparisonsController < ApplicationController
     
   def tq_fq_dimension_done(compare)
     @compare = compare
+    @quads = compare.tqfq
     render 'tqfq'
   end
   

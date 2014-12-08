@@ -6,16 +6,21 @@
       <%= system.type %>
    </td>   
    <td>
-      <div class="label"><%= system.tq_fq_quadrant %></div>
+      <%= system.asset_type.try(:value) %>
+   </td>   
+   <td>
+      <% if system.tq_fq_quadrant %>
+         <div class="label <%= tq_fq_colour(system.tq_fq_quadrant.value) %>"><%= system.tq_fq_quadrant.value %></div>
+      <% end %>
    </td>
    <td>
-      <%= system.pace_layer %>
+      <%= system.pace_layer.try(:value) %>
    </td>
    <td>
-      <%= system.criticality %>
+      <%= system.criticality.try(:value) %>
    </td>
    <td>
-      <%= number_to_percentage(system.sap_coverage) %>
+      <%= number_to_percentage(system.sap_coverage.try(:value)) %>
    </td>
    <td>
       <%= link_to "Show",  system_path(system), class: "button tiny"%>

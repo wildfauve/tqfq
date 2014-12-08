@@ -29,4 +29,18 @@ module ApplicationHelper
     end 
   end
   
+  def tq_fq_colour(quad)
+    if quad == "replace"
+      "erorr"
+    elsif quad == "keep"
+      "success"
+    else
+      "warning"
+    end
+  end 
+  
+  def property_list_select(name)
+    Property.select_options[name].map{|o| [o.to_s, o.to_s]}
+  end
+  
 end

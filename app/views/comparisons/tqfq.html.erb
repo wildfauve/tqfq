@@ -1,26 +1,20 @@
-<div class='alert alert-info fade in' data-alert='alert'>
-   <h3>TQFQ</h3>
-</div>
-
-<% quads = @compare.tqfq %>
-
 <div class="row">
-   <div class="col-md-6">
-      <% pos = quads.position(:top_left) %>
+   <div class="small-6 columns panel">
+      <% pos = @quads.position(:top_left) %>
       <%= render partial: 'quad', locals: {pos: pos}%>
    </div>
-   <div class="col-md-6">
-      <% pos = quads.position(:top_right) %>
+   <div class="small-6 columns panel">
+      <% pos = @quads.position(:top_right) %>
       <%= render partial: 'quad', locals: {pos: pos}%>
    </div>
 </div>
 <div class="row">
-   <div class="col-md-6">
-      <% pos = quads.position(:bottom_left) %>
+   <div class="small-6 columns panel">
+      <% pos = @quads.position(:bottom_left) %>
       <%= render partial: 'quad', locals: {pos: pos}%>
    </div>
-   <div class="col-md-6">
-      <% pos = quads.position(:bottom_right) %>      
+   <div class="small-6 columns panel">
+      <% pos = @quads.position(:bottom_right) %>      
       <%= render partial: 'quad', locals: {pos: pos}%>
    </div>
 </div>

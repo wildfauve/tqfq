@@ -2,9 +2,7 @@ class Property
   
   include Mongoid::Document
   include Mongoid::Timestamps  
-  
-  # Name|GUID|Notes|Technical Fit|Tech Assessment Rationale|Functional Assessment|Functional Assessment Rationale|TSSD Scope|TSSD Rationale
-  
+    
   field :name, type: Symbol
   field :value, type: String
   field :tokenised, type: Boolean, default: false
@@ -13,11 +11,19 @@ class Property
   embedded_in :reference_model
 
   @@tokenise_props = [:asset_type, :criticality, :tq_fq_quadrant, :pace_layer]
+  @@select_options = {
+    asset_type: [:enterprise_application, :system_component, :lob_application, :actor, :desktop_system, :reporting_application, :core_application, :marketing_application, :core],
+    tq_fq_quadrant: [:replace, :keep, :refactor, :enhance],
+    pace_layer: [:sor, :sod, :soi]
+  }
       
   def self.imported_props
     @@props
   end
-   
+  
+  def self.select_options
+    @@select_options
+  end
    
   def self.find_prop_from_import(prop)
     @@props.find {|p| p.name == prop}
@@ -37,6 +43,14 @@ class Property
     else
       value
     end 
+  end
+  
+  def has_select_options?
+    @@select_options.has_key?(self.name.to_sym)
+  end
+  
+  def select_options
+    @@select_options[self.name.to_sym]
   end
   
   def add_system(system)

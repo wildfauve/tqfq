@@ -6,9 +6,9 @@ class Quality
   def initialize(systems: nil)
     @systems = systems
     @dims = []
-    @pace = systems.map(&:pace_layer).uniq
+    @pace = systems.map {|s| s.pace_layer.try(:value) }.uniq
     @total_sys = @systems.count
-    @quads = Quadrant.generate(total_sys: @total_sys, assess_total: @systems.map(&:tq_fq_quadrant).count {|q| Quadrant.valid?(q)} )
+    @quads = Quadrant.generate(total_sys: @total_sys, assess_total: @systems.map {|s| s.tq_fq_quadrant}.count {|q| Quadrant.valid?(q)} )
   end
 
   def process

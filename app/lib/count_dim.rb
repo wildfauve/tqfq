@@ -10,7 +10,7 @@ class CountDim
   end
   
   def add(system: nil)
-    coll = system.send(@dim_name)
+    coll = system.send(@dim_name).try(:value)
     if @collection[coll]
       @collection[coll] += 1
     else
