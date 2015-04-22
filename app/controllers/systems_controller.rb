@@ -1,7 +1,7 @@
 class SystemsController < ApplicationController
   
   def index
-    @systems = System.all
+    @systems = System.all.asc(:name)
   end
   
   def new

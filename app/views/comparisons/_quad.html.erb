@@ -1,12 +1,14 @@
-<div class="bg-primary">
-		<h1 class="text-center"><span class="glyphicon glyphicon-ok"></span><%= pos.position.to_s.titleize %></h1>
-      <h2 class="text-center"><%= pos.ct%></h2>
-      <h1 class="text-center"><%= number_to_percentage(pos.tot_percent)%></h1>            
-      <h1 class="text-center"><%= number_to_percentage(pos.assess_percent)%></h1>
-      <% for dim in pos.count_dims %>
-         <h4 class="text-center"><%= dim.dim_name.to_s.titleize%></h4>
-         <% dim.each do |k, v|%>
-            <h4 class="text-center"><%= "#{k}: #{v}"%></h4>
-         <% end %>
-      <% end%>
-</div>
+<h1 class="text-center"><i class="fi-check"></i><%= pos.position.to_s.titleize %></h1>
+<h2 class="text-center"><%= pos.ct%></h2>
+<h1 class="text-center">Total: <%= number_to_percentage(pos.tot_percent)%></h1>            
+<h1 class="text-center">Assessed: <%= number_to_percentage(pos.assess_percent)%></h1>
+
+<% for dim in pos.count_dims %>
+   <dl class="sub-nav">   
+      <dt><%= dim.dim_name.to_s.titleize + ":"%></dt>
+      <% dim.each do |k, v|%>
+         <dt><%= "#{k}" %></dt>
+         <dd class="active"><a href="#"><%= "#{v}"%></a></h4>
+      <% end %>
+   </dl>      
+<% end%>

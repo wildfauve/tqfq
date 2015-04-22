@@ -1,65 +1,53 @@
-Name,Type,asset_type,type,maintain_customer,comments,it_owner,business_owner,customer,product_supplier,product_vendor,vendor_support,description/use,business_process,criticality,known_risks,dr,parent_system,description_use,technologies,pace_layer,tq_fq_quadrant,strategy_support,initiatives,roadmap_2016,roadmap_2018,notes
-Qualys,n/a,enterprise_application,n/a,n/a,Supporting third party for the Security Vulnerability Scanning appliances. ,N/A,Risk Management~ Organisational Resilience,Unknown,Qualys Inc,Qualys Inc,Complete,,,unknown,,,,,,,,,,,,
-RatesEngine,integration_component,enterprise_application,integration_component,n/a,The RatesEngine will retrieve rates (FX~ Yield~ Zero etc...) from an external source (Bloomberg) and export them to various internal file directories in the form of a text file. Production phase one will only export the NZPost Pharos FX file.,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets)~ Finance~ NZPost,IT,IT,,The RatesEngine will retrieve rates (FX~ Yield~ Zero etc...) from an external source (Bloomberg) and export them to various internal file directories in the form of a text file. Production phase one will only export the NZPost Pharos FX file. Application Servers KBPDTMSAPP03 - DR KBPDTMSAPP53 - PROD Database Servers KBPDSQLTRS01 - DR KBPDSQLTRS02 - PROD For DR functionality~ there is an async mirror between Prod and DR.,,tier_2,,,,,,,,,,,,
-RateSnapper,system,enterprise_application,system,N,"Core Treasury application critical to Treasury day to day operations.
+Name,Type,asset_type,maintain_customer,comments,it_owner,business_owner,customer,product_supplier,product_vendor,vendor_support,business_process,criticality,known_risks,dr,parent_system,description,technologies,pace_layer,tq_fq_quadrant,strategy_support,initiatives,roadmap_2016,roadmap_2018,notes
+Qualys,n/a,enterprise_application,n/a,Supporting third party for the Security Vulnerability Scanning appliances. ,N/A,Risk Management~ Organisational Resilience,Unknown,Qualys Inc,Qualys Inc,Complete,,unknown,,,,,,,,,,,,
+RatesEngine,integration_component,enterprise_application,n/a,The RatesEngine will retrieve rates (FX~ Yield~ Zero etc...) from an external source (Bloomberg) and export them to various internal file directories in the form of a text file. Production phase one will only export the NZPost Pharos FX file.,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets)~ Finance~ NZPost,IT,IT,,,tier_2,,,,,,,,,,,,
+RateSnapper,system,enterprise_application,N,"Core Treasury application critical to Treasury day to day operations.
   
- Housed on a standalone pc in NZPH~ and noted as a key Treasury risk. There is a backup pc in RNZH Level 12 for interim redundancy~ but BCP planning will see an upgrade to this system to a newer 'Rates Engine' with better redundancy.",Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),IT,IT,,Foreign Exchange rate appplication on PC used for day to day operations.ÊÊ,Rates feed into Quantum,tier_2,,,,,,,,,,,,
-SAS,reporting_platform,enterprise_application,reporting_platform,n/a,,N/A,Risk Management~ Portfolio Analytics,Unknown,SAS Institute (NZ) Limited,SAS Institute (NZ) Limited,Complete,Software License Agreement,,tier_2,,,,,,,,,,,,
-SCOM,platform,enterprise_application,platform,n/a,,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-ScriptingIT,n/a,enterprise_application,n/a,n/a,External party (vendor),N/A,COO~ Information Technology,Unknown,Scripting IT Ltd,Scripting IT Ltd,,Software Licence & Services Agreement,,unknown,,,,,,,,,,,,
-Solveit,system_component,enterprise_application,system_component,n/a,Component of Prosper,Application Development,Personal Markets~ Customer Service Experience,Unknown,Prosper Business Solutions,Ultradata,,A component of Prosper - Êis used throughout the bank for capturing customer related problems for Support Services to action,,tier_1,,,,,,,,,,,,
-Solvency,?,enterprise_application,?,?,No information available,Unknown,Unknown,Unknown,NA,N/A,,,,unknown,,,,,,,,,,,,
-Special Answers,system,enterprise_application,system,Y,,,,,,,,,,,,,,,,,,,,,,
-SpecialAnswerRobot,system_component,enterprise_application,system_component,n/a,,Technology Operations,COO~ Enterprise Operations ,Unknown,IT,IT,,gRobot polls for emails in the queue and sends the fax to GE-Q Special Answers.,During crisis~ implement relief package for Business and Retail Customers ,tier_2,,,,,,,,,,,,
-Spectrum,actor,enterprise_application,actor,n/a,Infrastructure monitoring system provided by Datacom,Unknown,Business Markets~ Distribution,Unknown,Spectrum Software Pty Ltd,,,Software Evaluation Agreement,,unknown,,,,,,,,,,,,
-SQLBackupPro,platform_component,enterprise_application,platform_component,n/a,No information available,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-STB,n/a,enterprise_application,n/a,n/a,Decommissioned in 2012,Decommisioned,Risk Management,Unknown,NA,N/A,,"*Decommissioned Jan 2012. FIST ended the contract with the vendor.
-Ê
-STB is a system used by the Fist team to detect money laundering.
-Ê
-Customer activity data is extracted from the Data warehouse overnight then loaded and processed by the STB system at 9am in the morning.
-Ê
-The Fist team analyse the results highlighted by STB of those that meet ""pre-defined"" conditions of potential fraudulent activity.
-Ê
-STB (SQL back-end) contains 1 years worth of data.",,tier_2,,,,,,,,,,,,
-Tallyman,system_component,enterprise_application,system_component,n/a,The front end web-based application of the Collections System. Enables Kiwibank collections staff to perform daily collection activities.,Application Development,COO~ Enterprise Operations ,Unknown,Experian,Experian,Complete,"The front end web-based application of the Collections System. Enables Kiwibank collections staff to perform daily collection activities.
-",Bank wide collections process~  holds all customers & accounts,tier_2,,low,,,,,,,,,,
-Verisign,n/a,enterprise_application,n/a,n/a,Third party (vendor),Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-WebPerformance,?,enterprise_application,?,?,No information available,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-WhereScape,data_warehouse_platform,enterprise_application,data_warehouse_platform,n/a,,Unknown,COO~ Payment Services ,Enterprise Information,WhereScape Limited,Datacom,,Software Support Agreement,,unknown,,,,,,,,,,,,
-Worldlink Payment Services,actor,enterprise_application,actor,n/a,Provided by Citibank. A payment solution that allows the bank to issue payments in more than 135 currencies.,Wholesale Application Delivery,Business Markets (Financial Markets),Business Markets (Financial Markets),Citibank,Citibank,Complete,Citi file and API processing application~ linked to International Middleware,International Payments,tier_1,Internet dependence,,,,,,,,,,,
-360T,component,system_component,component,,,,,,,,,,Wholesale FX trading,tier_1,,,TMS,"Integrates various trading systems into one front end view where traders commit to a deal.  Contains connectors; Connector to global 360T platform, passes deals onto Quantum",,,,,,,,
-ActivateBB,system,lob_application,system,,,,,,,,,,"Business Markets loan Origination - Retail, retail SME & Wholesale",tier_1,,,,"Business banking Loan application, decisioning and processing",,sor,refactor,,,,,
-AOA Generator,system,lob_application,system,,,,,,,,,,,tier_1,,,,Captures documents at the time of account establishment. Contains details of all the valid signatories.,,sor,replace,,,,,
-Appointment Manager,system,lob_application,system,,,,,,,,,,,tier_2,,,,Booking appointments between Kiwibank customers and knowledgeable banking specialist.,,sod,replace,,,,,
-Autobahn,external,actor,external,,,,,,,,,,Wholesale FX trading,tier_2,,,,Foreign exchange client app prvided by Deutsche Bank,,sor,keep,,,,,
-Barx,external,actor,external,,,,,,,,,,Wholesale FX trading,tier_2,,,,Barclays multi-asset class e-trading solutions,,sor,keep,,,,,
-BNZ PC Banking,external,actor,external,,,,,,,,,,Fortnightly payroll run from Tuesday 2pm until 4pm Wednesday on pay week,tier_2,,,,Client software to access the BNZ's banking system via Direct Dial. The Settlements team use it for payments to BNZ.,,sor,keep,,,,,
-CitiDirect,external,actor,external,,,,,,,,,,"Manual entry, reporting & checking of International payments",tier_2,,,,CitiBank's web app providing a payments service that enables FCA & international payments,,sor,keep,,,,,
-Corporate Product Database,external,actor,external,,,,,,,,,,Exception Management for Billpay & IDVA (Identification Verification Agency),tier_2,,,,Desktop application prviding access to the Nzpost Corporate Product Database,,sod,replace,,,,,
-CSLinkage,component,system_component,component,,,,,,,,,,,tier_2,,,B2K,Enables Base2000 to communicate with the Middleware.,,,,,,,,probably part of B2K
-DealControl,component,system_component,component,,,,,,,,,,Deal entry,tier_2,,,Quantum,"Trade capture and positioning, essentially a Quantum GUI",,,,,,,,probably part of Quantum
-Di's Quote Service,system,lob_application,system,,,,,,,,,,,tier_2,,,,An intranet application used by the Priority Banking Team. It is used to determine the rate of change for large Term Deposits. The Priority Banking Team use it to track their quotes which ultimately enables them to collect sales points once or if the quote is accepted.,,sor,replace,,,,,
-EFTPOS,system,lob_application,system,,,,,,,,,,,tier_1,,,,"Kiwibank use two services:
+ Housed on a standalone pc in NZPH~ and noted as a key Treasury risk. There is a backup pc in RNZH Level 12 for interim redundancy~ but BCP planning will see an upgrade to this system to a newer 'Rates Engine' with better redundancy.",Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),IT,IT,,Rates feed into Quantum,tier_2,,,,,,,,,,,,
+SAS,reporting_platform,enterprise_application,n/a,,N/A,Risk Management~ Portfolio Analytics,Unknown,SAS Institute (NZ) Limited,SAS Institute (NZ) Limited,Complete,,tier_2,,,,,,,,,,,,
+SCOM,platform,enterprise_application,n/a,,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+ScriptingIT,n/a,enterprise_application,n/a,External party (vendor),N/A,COO~ Information Technology,Unknown,Scripting IT Ltd,Scripting IT Ltd,,,unknown,,,,,,,,,,,,
+Solveit,system_component,enterprise_application,n/a,Component of Prosper,Application Development,Personal Markets~ Customer Service Experience,Unknown,Prosper Business Solutions,Ultradata,,,tier_1,,,,,,,,,,,,
+Solvency,?,enterprise_application,?,No information available,Unknown,Unknown,Unknown,NA,N/A,,,unknown,,,,,,,,,,,,
+SpecialAnswerRobot,system_component,enterprise_application,n/a,,Technology Operations,COO~ Enterprise Operations ,Unknown,IT,IT,,During crisis~ implement relief package for Business and Retail Customers ,tier_2,,,,,,,,,,,,
+Spectrum,actor,enterprise_application,n/a,Infrastructure monitoring system provided by Datacom,Unknown,Business Markets~ Distribution,Unknown,Spectrum Software Pty Ltd,,,,unknown,,,,,,,,,,,,
+SQLBackupPro,platform_component,enterprise_application,n/a,No information available,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+STB,n/a,enterprise_application,n/a,Decommissioned in 2012,Decommisioned,Risk Management,Unknown,NA,N/A,,,tier_2,,,,,,,,,,,,
+Tallyman,system_component,enterprise_application,n/a,The front end web-based application of the Collections System. Enables Kiwibank collections staff to perform daily collection activities.,Application Development,COO~ Enterprise Operations ,Unknown,Experian,Experian,Complete,Bank wide collections process~  holds all customers & accounts,tier_2,,low,,,,,,,,,,
+Verisign,n/a,enterprise_application,n/a,Third party (vendor),Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+WebPerformance,?,enterprise_application,?,No information available,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+WhereScape,data_warehouse_platform,enterprise_application,n/a,,Unknown,COO~ Payment Services ,Enterprise Information,WhereScape Limited,Datacom,,,unknown,,,,,,,,,,,,
+Worldlink Payment Services,actor,enterprise_application,n/a,Provided by Citibank. A payment solution that allows the bank to issue payments in more than 135 currencies.,Wholesale Application Delivery,Business Markets (Financial Markets),Business Markets (Financial Markets),Citibank,Citibank,Complete,International Payments,tier_1,Internet dependence,,,,,,,,,,,
+SharePoint,not_determined,"","","","","","","","","","","","","","","","","","","","","","",""
+AOA Generator,system,lob_application,,,,,,,,,,tier_1,,,,Captures documents at the time of account establishment. Contains details of all the valid signatories.,,sor,replace,,,,,
+Appointment Manager,system,lob_application,,,,,,,,,,tier_2,,,,Booking appointments between Kiwibank customers and knowledgeable banking specialist.,,sod,replace,,,,,
+Autobahn,external,actor,,,,,,,,,Wholesale FX trading,tier_2,,,,Foreign exchange client app prvided by Deutsche Bank,,sor,keep,,,,,
+Barx,external,actor,,,,,,,,,Wholesale FX trading,tier_2,,,,Barclays multi-asset class e-trading solutions,,sor,keep,,,,,
+BNZ PC Banking,external,actor,,,,,,,,,Fortnightly payroll run from Tuesday 2pm until 4pm Wednesday on pay week,tier_2,,,,Client software to access the BNZ's banking system via Direct Dial. The Settlements team use it for payments to BNZ.,,sor,keep,,,,,
+CitiDirect,external,actor,,,,,,,,,"Manual entry, reporting & checking of International payments",tier_2,,,,CitiBank's web app providing a payments service that enables FCA & international payments,,sor,keep,,,,,
+Corporate Product Database,external,actor,,,,,,,,,Exception Management for Billpay & IDVA (Identification Verification Agency),tier_2,,,,Desktop application prviding access to the Nzpost Corporate Product Database,,sod,replace,,,,,
+CSLinkage,component,system_component,,,,,,,,,,tier_2,,,B2K,Enables Base2000 to communicate with the Middleware.,,,,,,,,probably part of B2K
+DealControl,component,system_component,,,,,,,,,Deal entry,tier_2,,,Quantum,"Trade capture and positioning, essentially a Quantum GUI",,,,,,,,probably part of Quantum
+EFTPOS,system,lob_application,,,,,,,,,,tier_1,,,,"Kiwibank use two services:
 ETSL (Paymark)
 Eftpos NZ (ANZ POS)
 Only ETSL provide stand-in and have much bigger volumes than Eftpos NZ. All transactions are real-time and come in via the ATMC switch. Stand-in limit for Eftpos by ETSL is $1000.00. According to Distribution, POS has priority over ATM.",,sor,refactor,,,,,
-EndofDay,component,system_component,component,,,,,,,,,,,tier_1,,,Ultracs,"Ultracs EOD processing occurs 7 days a week, after the processing of the ISL Inwards #2 file (Tues - Sat) and performs a number of important functions including closing the current day's processing.
+EndofDay,component,system_component,,,,,,,,,,tier_1,,,Ultracs,"Ultracs EOD processing occurs 7 days a week, after the processing of the ISL Inwards #2 file (Tues - Sat) and performs a number of important functions including closing the current day's processing.
  As part of the EOD process, there are a number of key sub processes; see the following components. Runs on Ultracs. ",,,,,,,,
-EndofMonth,component,system_component,component,,,,,,,,,,,tier_1,,,Ultracs,"Occurs on the last night of every month, AFTER the End of day BEFORE Start of Day. Datacom hand control of system over to the Core banking group to run the EOM.
+EndofMonth,component,system_component,,,,,,,,,,tier_1,,,Ultracs,"Occurs on the last night of every month, AFTER the End of day BEFORE Start of Day. Datacom hand control of system over to the Core banking group to run the EOM.
 Runs on Ultracs.",,,,,,,,
-EndofYear,component,system_component,component,,,,,,,,,,,tier_1,,,Ultracs,"Occurs on the last night of the financial year (30 June), AFTER the End of Month BEFORE Start of Day.  Runs on Ultracs",,,,,,,,
-Fixed Rate Break Calculator,component,desktop_system,component,,,,,,,,,,Loan Discharge Enquiries,tier_2,,,,Loan Break-fee calculator,,sor,,,,,,
-Flo2Cash,external,actor,external,,,,,,,,,,,tier_2,,,,"A Direct Debit Bureau service from 'Flo2Cash' (third party) that provides a Kiwibank customer portal to create and manage direct debits. Project Direct Debit Bureau (KB0312) will see the implementation of this solution in May 2012. The Portal runs in Flo2cash’s data centre in Auckland and communicates with Kiwibanks payments system to implement the payment requests. The solution is in simple terms made up of:a vendor 'Flo2Cash', hostingthe Flo2Cash system, which posts direct debit transaction information through tothe Kiwibank Payments Engine.
+EndofYear,component,system_component,,,,,,,,,,tier_1,,,Ultracs,"Occurs on the last night of the financial year (30 June), AFTER the End of Month BEFORE Start of Day.  Runs on Ultracs",,,,,,,,
+Fixed Rate Break Calculator,component,desktop_system,,,,,,,,,Loan Discharge Enquiries,tier_2,,,,Loan Break-fee calculator,,sor,,,,,,
+Flo2Cash,external,actor,,,,,,,,,,tier_2,,,,"A Direct Debit Bureau service from 'Flo2Cash' (third party) that provides a Kiwibank customer portal to create and manage direct debits. Project Direct Debit Bureau (KB0312) will see the implementation of this solution in May 2012. The Portal runs in Flo2cash’s data centre in Auckland and communicates with Kiwibanks payments system to implement the payment requests. The solution is in simple terms made up of:a vendor 'Flo2Cash', hostingthe Flo2Cash system, which posts direct debit transaction information through tothe Kiwibank Payments Engine.
 Technical Summary
 The Flo2Cash system is a three tier model:Flo2Cash system accessing aWeb application, running on an IIS server that will access aBackend database.
 The Flo2Cash system is architected as a gateway server that receives IP traffic from Flo2Cash. This traffic must meet a number of requirements before it is passed on to a gateway server running web services on IIS. Real time XML web services calls are converted into SQL statements and executed against a database on the ATM Reconciliation servers KBPDATMREC01 and 02.
 There are a number of parties or dependencies involved in the dataflow:Flo2Cash who initiate the connection to Kiwibank.External DNS servers which provide Flo2Cash with the correct IP address based on the location of the live systemNetScalers which will validate the certificate used by Flo2Cash to authenticate and encrypt the data. Internal NetScalers will load balance the calls.Web Server using Microsoft IIS to present a single WCF web service.SQL server using SQL 2008Backend infrastructure servers.",,sor,keep,,,,,
-Funds Transfer Pricing,system,lob_application,system,,,,,,,,,,Funding cost reallocation to profit centres,tier_2,,,"","","",sor,replace,"","","","",""
-GDS Swaps Reporting,component,desktop_system,component,,,,,,,,,,,tier_2,,,,Creates Swap value numbers used for quarterly GDS report. The reports are  in SAS.,,,,,,,,
-Heaps,system,lob_application,system,,,,,,,,,,"",tier_2,,,"","The heaps! application is personal finance management tool providing all New Zealanders with a goal setting and budgeting tool. The purpose of the tool is to add value to Kiwibank internet banking customers by giving them a way to manage their finances, however you don't have to be a Kiwibank customer to use heaps!  Kiwibank customers access heaps! via a button on their accounts page when they login to Internet Banking.  Non-kiwibank customer login viawww.heaps.co.nz and upload their banks data.The heaps! application is hosted on a third party server and the development is administered by Able Technology in Wellington.heaps! customer support is managed through the Kiwibank Online TeamThe way in which the tool works is:The heaps! application is 100% owned by Kiwibank.Internet banking customers can register for heaps! by logging into internet banking system from either the;Accounts page by clicking on the ‘heaps!’ buttonQuicklinks menu by clicking the ‘heaps! – sign up now’ quicklinkApply & Open menu, under ‘Personal finance management’.On registration their details are passed through CRM to staging where overnight, their transaction history for the last 12 months is found and stored in a file.The transaction history data file is encrypted and passed to a staging VPN.Able Technology access the file in the VPN and pull it into the heaps! application.Once registration is complete, customers access the heaps! application from the Accounts page in Internet banking by clicking on the ‘heaps!’ button.The customer interacts with the heaps! application independent to their internet banking session.The heaps! application will time out after 15min of inactivity.Beyond registration, a daily transaction data file is created for all customers who have registered and who have had their twelve month history provided.The heaps! application is free for all Kiwibank customers to use and allows the customer to track and categorise their spending, set spending targes and set and manage financial goals.Customers can upload transactions from the following banks in to  heaps!: ANZ (MS Money format), ASB (OFX format), BNZ (OFX format), National Bank (OFX format), Westpac (MYOB format).The heaps! web site is:www.heaps.co.nzNon-kiwibank customers register by clicking on the Login button from the web sitewww.heaps.co.nz","",sod,enhance,Digital,"","","",""
-Instinct,system,lob_application,system,,,,,,,,,,used for person fraud monitoring ( used by Activate & also recives daily file for all customer accounts created ),tier_1,,,,"Instinct is another Dectech tool that identifies fraudulent applications. Activate queries Instinct when processing applications. These applications are assesses for their 'fraud potential"" and assigned a fraud risk grade - those cases which are highly suspicious are highlighted for further analysis by a fraud analyst using alerts.",,sor,refactor,,,,,
-International Desktop Application,system,lob_application,system,,,,,,,,,,"International payments out - TT, DC, Draft.  FCA transfers.  Templated payments.  ",tier_1,,,,"A .NET / SQL desktop application available to the International ops team providing management functionality for:
+Funds Transfer Pricing,system,lob_application,,,,,,,,,Funding cost reallocation to profit centres,tier_2,,,"","","",sor,replace,"","","","",""
+GDS Swaps Reporting,component,desktop_system,,,,,,,,,,tier_2,,,,Creates Swap value numbers used for quarterly GDS report. The reports are  in SAS.,,,,,,,,
+Heaps,system,lob_application,,,,,,,,,"",tier_2,,,"","The heaps! application is personal finance management tool providing all New Zealanders with a goal setting and budgeting tool. The purpose of the tool is to add value to Kiwibank internet banking customers by giving them a way to manage their finances, however you don't have to be a Kiwibank customer to use heaps!  Kiwibank customers access heaps! via a button on their accounts page when they login to Internet Banking.  Non-kiwibank customer login viawww.heaps.co.nz and upload their banks data.The heaps! application is hosted on a third party server and the development is administered by Able Technology in Wellington.heaps! customer support is managed through the Kiwibank Online TeamThe way in which the tool works is:The heaps! application is 100% owned by Kiwibank.Internet banking customers can register for heaps! by logging into internet banking system from either the;Accounts page by clicking on the ‘heaps!’ buttonQuicklinks menu by clicking the ‘heaps! – sign up now’ quicklinkApply & Open menu, under ‘Personal finance management’.On registration their details are passed through CRM to staging where overnight, their transaction history for the last 12 months is found and stored in a file.The transaction history data file is encrypted and passed to a staging VPN.Able Technology access the file in the VPN and pull it into the heaps! application.Once registration is complete, customers access the heaps! application from the Accounts page in Internet banking by clicking on the ‘heaps!’ button.The customer interacts with the heaps! application independent to their internet banking session.The heaps! application will time out after 15min of inactivity.Beyond registration, a daily transaction data file is created for all customers who have registered and who have had their twelve month history provided.The heaps! application is free for all Kiwibank customers to use and allows the customer to track and categorise their spending, set spending targes and set and manage financial goals.Customers can upload transactions from the following banks in to  heaps!: ANZ (MS Money format), ASB (OFX format), BNZ (OFX format), National Bank (OFX format), Westpac (MYOB format).The heaps! web site is:www.heaps.co.nzNon-kiwibank customers register by clicking on the Login button from the web sitewww.heaps.co.nz","",sod,enhance,Digital,"","","",""
+Instinct,system,lob_application,,,,,,,,,used for person fraud monitoring ( used by Activate & also recives daily file for all customer accounts created ),tier_1,,,,"Instinct is another Dectech tool that identifies fraudulent applications. Activate queries Instinct when processing applications. These applications are assesses for their 'fraud potential"" and assigned a fraud risk grade - those cases which are highly suspicious are highlighted for further analysis by a fraud analyst using alerts.",,sor,refactor,,,,,
+International Desktop Application,system,lob_application,,,,,,,,,"International payments out - TT, DC, Draft.  FCA transfers.  Templated payments.  ",tier_1,,,,"A .NET / SQL desktop application available to the International ops team providing management functionality for:
 Foreign Currecny Accounts (FCA)
 Foreign Cheque Deposits
 Telegraphic Transfers/ Direct Credits and Foreign Drafts
@@ -76,67 +64,44 @@ Australian Dollar
 Japanese Yen.
 As Kiwibank's core bank system has no ability to host FCAs, Citibank were chosen as the service provider. All financial transactions are held and operated within CitiBank systems.
 The Intldbprod db is held on CRM01. Inputs to the Application come from the International Middleware ('Middleware Shared'), and direct user input through the desktop interface.",,sor,refactor,,,,,
-Internet Banking,system,lob_application,system,,,,,,,,,,Monitoring for Fraud,tier_1,,,,"There are a number of systems that rely on the availability of the Internet including,  Activate Veda Advantage, Bloomberg, Citi Treasury, CitiDirect, CitiFX Chief Dealer, Docushare, eFunds, Flo2Cash, Go Fly Credit Cards, Imprint, Jadestar, JP Morgan, Landonline, Online Credit Card Application process, Overnight Processing, PAPS, PrimeClear, PrimeTrade, Propel, Reuters, RightNow, Swift, Voyager & VPS.
+Internet Banking,system,lob_application,,,,,,,,,Monitoring for Fraud,tier_1,,,,"There are a number of systems that rely on the availability of the Internet including,  Activate Veda Advantage, Bloomberg, Citi Treasury, CitiDirect, CitiFX Chief Dealer, Docushare, eFunds, Flo2Cash, Go Fly Credit Cards, Imprint, Jadestar, JP Morgan, Landonline, Online Credit Card Application process, Overnight Processing, PAPS, PrimeClear, PrimeTrade, Propel, Reuters, RightNow, Swift, Voyager & VPS.
 There are a number of systems that rely on the availability of the Internet including,  Activate Veda Advantage, Bloomberg, Citi Treasury, CitiDirect, CitiFX Chief Dealer, Docushare, eFunds, Flo2Cash, Go Fly Credit Cards, Imprint, Jadestar, JP Morgan, Landonline, Online Credit Card Application process, Overnight Processing, PAPS, PrimeClear, PrimeTrade, Propel, Reuters, RightNow, Swift, Voyager & VPS.
 
 The Apps that impacted in the Dealing room (Auckland and wellington) are:
 Thomson Reuters, 360T FX trading, BARX, CitiVelocity
 The Apps that impacted for treasury operations are: CitiDirect, JPMorgan",,sod,refactor,,,,,
-IVR,system,lob_application,system,,,,,,,,,,Manage urgent queries to facilitate continued function of Prepaid & Debit Cards,tier_2,,,,"Interactive Voice Response, used by Phone Banking & Call Centres.
+IVR,system,lob_application,,,,,,,,,Manage urgent queries to facilitate continued function of Prepaid & Debit Cards,tier_2,,,,"Interactive Voice Response, used by Phone Banking & Call Centres.
 Part of the Gen-i Managed Telephony Service.
 An IVR enables a telephone caller, to select options from a voice menu and interact with the computer phone system.
 The IVRs also recognise the caller's simple spoken answer such as ""yes"", ""no"", or a number as a valid response to the voice prompt.",,sod,keep,,,,,
-KBMAC,external,actor,external,,,,,,,,,,"During crisis, implement relief package for Business and Retail Customers ",tier_1,,,,"KBMAC (Kiwibank – Manage Customer).
-KBMAC is an application suite within the NZPost Teller Point of Sale (POS) application called PostLink.
- 
-It provides the PostShop Teller with all transactional activity relating to Kiwibank Customers accounts including credit cards:
-Deposit
-Print Balance
-Withdrawal
-Transaction Listing
-Fund Transfer
-Maintain Payments
-Order Bank Cheque
-Card Maintenance
-Term Deposit
-Order Statement
-Order Stationery
-View AOA
-Referrals
-Stop Cheque
-Account Maintenance
-Customer Maintenance
-Foreign Cheque Deposits
-International TTs, DCs and Drafts",,sod,replace,,,,,
-Kiwisaver,system,lob_application,system,,,,,,,,,,"",tier_1,,,"","Kiwisaver processing eg payment reversals, early withdrawals; Payment exceptions for failed KiwiSaver transactions are sent to the KiwiSaver Sharepoint site. Add to scope; Tier 2",Sharepoint Application,sor,replace,"","","","",""
-Lips,component,system_component,component,,,,,,,,,,,tier_2,,,ValueQ7,"A web application component of the Policy Admin System - Value Q7.
+Kiwisaver,system,lob_application,,,,,,,,,"",tier_1,,,"","Kiwisaver processing eg payment reversals, early withdrawals; Payment exceptions for failed KiwiSaver transactions are sent to the KiwiSaver Sharepoint site. Add to scope; Tier 2",Sharepoint Application,sor,replace,"","","","",""
+Lips,component,system_component,,,,,,,,,,tier_2,,,ValueQ7,"A web application component of the Policy Admin System - Value Q7.
 LIPS is integrated and displayed within In Touch screens. It is used by frontline staff to process new insurance applications, and to provide advice on existing insurance policies.
 
 Staff also use In Touch to view documents - including insurance documents. These documents are held within DIMS.",,,,,,,,
-Liquidity,not_determined,?,not_determined,,,,,,,,,,,tier_2,,,,Daily and Monthly RBNZ & Treasury reporting needs,,,,,,,,
-MarkitWire,external,actor,external,,,,,,,,,,Interbank IR Swaps trading,tier_2,,,,"Global IR Swaps trading platform, required for OTC Derivatives trading compliance",,sor,keep,,,,,
-Mobile Banking,system,lob_application,system,,,,,,,,,,,tier_1,,,,"Mobile Internet Banking allows customers do basic internet banking on a mobile phone’s web browser.The customer goes to the urlwww.kiwibank.co.nz/mobile (they will also be redirected there if they go towww.kiwibank.co.nz)They login with their existing internet banking credentials.Keepsafe is:not required at loginnot required when selecting a saved personal payeenot required when selecting a bill payeerequired when entering the account number to make a one off payment.The new mobile banking offers a full suite of banking services:One-off paymentsPay all billsSkip or cancel automatic paymentsTransfer money between accountsView account balancesCheck transaction historySee upcoming paymentsPay your Kiwibank Credit Card
+Liquidity,not_determined,?,,,,,,,,,,tier_2,,,,Daily and Monthly RBNZ & Treasury reporting needs,,,,,,,,
+MarkitWire,external,actor,,,,,,,,,Interbank IR Swaps trading,tier_2,,,,"Global IR Swaps trading platform, required for OTC Derivatives trading compliance",,sor,keep,,,,,
+Mobile Banking,system,lob_application,,,,,,,,,,tier_1,,,,"Mobile Internet Banking allows customers do basic internet banking on a mobile phone’s web browser.The customer goes to the urlwww.kiwibank.co.nz/mobile (they will also be redirected there if they go towww.kiwibank.co.nz)They login with their existing internet banking credentials.Keepsafe is:not required at loginnot required when selecting a saved personal payeenot required when selecting a bill payeerequired when entering the account number to make a one off payment.The new mobile banking offers a full suite of banking services:One-off paymentsPay all billsSkip or cancel automatic paymentsTransfer money between accountsView account balancesCheck transaction historySee upcoming paymentsPay your Kiwibank Credit Card
 What is not currently supported:Does not support Business Banking customers
 MIB now runs under the new internet banking architecture.
 Is compatible with:iPhoneWindows Mobile SmartphonesRegular mobile phones with web browsers (WAP enabled).
 There are two different versions of web pages .  The web site detects the type of phone and displays the appropriate version.
 Mobile Internet Banking differs from 'Mobile Banking' (see link under Related KB Systems) in that:It doesn't require the customer to download anything (ie. Java applet).It is supported by Kiwibank and lives within the Internet Banking environment (3rd party Fronde support and manage Mobile Banking).Uses existing IB login credentials rather than a seperate unique password.Works with most modern phones that have web access (Mobile Banking's Java applet does not work with many modern smartphones)
 ",,sod,replace,,,,,
-Moodys,system,lob_application,system,,,,,,,,,,,tier_2,,,,Moody's Risk-Origins software is used for Loan origination and decisioning processing and loan management. Moodys is used for wholesale and large business loans only whereas Activate is used for all other types of loans.,,sor,keep,,,,,
-Musicida,system,lob_application,system,,,,,,,,,,"During crisis, implement relief package for Business and Retail Customers ",tier_2,,,,"Recs team use this application to view post transactions for Post dishonour and NZPost Payover tasks. Customers are able to redeem money orders at a NZ Post outlet. These can be exchanged for cash, or processed as a direct credit to their bank account. Alternatively they can be sent to Kiwibank head office to be redeemed into a bank account.",,sor,keep,,,,,
-OnlineCreditCardApp,component,system_component,component,,,,,,,,,,,tier_1,,,Internet Banking,"This is a new credit card application process available from Internet Banking and the Kiwibank website.
+Musicida,system,lob_application,,,,,,,,,"During crisis, implement relief package for Business and Retail Customers ",tier_2,,,,"Recs team use this application to view post transactions for Post dishonour and NZPost Payover tasks. Customers are able to redeem money orders at a NZ Post outlet. These can be exchanged for cash, or processed as a direct credit to their bank account. Alternatively they can be sent to Kiwibank head office to be redeemed into a bank account.",,sor,keep,,,,,
+OnlineCreditCardApp,component,system_component,,,,,,,,,,tier_1,,,Internet Banking,"This is a new credit card application process available from Internet Banking and the Kiwibank website.
 The interactive asp pages enable the customer to complete a form then submit their details to Activate KB via the Middleware for processing.
 
 When an existing Kiwibank customer provides a valid access number, it will automatically populate identification fields with data held into Activate.
 
 If an access number is not provided, the system will check the customers full name, d.o.b and complete a verification process (i.e. verify a match in Ultracs) then populate the identification fields.",,,,,,,,
-OnlineHomeLoanApp,component,system_component,component,,,,,,,,,,,tier_1,,,Internet Banking,"This is a new Home Loan application process available from Internet Banking and the Kiwibank website.
+OnlineHomeLoanApp,component,system_component,,,,,,,,,,tier_1,,,Internet Banking,"This is a new Home Loan application process available from Internet Banking and the Kiwibank website.
 The interactive asp pages enable the customer to complete a form then submit their details to Activate KB via the Middleware for processing.
 
 When an existing Kiwibank customer provides a valid access number, it will automatically populate identification fields with data held into Activate.
 
 If an access number is not provided, the system will check the customers full name, d.o.b and complete a verification process (i.e. verify a match in Ultracs) then populate the identification fields.",,,replace,Digital,,,,
-Outbound,system,lob_application,system,,,,,,,,,,,tier_2,,,,"3rd party product that puts pin numbers on credit cards over the phone. Works with the Pin Loading application
+Outbound,system,lob_application,,,,,,,,,,tier_2,,,,"3rd party product that puts pin numbers on credit cards over the phone. Works with the Pin Loading application
 ""PIN at Store is a application available from Postshops that enable customers to put PINs on debit/credit cards.
 It provides the ability to:Order a personalised or issue non-personalised EFTPOS cardStop/Replace an existing EFTPOS card (which may have been lost, stolen, or damaged)Change a forgotten / known PIN on an EFTPOS or a credit cardAdd a PIN on a newly issued credit cardChange card / account linkage
 PIN @ Store impacts the following systems:
@@ -156,17 +121,16 @@ The following tables were created and populated in the data warehouse to enable
 The following three peripheral devices are integrated with Postlink “Pin at Store” workflow (see also linked diagrams):Swift Pinpad, supplied by Quest Payment services, used currently for Eftpos paymentsMillentech Card Encoder deviceMillentech DC420 Network appliance; for connecting and sharing the Card Encoder with all post shop terminals.
 
 The following is required for PIN encoding to work:Quest Swift Pin Pad is successfully updated with required key and operationalMillentech Magtech Encoder is installed, configured and operationalMillentech DC429 network device is configured and connected to with Encoder, operationalKB Web Services, HSM and CMS are operationalThe extended middleware service is operational""",,sor,keep,,,,,
-Prepaid,system,lob_application,system,,,,,,,,,,"",tier_2,,,"",Hosted by VPS,"",sor,replace,"","","","",""
-Propel,system,lob_application,system,,,,,,,,,,Settle/Discharge existing home loans,tier_2,,,,"Used by Home Loans Operations for Loan Documentation. Internet based, the system is accessed by using a web browser.",,sod,replace,,,,,
-PublicInternet,system,lob_application,system,,,,,,,,,,,tier_2,,,,"This is Kiwibanks' public facing website, recently redeveloped by an external company Springload.
+Prepaid,system,lob_application,,,,,,,,,"",tier_2,,,"",Hosted by VPS,"",sor,replace,"","","","",""
+PublicInternet,system,lob_application,,,,,,,,,,tier_2,,,,"This is Kiwibanks' public facing website, recently redeveloped by an external company Springload.
 Internet Banking is also available from the main website.
 
 The Change Process
 Springload push changes to the Web servers from SIT. Springload have remote access to KBSTWEBOLB03. From here they push updates to KBPDWEBOLB03,04,51 and 52.
 
 If a change needs to be requested, this should be raised through Marketing Services (Sara Horsley).",,sod,replace,,,,,
-Quantum,component,system_component,component,,,,,,,,,,Financial Market Trade capture and settlement,tier_1,,,TMS,"All Financial markets products - FX, MM, Securities, Derivatives",,sor,keep,,,,,
-Quest,system,lob_application,system,,,,,,,,,,,tier_2,,,,"Web-based Insurance system provided by Tower for house, contents and car insurance.
+Quantum,component,system_component,,,,,,,,,Financial Market Trade capture and settlement,tier_1,,,TMS,"All Financial markets products - FX, MM, Securities, Derivatives",,sor,keep,,,,,
+Quest,system,lob_application,,,,,,,,,,tier_2,,,,"Web-based Insurance system provided by Tower for house, contents and car insurance.
 Postshops and customers call the '0800' number which is answered by the Insurance sales team in Outbound. The team access the Quest system and enter the details of the application.
 
 Within the next 6 to 12 months, Quest will be integrated with In Touch, enabling staff to access Quest via In Touch.
@@ -214,10 +178,10 @@ See  the linked Text Rebuild Solution diagram for more information.
 
 
 """,,sod,keep,,,,,
-Third Party Exports,system,lob_application,system,,,,,,,,,,,tier_2,,,,"ASP .NET application used by business staff for registering a customer's account for the transaction export service - required for Xero account activation.
+Third Party Exports,system,lob_application,,,,,,,,,,tier_2,,,,"ASP .NET application used by business staff for registering a customer's account for the transaction export service - required for Xero account activation.
 Transactions for registered accounts are pushed to Xero following daily processing (average 4am) via encrypted VPN.
 The application is published and accessed via Sharepoint here:http://collaborate/sites/SupportServices/ThirdPartyExports/default.aspx",,sod,replace,,,,,
-Tieback,system,lob_application,system,,,,,,,,,,,tier_2,,,,"An important part of the Fraud Detection architecture. Allows both automatic and manual blocking of credit or debit cards:
+Tieback,system,lob_application,,,,,,,,,,tier_2,,,,"An important part of the Fraud Detection architecture. Allows both automatic and manual blocking of credit or debit cards:
    - Automatically initiated by the PRM application when, based on a set of rules, fraudulent card activity is detected.
    - Manually by the FIST Analyst via the PRM application.
 
@@ -227,10 +191,10 @@ Currently Tieback support the following action types:Block: This requests a card
 All these action requests are services through middleware calls and all will end with the Tieback update the action request with the result of performing the requested action.
 
 ",,sor,enhance,,,,,
-Treasury Management System,system,lob_application,system,,,,,,,,,,Bank Liquidity Management (incl. Cash Forecasting & Funding),tier_1,,,""," The accounting EOD process is independent of the TMS Overnight processing. It uses the Treasury GL report produced from Ultracs. EOD process starts from 6 pm and entails the following:Accrual ReportBalance Sheet and Market to Market reportingCCY translationCloses EOD in the system note steps 1 to 4 are same day 5Runs GL interface files for PharosCreates a consolidated GL merge fileGL merge file is checked by the Treasury Performance AnalystThen sent to Pharos, the NZ Post GL repository.Note steps 5 to 6 are run 3 am. End of month is a critical time as Finance have only 3 days before NZ Post close the ledger. See also Overnight Processing - Start of Day - REC Extract.TMS gets a daily extract from Ultracs (9 files), arriving approximately 3 am; this is a subset of what is sent to the DW. At 5 am the ETL process creates four files:TP x 2 - Transfer Pricing file (copied to the Quantum db)RE x 2 - Risk Exposure file (copied to Qrisk db)Processing ends at approximately 7am, Tuesday to Saturday. If the Ultracs extract files are late, the system will continue to poll until 4.30 am at which point the system will fail if the file hasn't arrived","",sor,keep,"","","","",""
-Travelex,component,desktop_system,component,,,,,,,,,,,tier_2,,,Ultracs,"The International team use an Access Database to upload the Travelex transactions then enter them into Ultracs. The Postshop and the Travelex transactions are reconciled the following day.
+Treasury Management System,system,lob_application,,,,,,,,,Bank Liquidity Management (incl. Cash Forecasting & Funding),tier_1,,,""," The accounting EOD process is independent of the TMS Overnight processing. It uses the Treasury GL report produced from Ultracs. EOD process starts from 6 pm and entails the following:Accrual ReportBalance Sheet and Market to Market reportingCCY translationCloses EOD in the system note steps 1 to 4 are same day 5Runs GL interface files for PharosCreates a consolidated GL merge fileGL merge file is checked by the Treasury Performance AnalystThen sent to Pharos, the NZ Post GL repository.Note steps 5 to 6 are run 3 am. End of month is a critical time as Finance have only 3 days before NZ Post close the ledger. See also Overnight Processing - Start of Day - REC Extract.TMS gets a daily extract from Ultracs (9 files), arriving approximately 3 am; this is a subset of what is sent to the DW. At 5 am the ETL process creates four files:TP x 2 - Transfer Pricing file (copied to the Quantum db)RE x 2 - Risk Exposure file (copied to Qrisk db)Processing ends at approximately 7am, Tuesday to Saturday. If the Ultracs extract files are late, the system will continue to poll until 4.30 am at which point the system will fail if the file hasn't arrived","",sor,keep,"","","","",""
+Travelex,component,desktop_system,,,,,,,,,,tier_2,,,Ultracs,"The International team use an Access Database to upload the Travelex transactions then enter them into Ultracs. The Postshop and the Travelex transactions are reconciled the following day.
 Also used to generate daily cash letter sent to Travelex with cheques.",,,replace,,,,,
-ValueQ7,system,lob_application,system,,,,,,,,,,"Administer changes to Insurance policies, raise premiums, process dishonours, cancellations etc.",tier_2,,,," This is the insurance core system that stores insurance data, handles applications, calculates premiums, initiates premium payments and letters. It is used to deliver Kiwi Insurance products to customers. Types of insurance administered by this system include:
+ValueQ7,system,lob_application,,,,,,,,,"Administer changes to Insurance policies, raise premiums, process dishonours, cancellations etc.",tier_2,,,," This is the insurance core system that stores insurance data, handles applications, calculates premiums, initiates premium payments and letters. It is used to deliver Kiwi Insurance products to customers. Types of insurance administered by this system include:
 
 Credit Card Repayment Insurance
 Home Loan Insurance
@@ -240,8 +204,8 @@ Points to Note:
 The product suite does NOT include general insurance products (ie. House, Car, Contents). The current arrangement with Tower to provide these products will continue.
 Value Q7, or simply 'Value', is the name of the product suite from NZ based company AMS, that has been implemeted as Kiwibank's 'Policy Admin System'.
 'Bancassurance' is a term used to describe the collaboration between banks and insurers for the distribution of insurance products to customers.",,sor,enhance,,,,,
-Velocity,system,lob_application,system,,,,,,,,,,Wholesale FX trading,tier_2,,,,Web based application with Fat client installed on local KB desktop pc. Wholesale FX trading,,sor,keep,,,,,
-Visa Card Reporting,system,reporting_application,system,,,,,,,,,,,tier_2,,,,"This system was implemented as part of Project Carter KB0197 in 2009. It comprises a SQL Server back end (PC),  running proprietary code that is accessed via reporting services on server ....DBA01 leveraging a number of reports that then access the visacard system itself.
+Velocity,system,lob_application,,,,,,,,,Wholesale FX trading,tier_2,,,,Web based application with Fat client installed on local KB desktop pc. Wholesale FX trading,,sor,keep,,,,,
+Visa Card Reporting,system,reporting_application,,,,,,,,,,tier_2,,,,"This system was implemented as part of Project Carter KB0197 in 2009. It comprises a SQL Server back end (PC),  running proprietary code that is accessed via reporting services on server ....DBA01 leveraging a number of reports that then access the visacard system itself.
 The desktop, (name = KBCORD40D93F), is located at Mark Sharp's desk though due to be moved to the more secure RNZH L8 server room.
 
 This sytem references the following data sources:KiwiDWDB. The primary Kiwibank data warehouse
@@ -250,224 +214,123 @@ This sytem references the following data sources:KiwiDWDB. The primary Kiwibank
 Scheduled Tasks
 The system runs 1 daily SQL Server task that loads up and processes its data into Visacards DB. This runs at 9:30am everymorning Mon-Fri.
 Notification success or failure is via email. Current receivers of email are M.Sharp, Susan D'Lima, Anton Desi, and Jamie Wood.",,sor,replace,,,,,
-Voyager,component,desktop_system,component,,,,,,,,,,"During crisis, implement relief package for Business and Retail Customers ",tier_2,,,,"This application is used to import the Western Union transaction file for reconciliation. The file is transferred from Western Union via this web tool. This is done first thing in the morning, Monday to Friday.
+Voyager,component,desktop_system,,,,,,,,,"During crisis, implement relief package for Business and Retail Customers ",tier_2,,,,"This application is used to import the Western Union transaction file for reconciliation. The file is transferred from Western Union via this web tool. This is done first thing in the morning, Monday to Friday.
  
 The International team send a file of transactions to the Settlements team to make Payments to Western Union",,sor,keep,,,,,
-Visa Processing System,external,actor,external,,,,,,,,,,,tier_2,,,,"VPS is an outsourced card processing platform from Visa Processing Systems. It is used by Kiwibank and NZ Post, along with other retail customers, to provide various types of prepaid Visa cards to customers.  This is a web-based storage system for pdf copies of applications and supporting documentation.
+Visa Processing System,external,actor,,,,,,,,,,tier_2,,,,"VPS is an outsourced card processing platform from Visa Processing Systems. It is used by Kiwibank and NZ Post, along with other retail customers, to provide various types of prepaid Visa cards to customers.  This is a web-based storage system for pdf copies of applications and supporting documentation.
 
 At the same time as scanning the paper applications Datamail capture the relevant customer details, using a combination of automated OCR and manual data entry techniques.
 
 This information is then placed into a CSV file which Kiwibank collects off Datamail’s lightning server four times a day and then processes through BizTalk, middleware and into Activate. (Datamail Consumer Credit Card Application Loading process).
 VRetrieve URL is:https://kiwibank.datamail.co.nz
 The production BizTalk server is FSWNDNTBIZ01. This currently submits CC applications to the 10.4.1.93 middleware server. This server is then linked to ActivateKB via the Activate Process Manager Web Service.",,sor,keep,,,,,
-Websign,component,system_component,component,,,,,,,,,,,tier_1,,,Internet Banking,"Web-based application, access via links in IB, to allow online signing of home loan documents. Provided by FMS.",,sod,replace,,,,,
-Western Union - Reconciliation,external,actor,external,,,,,,,,,,Keeping critical Post Shops open for KB transactions,tier_2,,,," This system is used to reconcile WU transactions with Postshops.
+Websign,component,system_component,,,,,,,,,,tier_1,,,Internet Banking,"Web-based application, access via links in IB, to allow online signing of home loan documents. Provided by FMS.",,sod,replace,,,,,
+Western Union - Reconciliation,external,actor,,,,,,,,,Keeping critical Post Shops open for KB transactions,tier_2,,,," This system is used to reconcile WU transactions with Postshops.
 Its an Access Db that compares files from Postshops with those from WU.
  
 Staff print reports that lists discrepancies between the two and investigate the anomalies.
  
 Files are received from NZ Post via email (Terry Driskel) and from WU via Voyager. ",,sor,replace,,,,,
-WestpacAUD,external,actor,external,,,,,,,,,,,tier_2,,,,This is Westpac's web-based banking system. The Settlements team use it for reconciliation and position keeping.,,sor,keep,,,,,
-Xero,external,actor,external,,,,,,,,,,,tier_2,,,,"Xero is a online business accounting system for small to medium sized businesses. Businesses sign up with Xero to enable Xero to access a nominated account to view their transactions.
+WestpacAUD,external,actor,,,,,,,,,,tier_2,,,,This is Westpac's web-based banking system. The Settlements team use it for reconciliation and position keeping.,,sor,keep,,,,,
+Xero,external,actor,,,,,,,,,,tier_2,,,,"Xero is a online business accounting system for small to medium sized businesses. Businesses sign up with Xero to enable Xero to access a nominated account to view their transactions.
 KB customer signs up with Xero. Xero forward registration form to KB (email; WinZip encryption). KB operator uses ASP .NET registration application C3PO (Connect 3rd Party Organisations) (http://collaborate/sites/SupportServices/ThirdPartyExports/default.aspx) to register customer's accounts for transaction export service.
 
 Transactions for registered accounts are pushed to Xero following daily processing (average 4am) via encrypted VPN.",,sod,keep,,,,,
-Text Banking,system,lob_application,system,,,,,,,,,,"",tier_2,,,"","","",sor,replace,"","","","",""
-Automated Rate ChangeSystem,not_determined,,not_determined,,,,,,,,,,,,,,,Update TD & Loan Interest rates by the Business into Ultracs; System component; out-of-scope,Sharepoint Application,,,,,,,
-Bulk VDC Reissue,not_determined,,not_determined,,,,,,,,,,,,,,,Bulk reissuing of VDC primarily during Large compromised card issues System component; out-of-scope,Sharepoint Application,,,,,,,
-Core Services,not_determined,,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
-CX Insights,not_determined,,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
-Datamail,not_determined,,not_determined,,,,,,,,,,,,,,,Datamail exceptions report; first time Doug heard of it out-of-scope,Sharepoint Application,,,,,,,
-Direct Channels,not_determined,,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
-HL Customer Documentation,not_determined,,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
-IT Alerts,not_determined,,not_determined,,,,,,,,,,,,,,,Major Incidnet and Channel outage notifications IT Operations out-of-scope,Sharepoint Application,,,,,,,
-IT Payments,not_determined,,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
-Kapai,not_determined,,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
-LRM,not_determined,,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
-MAC Form,not_determined,,not_determined,,,,,,,,,,,,,,,MAC request management  Out-of-Scope,Sharepoint Application,,,,,,,
-Prepaid Card,not_determined,,not_determined,,,,,,,,,,,,,,,Process Prepaid card exceptions out-of-scope; system component,Sharepoint Application,,,,,,,
-Procurement,not_determined,,not_determined,,,,,,,,,,,,,,,Stock management? Procurement inventory Out-of-scope,Sharepoint Application,,,,,,,
-ProcurementPortal,not_determined,,not_determined,,,,,,,,,,,,,,,I got access denied but this is a support service so let’s put this out-of-scope for now,Sharepoint Application,,,,,,,
-Quoting Tool,system,lob_application,system,,,,,,,,,,"",tier_2,,,"",Aka DQs (Di’s Quote Service) is an intranet application used by the Priority Banking Team. It is used to determine the rate of change for large Term Deposits. The Priority Banking Team use it to track their quotes which ultimately enables them to collect sales points once or if the quote is accepted. Add to scope; Tier 2,Sharepoint Application,replace,sor,"","","","",""
-Reloadable,not_determined,,not_determined,,,,,,,,,,,,,,,"Process reloaded exceptions
+Text Banking,system,lob_application,,,,,,,,,"",tier_2,,,"","","",sor,replace,"","","","",""
+Automated Rate ChangeSystem,not_determined,,,,,,,,,,,,,,,Update TD & Loan Interest rates by the Business into Ultracs; System component; out-of-scope,Sharepoint Application,,,,,,,
+Bulk VDC Reissue,not_determined,,,,,,,,,,,,,,,Bulk reissuing of VDC primarily during Large compromised card issues System component; out-of-scope,Sharepoint Application,,,,,,,
+Core Services,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
+CX Insights,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
+Datamail,not_determined,,,,,,,,,,,,,,,Datamail exceptions report; first time Doug heard of it out-of-scope,Sharepoint Application,,,,,,,
+Direct Channels,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
+HL Customer Documentation,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
+IT Alerts,not_determined,,,,,,,,,,,,,,,Major Incidnet and Channel outage notifications IT Operations out-of-scope,Sharepoint Application,,,,,,,
+IT Payments,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
+Kapai,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
+LRM,not_determined,,,,,,,,,,,,,,,Can’t access out-of-scope,Sharepoint Application,,,,,,,
+MAC Form,not_determined,,,,,,,,,,,,,,,MAC request management  Out-of-Scope,Sharepoint Application,,,,,,,
+Prepaid Card,not_determined,,,,,,,,,,,,,,,Process Prepaid card exceptions out-of-scope; system component,Sharepoint Application,,,,,,,
+Procurement,not_determined,,,,,,,,,,,,,,,Stock management? Procurement inventory Out-of-scope,Sharepoint Application,,,,,,,
+ProcurementPortal,not_determined,,,,,,,,,,,,,,,I got access denied but this is a support service so let’s put this out-of-scope for now,Sharepoint Application,,,,,,,
+Reloadable,not_determined,,,,,,,,,,,,,,,"Process reloaded exceptions
  System component of VPS; out-of-scope",Sharepoint Application,,,,,,,
-Swift Repair Portal,not_determined,,not_determined,,,,,,,,,,,,,,,International payment exceptions processing; System component; out-of-scope,Sharepoint Application,,,,,,,
-3dSecure,system_component,enterprise_application,system_component,n/a,,Application Development,COO~ Payment Services ,Payments Services,EMC,,Complete,Credit card security validation under the ÔSecureCodeÕ for MasterCard and ÔVerified by VisaÕ for Visa scheme. Customer using credit cards for online purchases are prompted for additional security credentials from the Issuing bank~ such as Kiwibank.Ê,,tier_2,,high,,,,,,,,,,
-AmbitFocus,reporting_system,enterprise_application,reporting_system,n/a,,Wholesale Application Delivery,Business Markets~ Financial Markets,Treasury,SunGard,SunGard,Complete,Asset and Liability Management for Reserve Bank and Risk reporting (formerly ALM),Bank Liquidity Management (incl. Cash Forecasting & Funding),unknown,Not fit for purpose,,,,,,,,,,,
-Ask Me,system,enterprise_application,system,N,,Application Development,COO~ Enterprise Information,Personal Markets~ Customer Service Experience,N/A,N/A,,Sharepoint Intranet application. Provide customer service staff with access to a single source of information about KiwibankÊservices,,tier_1,,,,,,,,,,,,
-ATMPro,system,enterprise_application,system,N,,Application Development,COO~ Payment Services ,Payments Services,ProfitStars,Unknown,,Server based ATM channel management solution including asset~ site and cash management,ATM Cash Management,tier_1,,,,,,,,,,,,
-Banklink,actor,enterprise_application,actor,n/a,,Application Development,COO~ Payment Services ,Personal Markets,Banklink,Banklink,,Banklink is a company that provides a service enabling a customer to view multiple bank accounts across multiple banks.,,tier_2,,,,,,,,,,,,
-Biztalk,platform,enterprise_application,platform,n/a,,Application Development,COO~ Information Technology,Payments Services~ Retail,Microsoft,IBM (tbc),Complete,Biztalk manages long running system integration workflows and scheduling functionality. Part of Kiwibank Middleware,Make Visa Payments (daily),tier_1,,,,,,,,,,,,
-Blackpearl,platform,enterprise_application,platform,n/a,,Application Development,Personal Markets~ Customer Service Experience,COO~ Information Technology,K2,Venter Consulting Ltd,Complete,Business process management platform for building workflows and process-driven applications. Used for MAC forms~ Securemail and others,,unknown,,,,,,,,,,,,
-Bloomberg,actor,enterprise_application,actor,n/a,,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Bloomberg,Bloomberg,Complete,Bloombergs service interface~ feeding financial information in real-time to the Treasury.,Bank Liquidity Management (incl. Cash Forecasting & Funding),tier_1,,,,,,,,,,,,
-Behavioural Scoring,system,enterprise_application,system,Y,,Application Development,Risk Management~ Portfolio Analytics,Risk Management,N/A,N/A,,Database rules engine for 'scoring' customers from a risk~ and behavioural viewpoint,,tier_2,,,,,,,,,,,,
-PROactive Reconciliation and Investigation ,n/a,enterprise_application,n/a,n/a,,Application Development,COO~ Enterprise Operations ,Enterprise Operations,Broadridge,Broadridge,,Financial solutions for reconcilliation of transactions (one off ?),Reconciliation of Accounts,unknown,,,,,,,,,,,,
-CallManager,system_component_(may_be_an_actor),enterprise_application,system_component_(may_be_an_actor),n/a,,N/A,Personal Markets~ Customer Service Experience,COO,Gen-i,Gen-i,,CallManager tracks all active VoIP network components. Part of the Gen-i Managed Telephony Service~ ,,tier_1,,,,,,,,,,,,
-CaseBook,system,enterprise_application,system,Y,Sharepoint Application,Application Development,Risk Management~ Organisational Resilience,Risk Management,N/A,N/A,,Case management system for investigation and reporting of Financial crime alerts ,Monitoring for Fraud,tier_2,,,,,,,,,,,,
-Cognos,reporting_platform,enterprise_application,reporting_platform,n/a,,Technology Operations,COO~ Enterprise Information,Personal Markets~ Business Markets,CDP (part of IBM),CDP (part of IBM),Complete,Business intelligence software used for management reporting by EIS.,Bank Liquidity Management (incl. Cash Forecasting & Funding),tier_2,,,,,,,,,,,,
-CompaniesOffice,actor,enterprise_application,actor,n/a,,N/A,Business Markets~ Distribution,Unknown,NA,N/A,,External data link via manual web browser interaction,,unknown,,,,,,,,,,,,
-ComplianceLink,system_component,enterprise_application,system_component,n/a,Component of Swift and Int'l Desktop Application,Application Development,Risk Management~ Organisational Resilience,Risk Management,Accuity,Accuity,,Detection of suspicious customers and transactions~ particularly Politically exposed and sanctioned persons and sanctioned transactions.,,tier_1,,,,,,,,,,,,
-CreditManagement,system,enterprise_application,system,Y,Loan application data are uploaded to this system.,Application Development,Risk Management~ Retail Credit,Enterprise Operations,IT,IT,,"The Credit Management Application (CMA) is a replacement for a series of MS Access databases used by the Kiwibank Credit team.ÊIt is a tool used by Credit ManagementÊstaff~ and made up of the following three separate components:
-1.ÊDLA Ð Delegated Lending Authority details for Lenders
-2.ÊQuality Ð Review and scoring of the ÒQualityÓ ofÊ lending deals referred to Credit Managers
-3.ÊHindsight Ð Review and scoring of the previously approved deals by Credit Managers
-The CMA is used daily by the Credit team to primarily review the quality of referred deals to Credit Managers. On a monthly basis all approved deals from prior month are reviewed using the Hindsight function. The DLA component is generally used by staff if required to check lending limits when undertaking Quality and Hindsight tasks.
-Note: There will be some management reporting from the CMA that will be developed in due course (separate workstream)
-System Details
-The system is madeÊup of:A smart client desktop application developed by Danny Siew~ IT Applications Developer.New SQL Server database (CreditManagement_db) created by theÊApplication Delivery Team.New data feeds created to supply the new CreditManagement Db with Activate lending data via DataStaging.
-Note: Refer to IT Diagrams for more info.
-Database FeedsKB Activate data is scheduled to move from Staging to CMA three times a day Ð 9am~ 12 noon and 4pm business daysPL Activate data is scheduled to move from Staging to CMA once per day - 4pm business days
-User Access
-Business users of CMA will refer to CMA Administrator Ð Senior Credit Manager or Credit Business Analyst for access and allocation of ÔroleÕ levels with the CMA.
-Ê",used for hindsighting and quality reporting for lending ( from Activate ),tier_2,,low,,,,,,,,,,
-CRM Prompts,system_component,enterprise_application,system_component,n/a,,Application Development,COO~ Data Driven Marketing,Personal Markets~ Business Markets,NA,N/A,,"Personalised Customer Prompts within In Touch~ KBMAC and IB~ as well as bulk credit card limit increases via B2K.
-Ê
-Mail merge files created for the Business (letters to Customers) and produces bulk mailing files for Datam.
-
-Pre-populates Activate with data in preparation for Customer acceptance of mailed instructions.
-Ê
-oÊVisa debit annual fees
-oÊDD authorisation fees
-oÊCredit write-offs for Overdrafts
-
-Ê",Administer changes to Insurance policies~ raise premiums~ process dishonours~ cancellations etc.,tier_2,,,,,,,,,,,,
-Daon,?,enterprise_application,?,,May be used to store escrow agreements http://www.daon.com/,Application Development,COO~ Information Technology,Unknown,Software Escrow Guardians Ltd,Software Escrow Guardians Ltd,Complete,Escrow Agreement,,unknown,,,,,,,,,,,,
-DIMS,system,enterprise_application,system,Y,,Application Development,Personal Markets~ Customer Service Experience,Unknown,IT,IT,,"Document and Image Management System (DIMS) is a web Methods layer that calls a SQL Server database that holds indexes of where files are stored on the NAS (soon to be replaced by KB Shares 02).
- 
-Internet banking and Kiwibrowser use DIMS to retrieve statements and images.
- 
-Other applications (mainly developed by Andrew Taylor) bypass the DIMS and query the SQL DB index directly.
- 
-In Touch uses the DIMS to retrieve images from the NAS.",,tier_1,,,,,,,,,,,,
-DMO,?,enterprise_application,?,,No information available,N/A,Personal Markets ,Unknown,,,,,During crisis~ implement relief package for Business and Retail Customers ,unknown,,,,,,,,,,,,
-DocCollect,?,enterprise_application,?,,No information available,N/A,Business Markets~ Financial Markets,Unknown,Citibank,Citibank,,"Electronic Trade Document Collection Service (Ôthe SystemÓ) is a web-enabled export document collection solution provided by Citibank~ Singapore Branch (ÒCitibankÓ) and
-powered by Trustcopy Pte Ltd that accepts documents from any electronic document preparation solution to be presented electronically to Citibank under Letters of Credit..
-
-The System is accessed via CitibankÕs Corporate Internet Banking at https://www.asia.citibank.com/singapore/corporate.
-
-The process used is that a document is scanned and placed into a folder on the users PC.
-Software supplied by Citi is required to be downloaded onto the users PC with the purpose of converting the document file from a general format (.jpg or .doc or .xls formats for example) into the encrypted format. Once the user complete this step~ the documents are then uploaded into DocCollect and forwarded to Citi for processing.
-
-The products supported by the system are Export Letter of Credits with relatively low volumes processed (3 per week) with the customer being exporters with a requirement to obtain payment for goods sent overseas.
-","Process existing Trade Finance  requests  - Loans and Letters of Credit (lcs) 
+Swift Repair Portal,not_determined,,,,,,,,,,,,,,,International payment exceptions processing; System component; out-of-scope,Sharepoint Application,,,,,,,
+3dSecure,system_component,enterprise_application,n/a,,Application Development,COO~ Payment Services ,Payments Services,EMC,,Complete,,tier_2,,high,,,,,,,,,,
+AmbitFocus,reporting_system,enterprise_application,n/a,,Wholesale Application Delivery,Business Markets~ Financial Markets,Treasury,SunGard,SunGard,Complete,Bank Liquidity Management (incl. Cash Forecasting & Funding),unknown,Not fit for purpose,,,,,,,,,,,
+Ask Me,system,enterprise_application,N,,Application Development,COO~ Enterprise Information,Personal Markets~ Customer Service Experience,N/A,N/A,,,tier_1,,,,,,,,,,,,
+ATMPro,system,enterprise_application,N,,Application Development,COO~ Payment Services ,Payments Services,ProfitStars,Unknown,,ATM Cash Management,tier_1,,,,,,,,,,,,
+Banklink,actor,enterprise_application,n/a,,Application Development,COO~ Payment Services ,Personal Markets,Banklink,Banklink,,,tier_2,,,,,,,,,,,,
+Biztalk,platform,enterprise_application,n/a,,Application Development,COO~ Information Technology,Payments Services~ Retail,Microsoft,IBM (tbc),Complete,Make Visa Payments (daily),tier_1,,,,,,,,,,,,
+Blackpearl,platform,enterprise_application,n/a,,Application Development,Personal Markets~ Customer Service Experience,COO~ Information Technology,K2,Venter Consulting Ltd,Complete,,unknown,,,,,,,,,,,,
+Bloomberg,actor,enterprise_application,n/a,,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Bloomberg,Bloomberg,Complete,Bank Liquidity Management (incl. Cash Forecasting & Funding),tier_1,,,,,,,,,,,,
+Behavioural Scoring,system,enterprise_application,Y,,Application Development,Risk Management~ Portfolio Analytics,Risk Management,N/A,N/A,,,tier_2,,,,Database rules engine for 'scoring' customers from a risk~ and behavioural viewpoint,,,,,,,,
+PROactive Reconciliation and Investigation ,n/a,enterprise_application,n/a,,Application Development,COO~ Enterprise Operations ,Enterprise Operations,Broadridge,Broadridge,,Reconciliation of Accounts,unknown,,,,,,,,,,,,
+CallManager,system_component_(may_be_an_actor),enterprise_application,n/a,,N/A,Personal Markets~ Customer Service Experience,COO,Gen-i,Gen-i,,,tier_1,,,,,,,,,,,,
+CaseBook,system,enterprise_application,Y,Sharepoint Application,Application Development,Risk Management~ Organisational Resilience,Risk Management,N/A,N/A,,Monitoring for Fraud,tier_2,,,,,,,,,,,,
+Cognos,reporting_platform,enterprise_application,n/a,,Technology Operations,COO~ Enterprise Information,Personal Markets~ Business Markets,CDP (part of IBM),CDP (part of IBM),Complete,Bank Liquidity Management (incl. Cash Forecasting & Funding),tier_2,,,,,,,,,,,,
+CompaniesOffice,actor,enterprise_application,n/a,,N/A,Business Markets~ Distribution,Unknown,NA,N/A,,,unknown,,,,,,,,,,,,
+ComplianceLink,system_component,enterprise_application,n/a,Component of Swift and Int'l Desktop Application,Application Development,Risk Management~ Organisational Resilience,Risk Management,Accuity,Accuity,,,tier_1,,,,,,,,,,,,
+CreditManagement,system,enterprise_application,Y,Loan application data are uploaded to this system.,Application Development,Risk Management~ Retail Credit,Enterprise Operations,IT,IT,,used for hindsighting and quality reporting for lending ( from Activate ),tier_2,,low,,,,,,,,,,
+CRM Prompts,system_component,enterprise_application,n/a,,Application Development,COO~ Data Driven Marketing,Personal Markets~ Business Markets,NA,N/A,,Administer changes to Insurance policies~ raise premiums~ process dishonours~ cancellations etc.,tier_2,,,,,,,,,,,,
+Daon,?,enterprise_application,,May be used to store escrow agreements http://www.daon.com/,Application Development,COO~ Information Technology,Unknown,Software Escrow Guardians Ltd,Software Escrow Guardians Ltd,Complete,,unknown,,,,,,,,,,,,
+DMO,?,enterprise_application,,No information available,N/A,Personal Markets ,Unknown,,,,During crisis~ implement relief package for Business and Retail Customers ,unknown,,,,,,,,,,,,
+DocCollect,?,enterprise_application,,No information available,N/A,Business Markets~ Financial Markets,Unknown,Citibank,Citibank,,"Process existing Trade Finance  requests  - Loans and Letters of Credit (lcs) 
 
 *NZ Post Payover*",tier_2,,,,,,,,,,,,
-DocManager,system_component_or_platform,enterprise_application,system_component_or_platform,n/a,A scanning management tool used by Support Services.,Decommisioned,COO,Unknown,IT,IT,,"*Being replaced 2nd half 2011 by SAMS.
-Ê
-Doc Manager is a scanning management tool used by Support Services.
-Ê
-Batches of documents (max of 100) are scanned and appear in the list within Doc Manager. The actual images are held as tifs on the NAS (KB Shares 01 & 02).
-Ê
-AOA documents are also held on the DIMS because In Touch and Kiwibrowser use DIMS to retrieve images. Otherwise Doc manager updates a SQL table on the Data warehouse to hold the index of stored images.
-Ê
-Yoda is the tool used to view the images scanned by Doc Manager. Gedi is the tool used to view the AP image scanned by Doc Manager~ then updated and loaded into Ultracs.",,tier_2,,,,,,,,,,,,
-Docushare,actor,enterprise_application,actor,n/a,,N/A,COO~ Enterprise Operations ,Unknown,FMS,FMS,,A document management web service provided by FMS (formally Fast). Staff use it to order loan agreements.,,tier_2,,,,,,,,,,,,
-E2trains,n/a,enterprise_application,n/a,n/a,,Unknown,Finance,Unknown,e2Train Limited,,,Software License Agreement,,unknown,,,,,,,,,,,,
-Electronic Dishonour Database (EDD),system,enterprise_application,system,Y,,Application Development,COO~ Enterprise Operations ,Unknown,IT,IT,,Electronic Dishonour Database has four components: ADS (overnight process on the Data Warehouse)~ Inwards Dishonour (desktop application & DW)~ Outwards Dishonour (desktop application & DW)~ PPR fileÉ  ,During crisis~ implement relief package for Business and Retail Customers.,tier_2,,,,,,,,,,,,
-EnterpriseTelephony,actor,enterprise_application,actor,n/a,,N/A,COO~ Information Technology,Unknown,,,,This Enterprise Telephony item represents the IT systems by which Gen-i provide a 'Managed Telephony Service' to Kiwibank. It is made up of a significant number of components listed.  ICM Router;IVR;Peripheral Gateways;Phone Banking;Telecom infrastructure;Telephony - Contact Centre;Telephony - Corporate;Vodafone infrastructure;Voice Gateways; Mobile Phone (Kiwibank v Individuals); Teleconference facilities. Cisco -  (including Skill Set Changes and Webview~ emergency messages),Assess~ Authorise & Pay claims for Kiwi Insurance.,tier_1,,,,,,,,,,,,
-ESAS-RTGS,actor,enterprise_application,actor,n/a,ESAS is the Reserve Bank of New ZealandÕs Exchange Settlement Account System and along with Real-Time Gross Settlement (RTGS) allows individual transactions between financial institutions to be settled electronically as the transactions happen.,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Reserve Bank of NZ,RBNZ,Complete,Interbank settlement via ESAS accounts,Bank Liquidity Management (incl. Cash Forecasting & Funding),tier_1,,,,,,,,,,,,
-E-Text,?,enterprise_application,?,,No information available,N/A,COO~ Enterprise Operations ,Unknown,NA,N/A,,,,unknown,,,,,,,,,,,,
-Eunexus,actor,enterprise_application,actor,n/a,,Unknown,Risk Management,Unknown,Eunexus Pty Ltd,Eunexus Pty Ltd,,Software and Intelligence Subscription,,unknown,,,,,,,,,,,,
-Financial Crime Risk Management System (FCRM),system,enterprise_application,system,Y,,Application Development,Risk Management~ Organisational Resilience,Risk Management,Fiserv,Fiserv,,Financial crime management. Detection and analysis of suspicious transactions and persons. Mainly for Money laundering. Includes analysis~ reporting and case management,"Deal Execution (including booking & bill trading)
+DocManager,system_component_or_platform,enterprise_application,n/a,A scanning management tool used by Support Services.,Decommisioned,COO,Unknown,IT,IT,,,tier_2,,,,,,,,,,,,
+Docushare,actor,enterprise_application,n/a,,N/A,COO~ Enterprise Operations ,Unknown,FMS,FMS,,,tier_2,,,,,,,,,,,,
+E2trains,n/a,enterprise_application,n/a,,Unknown,Finance,Unknown,e2Train Limited,,,,unknown,,,,,,,,,,,,
+Electronic Dishonour Database (EDD),system,enterprise_application,Y,,Application Development,COO~ Enterprise Operations ,Unknown,IT,IT,,During crisis~ implement relief package for Business and Retail Customers.,tier_2,,,,,,,,,,,,
+EnterpriseTelephony,actor,enterprise_application,n/a,,N/A,COO~ Information Technology,Unknown,,,,Assess~ Authorise & Pay claims for Kiwi Insurance.,tier_1,,,,,,,,,,,,
+ESAS-RTGS,actor,enterprise_application,n/a,ESAS is the Reserve Bank of New ZealandÕs Exchange Settlement Account System and along with Real-Time Gross Settlement (RTGS) allows individual transactions between financial institutions to be settled electronically as the transactions happen.,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Reserve Bank of NZ,RBNZ,Complete,Bank Liquidity Management (incl. Cash Forecasting & Funding),tier_1,,,,,,,,,,,,
+E-Text,?,enterprise_application,,No information available,N/A,COO~ Enterprise Operations ,Unknown,NA,N/A,,,unknown,,,,,,,,,,,,
+Eunexus,actor,enterprise_application,n/a,,Unknown,Risk Management,Unknown,Eunexus Pty Ltd,Eunexus Pty Ltd,,,unknown,,,,,,,,,,,,
+Financial Crime Risk Management System (FCRM),system,enterprise_application,Y,,Application Development,Risk Management~ Organisational Resilience,Risk Management,Fiserv,Fiserv,,"Deal Execution (including booking & bill trading)
 
 *Funds Management*",tier_2,,,,,,,,,,,,
-FileSharing,system_component,enterprise_application,system_component,n/a,No information available,Technology Operations,Business Markets,Unknown,,,,,During crisis~ implement relief package for Business and Retail Customers ,unknown,,,,,,,,,,,,
-FinMetrics,?,enterprise_application,?,?,No information available,Wholesale Application Delivery,Business Markets~ Financial Markets,Unknown,TIBCO Software Inc,TIBCO Software Inc,,Risk management software,,unknown,,,,,,,,,,,,
-Fusion,?,enterprise_application,?,?,No information available,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-GE-Q Special Answers,system_component,enterprise_application,system_component,n/a,Specials Answers are for customers who have asked for a cheque to be cleared. When a customer requests a Special Answer~ the branch will complete a special answer form and fax it~ with a copy of the cheque~ to Support Services who will input the details into the automated Special Answer system then forward the request to the paying bank. GQ Special Answer is the desktop application where the details are entered. Staff can view the request and enter details of the account etc.,Technology Operations,COO~ Enterprise Operations ,Unknown,IT,IT,,"Specials Answers are for customers who have asked for a cheque to be cleared. When a customer requests a Special Answer~ the branch will complete a special answer form and fax it~ with a copy of the cheque~ to Support Services who will input the details into the automated Special Answer system then forward the request to the paying bank.
- 
-Approximately 2000 special answer requests are received each month by Support Services Bank staff must process within a limited time period to get an answer back to the customer.
- 
-This system has two parts:
-GQ Special Answers 
-gRobot
-GQ Special Answer is the desktop application where the details are entered. Staff can view the request and enter details of the account etc.",,tier_2,,,,,,,,,,,,
-gRobot,system_component,enterprise_application,system_component,n/a,,Technology Operations,COO~ Enterprise Operations ,Unknown,IT,IT,,gRobot polls for emails in the queue (every 4 minutes) and sends the fax to GE-Q Special Answers,,tier_2,,,,,,,,,,,,
-Hotlink,actor,enterprise_application,actor,n/a,,N/A,Unknown,Unknown,Vodafone,Vodafone,,"Vodafone HotLink is a service offered by Vodafone that enables customers to top up their Prepay or pay their phone bill straight from a mobile.
-Ê",,tier_2,,,,,,,,,,,,
-HSM8-SE Units,infrastructure_component,enterprise_application,infrastructure_component,n/a,,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-Imprint,system_component,enterprise_application,system_component,n/a,Component of EDS. Web-based application that enables users to view cheque images. Users log into EDS and view cheque images held by EDS. Images are not held locally. Currently 16 users.,N/A,COO~ Enterprise Operations ,Unknown,HP,HP,,"Web-based application that enables users to view cheque images. Users log into EDS and view cheque images held by EDS. Images are not held locally. Currently 16 users.
-",During crisis~ implement relief package for Business and Retail Customers ,tier_2,,,,,,,,,,,,
-International Middleware,platform_component,enterprise_application,platform_component,n/a,,Wholesale Application Delivery,COO~ Payment Services~ Business Markets Treasury and Intl Operations,COO~ Payment Services~ Business Markets Treasury and Intl Operations,IT,IT,,All International functions across all channels pass through here.,,tier_1,,,,,,,,,,,,
-Intranet,system,enterprise_application,system,N,,Application Development,People and Business Services~ Communications,Unknown,IT,IT,,"Built on Sharepoint~ this is the new Kiwibank intranet from March 2010~ implemented under Project KB0234. Link to site: http://ourspace
- 
-The site was developed by KnowledgeCue in conjunction with internal Kiwibank Sharepoint developers~ and page design by Springload.
- 
-Support
-Each Business group has their own page/s for which they have their own Content Managers and Content Authors (see SME field). This network of support staff play a role in aiding other staff who use the site~ answer their queries~ and keep the the information up to date. 
-If there is a technical fault with the intranet~ and internal support staff cannot resolve it~ an incident should be logged to the Service Desk~ and assigned to the resolver groups outlined below.
-Overall responsibility for the intranet's information resides ",Coordination of Crisis Management  Function during Crisis                ,tier_2,,,,,,,,,,,,
-Jadestar,desktop_application,enterprise_application,desktop_application,n/a,,N/A,People and Business Services~ HR Information Systems,Unknown,Jade Software,Jade Software,,"Jadestar is a Jade thin client application which has been installed on the HR desktops (hard drive). It provides a link for HR to access the core HRIS database application hosted by Jade in Christchurch. 
-",Evacuate all persons in the building and account for staff and visitors,tier_2,,,,,,,,,,,,
-JPMorgan,actor,enterprise_application,actor,n/a,"Web browser application from JP Morgan that enables the Settlements team to send trade instructions and generate reports.
-",Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),JPMorgan,JPMorgan,,"Web browser application from JP Morgan that enables the Settlements team to send trade instructions and generate reports.
-Ê
-JP Morgan provides wholesale financial services throughout the world",,tier_2,Internet dependence,,,,,,,,,,,
-K2,platform,enterprise_application,platform,n/a,,Application Development,Personal Markets~ Customer Service Experience,Unknown,K2,Datacom,,"K2 is a software platform for building workflows and process-driven applications across the enterprise. With its close integration with Sharepoint and other Microsoft products Kiwibank have invested in this platform in order to build new business applications~ and automate internal processes.
- 
-",Telephone/Online Enquiries,tier_2,,,,,,,,,,,,
-Kofax,platform,enterprise_application,platform,n/a,,Application Development,COO~ Enterprise Operations ,Unknown,Kofax,Datcom,,Document scanning and management,,unknown,,,,,,,,,,,,
-Lexlegal,system,enterprise_application,system,Y,"LEX Legal Suite is matter management system (provided by LEX~ an Australian company) that allows the Kiwibank Legal Team to:
+FileSharing,system_component,enterprise_application,n/a,No information available,Technology Operations,Business Markets,Unknown,,,,During crisis~ implement relief package for Business and Retail Customers ,unknown,,,,,,,,,,,,
+FinMetrics,?,enterprise_application,?,No information available,Wholesale Application Delivery,Business Markets~ Financial Markets,Unknown,TIBCO Software Inc,TIBCO Software Inc,,,unknown,,,,,,,,,,,,
+Fusion,?,enterprise_application,?,No information available,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+GE-Q Special Answers,system_component,enterprise_application,n/a,Specials Answers are for customers who have asked for a cheque to be cleared. When a customer requests a Special Answer~ the branch will complete a special answer form and fax it~ with a copy of the cheque~ to Support Services who will input the details into the automated Special Answer system then forward the request to the paying bank. GQ Special Answer is the desktop application where the details are entered. Staff can view the request and enter details of the account etc.,Technology Operations,COO~ Enterprise Operations ,Unknown,IT,IT,,,tier_2,,,,,,,,,,,,
+gRobot,system_component,enterprise_application,n/a,,Technology Operations,COO~ Enterprise Operations ,Unknown,IT,IT,,,tier_2,,,,,,,,,,,,
+Hotlink,actor,enterprise_application,n/a,,N/A,Unknown,Unknown,Vodafone,Vodafone,,,tier_2,,,,,,,,,,,,
+HSM8-SE Units,infrastructure_component,enterprise_application,n/a,,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+Imprint,system_component,enterprise_application,n/a,Component of EDS. Web-based application that enables users to view cheque images. Users log into EDS and view cheque images held by EDS. Images are not held locally. Currently 16 users.,N/A,COO~ Enterprise Operations ,Unknown,HP,HP,,During crisis~ implement relief package for Business and Retail Customers ,tier_2,,,,,,,,,,,,
+International Middleware,platform_component,enterprise_application,n/a,,Wholesale Application Delivery,COO~ Payment Services~ Business Markets Treasury and Intl Operations,COO~ Payment Services~ Business Markets Treasury and Intl Operations,IT,IT,,,tier_1,,,,,,,,,,,,
+Intranet,system,enterprise_application,N,,Application Development,People and Business Services~ Communications,Unknown,IT,IT,,Coordination of Crisis Management  Function during Crisis                ,tier_2,,,,,,,,,,,,
+Jadestar,desktop_application,enterprise_application,n/a,,N/A,People and Business Services~ HR Information Systems,Unknown,Jade Software,Jade Software,,Evacuate all persons in the building and account for staff and visitors,tier_2,,,,,,,,,,,,
+JPMorgan,actor,enterprise_application,n/a,"Web browser application from JP Morgan that enables the Settlements team to send trade instructions and generate reports.
+",Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),JPMorgan,JPMorgan,,,tier_2,Internet dependence,,,,,,,,,,,
+K2,platform,enterprise_application,n/a,,Application Development,Personal Markets~ Customer Service Experience,Unknown,K2,Datacom,,Telephone/Online Enquiries,tier_2,,,,,,,,,,,,
+Kofax,platform,enterprise_application,n/a,,Application Development,COO~ Enterprise Operations ,Unknown,Kofax,Datcom,,,unknown,,,,,,,,,,,,
+Lexlegal,system,enterprise_application,Y,"LEX Legal Suite is matter management system (provided by LEX~ an Australian company) that allows the Kiwibank Legal Team to:
 - Capture and share the main details of each matter~ such as name~ work type~ client~ background and contacts
  - Track information about each matter~ such as file notes~ reminders~ invoices and time
  - Generate a wide variety of reports~ such as monthly reports and analyses of spending with law firms
 
-",N/A,Legal,Unknown,LEX,Datacom,,"LEX Legal Suite is matter management system (provided by LEX~ an Australian company) that allows the Kiwibank Legal Team to:ÊCapture and share the main details of each matter~ such as name~ work type~ client~ background and contacts
-ÊTrack information about each matter~ such as file notes~ reminders~ invoices and time
-ÊGenerate a wide variety of reports~ such as monthly reports and analyses of spending with law firms
-
-Installation:
-The Lex Legal Suite solution consists of:End user on a workstation with a web browser.AD Group: 'Managed Users Ð Lex Legal Suite UsersÕProxy exception 'lexlegal'Added as a Trusted siteWeb application hosted on a web server.Backend database containing a configuration databaseSharePoint document library
-For more information refer to the design documentation.
-",,tier_2,,,,,,,,,,,,
-Mastercard,actor,enterprise_application,actor,n/a,,Application Development,COO~ Payment Services ,Unknown,Mastercard,Mastercard,,Kiwibank send and receive Mastercard scheme files on a daily basis; see Mastercard Trans,,tier_2,,,,,,,,,,,,
-MIS,?,enterprise_application,?,?,No information available,Unknown,Business Markets,Unknown,,,,,"Deal Execution (including booking & bill trading)
+",N/A,Legal,Unknown,LEX,Datacom,,,tier_2,,,,,,,,,,,,
+Mastercard,actor,enterprise_application,n/a,,Application Development,COO~ Payment Services ,Unknown,Mastercard,Mastercard,,,tier_2,,,,,,,,,,,,
+MIS,?,enterprise_application,?,No information available,Unknown,Business Markets,Unknown,,,,"Deal Execution (including booking & bill trading)
 
 *Funds Management*",unknown,,,,,,,,,,,,
-Move-Peripheral,?,enterprise_application,?,?,No information available,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-Move-Printers,?,enterprise_application,?,?,No information available,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-Move-Server,?,enterprise_application,?,?,No information available,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-Multi Purpose Transactions (MPT),desktop_application,enterprise_application,desktop_application,n/a,,Technology Operations,COO~ Enterprise Operations ,Unknown,IT,IT,,"An Access DB called MPT resides on a PC in the Ultracs Support area. Its used to create one-off transactions i.e. reverse transactions/fees~ wholesale settlements. The DB has a form for DR and CR details. Only a few people from Support Services have access to this system.
-",Daily Settlements,tier_2,,,,,,,,,,,,
-NCC,?,enterprise_application,?,?,No information available,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-NzClear,actor,enterprise_application,actor,n/a,,Wholesale Application Delivery,Business Markets~ Treasury and Intl Operations,Unknown,Reserve Bank of NZ,Reserve Bank of NZ,Complete,"""NZClear is a RBNZ owned system. NZClear is used for the following tasks:   To view and manage KiwibankÕs ESAS account~ Buy and Sell NZD denominated~ Securities. Issue Kiwibank short dated discounted securities~ Settlement of some of Kiwibank NZD cash obligations~ Holds our portfolio of NZD denominated securities~ Settlement of SBI transactions under 3LC conditions (future state under SBI from early 2012. 3LC can be invoked by Kiwibank or another bank)~ Note: 3LC refers to the use of NZ Clear for file transfer and settlement~ in the event that SWIFT services~ Kiwibanks SWIFT connectivity or RBNZ SWIFT connectivity is unavailable. It is also the only means through which Kiwibank Treasury and support staff can view the Kiwibank ESAS account in real time.  NZ Clear has been enhanced to allow the sending bank to upload interchange files into the NZ Clear system (prior to Cash P or R entered)~ and the receiving bank to download the interchange file (after Cash P or R).  Accordingly~ this provides a solution for both file interchange and settlement.  Operational Processes~ The Interbank Wash-up is an absolute essential~ performed daily between 7.00 am and 8.30 am. Usually takes approx. 1.30 hrs for the Treasury Operations team to settle. Cut-off for NZClear is 8.30am sharp. Treasury Operations team receive a fax and email from EDS with the list of transactions via the banking network. Treasury Operations then use NZClear to enter these transactions. Note: This reflects the current state~ not as it will be under SBI.  Under SBI~ overnight processing is no longer routed through EDS.  Settlement will be on a gross bilateral basis via SWIFT.  The ÒWash-upÓ period will still exist but more so for the banks to attempt to square up their accounts at the Reserve Bank to levels they are happy with rather than the settlement of retail flow based transactions.  There are 6 PCs with a dedicated IP address to the Reserve Bank. Four in the Treasury Operations team~ and two from Wholesale IT. Plus 2 PCs at the Treasury/Treasury Support BCP site on level 12 of Radio New Zealand House. Each PC has its own static IP address to enabled it to pass through the kiwibank firewall to access to reserve Bank NZClear system via a common IP address.""",Collateral Management,tier_1,,,,,,,,,,,,
-OBRProcessing,n/a,enterprise_application,n/a,n/a,"Open Bank Resolution is a Reserve Bank initiative designed to open the bank for business on the next business day after its temporary closure following an insolvency event or an event that triggered putting it under statutory management.  The bank will be able to provide customers with full or partial access to their accounts and other bank services with little interruption.
+Move-Peripheral,?,enterprise_application,?,No information available,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+Move-Printers,?,enterprise_application,?,No information available,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+Move-Server,?,enterprise_application,?,No information available,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+Multi Purpose Transactions (MPT),desktop_application,enterprise_application,n/a,,Technology Operations,COO~ Enterprise Operations ,Unknown,IT,IT,,Daily Settlements,tier_2,,,,,,,,,,,,
+NCC,?,enterprise_application,?,No information available,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+NzClear,actor,enterprise_application,n/a,,Wholesale Application Delivery,Business Markets~ Treasury and Intl Operations,Unknown,Reserve Bank of NZ,Reserve Bank of NZ,Complete,Collateral Management,tier_1,,,,,,,,,,,,
+OBRProcessing,n/a,enterprise_application,n/a,"Open Bank Resolution is a Reserve Bank initiative designed to open the bank for business on the next business day after its temporary closure following an insolvency event or an event that triggered putting it under statutory management.  The bank will be able to provide customers with full or partial access to their accounts and other bank services with little interruption.
 During the temporary closure~ customersÕ accounts may be frozen and the Statutory Manager will determine the funds required to meet the bankÕs obligations to the industry.  This amount will be transferred to accounts under the control of the Statutory Manager and the remainder then unfrozen and available to customers the following day.
 A condition of registration as a bank (from June 2013) is to be pre-positioned for this funds freeze event if it is required.
 
 Components and Functionality
 The OBR process brings together existing functionality~ updates to existing extracts to add additional transaction information and the development of a database. This database~ Tabatha~ will store the extracted transaction information~ calculate funds freeze values and provide update files to the different transaction systems.
-",Application Development,Risk Management,Unknown,IT,IT,,"Open Bank Resolution is a Reserve Bank initiative designed to open the bank for business on the next business day after its temporary closure following an insolvency event or an event that triggered putting it under statutory management.Ê The bank will be able to provide customers with full or partial access to their accounts and other bank services with little interruption.
-During the temporary closure~ customersÕ accounts may be frozen and the Statutory Manager will determine the funds required to meet the bankÕs obligations to the industry.Ê This amount will be transferred to accounts under the control of the Statutory Manager and the remainder then unfrozen and available to customers the following day.
-A condition of registration as a bank (from June 2013) is to be pre-positioned for this funds freeze event if it is required.
-
-Components and Functionality
-The OBR process brings together existing functionality~ updates to existing extracts to add additional transaction information and the development of a database. This database~ Tabatha~ will store the extracted transaction information~ calculate funds freeze values and provide update files to the different transaction systems.
-An Operations Manual has been developed for this process and will be held securely. The individuals involved in this process will be provided with the relevant portion of the manual during any testing and if this event ever occurs. The complete manual would be available to the GM that co-ordinates such an event and a hard copy will be held by the Risk team in a secure location.
-This process will be tested twice yearly? And any updates to the Operations Manual arising from the test will be made. The manual has been created by the Core and Integration Delivery team and will be a joint responsibility between them and the FIST Operational Resilience team.
-Key Steps in the Process (Summarised)
-1.ÊStatutory Manager appointed/OBR invoked
-2.ÊFreeze systems/isolate bank
-3.ÊShut down access to Kiwibank systems
-4.ÊFreeze VPS
-5.ÊPrepare Ultracs for fund freeze
-6.ÊRun International processes
-7.ÊRun B2K processes
-8.ÊRun Treasury/Wholesale processes
-9.ÊPerform EOD/Start of Day for Ultracs
-10.ÊLoad information into Tabatha
-11.ÊCalculate funds freeze and populate output files
-12.ÊApply funds freeze
-13.ÊPerform reconciliations
-14.ÊMove funds to OBR account
-15.ÊPerform start of day
-16.ÊUnfreeze systems/reopen bank
-",,tier_1,,,,,,,,,,,,
-OnlineSecurity,?,enterprise_application,?,?,No information available,Unknown,Unknown,Unknown,,,,,,unknown,,,,,,,,,,,,
-Outlook,platform,enterprise_application,platform,n/a,,Technology Operations,COO~ Information Technology,Unknown,,,,,"Deal Execution (including booking & bill trading)
+",Application Development,Risk Management,Unknown,IT,IT,,,tier_1,,,,,,,,,,,,
+OnlineSecurity,?,enterprise_application,?,No information available,Unknown,Unknown,Unknown,,,,,unknown,,,,,,,,,,,,
+Outlook,platform,enterprise_application,n/a,,Technology Operations,COO~ Information Technology,Unknown,,,,"Deal Execution (including booking & bill trading)
 
 *Funds Management*",unknown,,,,,,,,,,,,
-Prepaid Application Processing System  (PAPS),system,enterprise_application,system,Y,"Kiwibank Payment Services offer a range of prepaid card products:
+Prepaid Application Processing System  (PAPS),system,enterprise_application,Y,"Kiwibank Payment Services offer a range of prepaid card products:
 The Prezzy VISA card is a non-embossed prepaid card that is accepted electronically at all VISA merchants.  Unlike a credit card it must have a credit balance before the customer can use the card. 
 The Loaded VISA card is a non-embossed personalised prepaid card that is accepted at all electronic VISA merchants. As with the Prezzy Card and unlike a credit card~ the Loaded card must have a credit balance before it can be used; this card can be reloaded with additional funds over the life of the card.
 Note: See VPS under Related Systems which is the new prepaid cards platform for newly issued Prezzy and Loaded cards (from Dec 2011)~ and for all Loaded for Travel and Christmas Visa cards.
@@ -483,223 +346,122 @@ Processing of applications (new~ additional~ supplementary (identification check
 
 
 
-",Application Development,COO~ Payment Services ,Unknown,IT,IT,,"Kiwibank Payment Services offer a range of prepaid card products:The Prezzy VISA card is a non-embossed prepaid card that is accepted electronically at all VISA merchants.Ê Unlike a credit card it must have a credit balance before the customer can use the card.The Loaded VISA card is a non-embossed personalised prepaid card that is accepted at all electronic VISA merchants. As with the Prezzy Card and unlike a credit card~ the Loaded card must have a credit balance before it can be used; this card can be reloaded with additional funds over the life of the card.
-Note: See VPS under Related SystemsÊwhich isÊthe new prepaid cards platform for newly issued Prezzy and Loaded cards (from Dec 2011)~ and for allÊLoaded for Travel and ChristmasÊVisa cards.
-PAPS is the repository where application data goes into;ÊPrezzy cards do not feed into PAPS only loaded cards.
-Reload refers to Loaded VISA card.
-PAPS selects the status of the application dependant on application information such as identification provided and fees paid.Ê Once an application is in a particular status~ the application will go to eFunds who return information whether an account has been created or not.
-There are three sources for applications (for new Loaded cards~ addition of new cardholders) that exist for PAPS:DatamailSecure Website (https://www.loadedcard.co.nz/)Manually directly into PAPS by the Payment Services~ Service Delivery Team
-Processing of applications (new~ additional~ supplementary (identification checks)~ website and Sharepoint maintenance) all occur through the web services layer.Ê As part of the Change Management process~ any changes to PAPS must be flowed into MIS.
-Customers can submit their paper based applications through the NZ Post network~ all paper based applications are sorted and scanned Datamail~ this scanned data is then sent and captured into PAPS in three daily files. This is achieved using the KiwiBank FDS system.
-All internet applications are captured directly by PAPS.
-PAPS creates a file containing applications with a certain status~ this file is sent to eFunds to capture the customer and balance details~ eFunds liaise with Eyede to get the cards created and sent to the customer.
-Fundamentally~ PAPS provides a number of integration and maintenance services~ comprising the following components:PAPS DatabaseMiddleware web serviceseFunds / Datamail Windows ServicesSharepoint maintenance and query site (http://reloadable)FDS Ð File distribution service (3 times per day)MIS (1 per day)
-The PAPS database resides on KBPDSQLCRM01.
-The middleware layer resides on 10.4.1.94~ under C:\Program Files\New Zealand Post Financial Services\Middleware Layer\2.0\Ver1.40\WebServices\CBI_2007060 folder
-The eFunds and Datamail Windows ServicesÊ reside on fswndntbiz01 (10.4.1.79)~ under C:\Program Files\New Zealand Post Financial Services\PAPS\Datamail Listener
-C:\Program Files\New Zealand Post Financial Services\PAPS\EFunds Handler folders
-The basic sharepoint site resides on kbpdspoint02;Ê kbpdsqlcrm01 is also used for the storage of sharepoint configuration~ asp.net customisation and so on.
-The Datamail files are transferred to Kiwibank via the KB FDS. The files are automatically transferred from FDS to PAPs for processing.",,tier_2,,,,,,,,,,,,
-Pharos,actor,enterprise_application,actor,N,Pharos is the internal name given to the NZ Post shared services Financial Management Information System (FMIS) that is used across the NZPost group.,N/A,Finance~ Shared Accounting,Unknown,Oracle,Oracle,,"Pharos is the internal name given to the NZ Post shared services Financial Management Information System (FMIS) that is used across the NZPost group.
- 
-The system is runs on version 8.4 of the Oracle Peoplesoft ERP solution.
- 
-It is used extensively by Kiwibank Finance and other business units for corporate accounting (general ledger~ accounts payable~ fixed assets) and reporting.  
- 
-Both TMS and Ultracs produce Journal extract files for daily upload to Pharos to establish the banks financial position.  
- 
-The Kiwibank HR/Payroll system will also produce a Journal file for salary payments. 
-",General Ledger,tier_2,,,,,,,,,,,,
-Pluralsight,?,enterprise_application,?,?,No information available,Application Delivery,COO,Unknown,Pluralsight,Pluralsight,,Developer training,,unknown,,,,,,,,,,,,
-Postilion Office,reporting_system,enterprise_application,reporting_system,n/a,Postilion Office supports reconciliation & management functions by retrieving data from the Postilion Real-time database and organising it so that complex queries can be run,Application Development,COO~ Payment Services ,COO,ACI Worldwide Inc,ACI Worldwide Inc,,Payment processing engine. Realtime Switching and logging of all ATM and Eftpos transactions.Ê,Assess~ Authorise & Pay claims for Kiwi Insurance.,tier_2,,,,,,,,,,,,
-PrimeClear,actor,enterprise_application,actor,n/a,"PrimeClear is Credit Suisse First Boston (CSFB) web-based system that provides access to information on transactions~ positions and margin balances.
+",Application Development,COO~ Payment Services ,Unknown,IT,IT,,,tier_2,,,,,,,,,,,,
+Pharos,actor,enterprise_application,N,Pharos is the internal name given to the NZ Post shared services Financial Management Information System (FMIS) that is used across the NZPost group.,N/A,Finance~ Shared Accounting,Unknown,Oracle,Oracle,,General Ledger,tier_2,,,,,,,,,,,,
+Pluralsight,?,enterprise_application,?,No information available,Application Delivery,COO,Unknown,Pluralsight,Pluralsight,,,unknown,,,,,,,,,,,,
+Postilion Office,reporting_system,enterprise_application,n/a,Postilion Office supports reconciliation & management functions by retrieving data from the Postilion Real-time database and organising it so that complex queries can be run,Application Development,COO~ Payment Services ,COO,ACI Worldwide Inc,ACI Worldwide Inc,,Assess~ Authorise & Pay claims for Kiwi Insurance.,tier_2,,,,,,,,,,,,
+PrimeClear,actor,enterprise_application,n/a,"PrimeClear is Credit Suisse First Boston (CSFB) web-based system that provides access to information on transactions~ positions and margin balances.
  
 It allows customers to monitor their trades and settlements within a real-time environment~ receive immediate confirmation of transactions and instantly project their cash requirements.
  
-The Settlements team use it to monitor the dealer's position.",Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Credit Suisse,Credit Suisse,,"PrimeClear is Credit Suisse First Boston (CSFB) web-based system that provides access to information on transactions~ positions and margin balances.
-Ê
-It allows customers to monitor their trades and settlements within a real-time environment~ receive immediate confirmation of transactions and instantly project their cash requirements.
-Ê
-The Settlements team use it to monitor the dealer's position.",,tier_2,,,,,,,,,,,,
-PrimeTrade,actor?,enterprise_application,actor?,n/a,PrimeTrade is a web-based system that customers use to buy and sell futures (the sale of financial Instruments or physical commodities for future delivery on a commodity exchange).,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Credit Suisse,Credit Suisse,Complete,PrimeTrade is a web-based system that customers use to buy and sell futures (the sale of financial Instruments or physical commodities for future delivery on a commodity exchange).,Futures Trading,tier_2,Internet dependence,,,,,,,,,,,
-Proactive Risk Manager  (PRM),system_component,enterprise_application,system_component,n/a,Component of the Fraud Detection System,Application Development,Risk Management~ Organisational Resilience,Unknown,Software Escrow Guardians Ltd,Software Escrow Guardians Ltd,Complete,ESCROW Agreement between Software Escrow Guardians~Kiwibank Limited & ACI Global Limited - BS11 compliance,Monitoring for Fraud,tier_2,,,,,,,,,,,,
-Proactive,system_component,enterprise_application,system_component,n/a,,Application Development,COO~ Enterprise Operations ,Unknown,,,,Kiwibanks Financial Reporting ,Reconciliations,tier_2,,,,,,,,,,,,
-ProfitStars,actor,enterprise_application,actor,n/a,Third party (financial management??) application Managed by IT Payments~ and used by the Distribution ATM Team. Application used for cash tracking/stocking levels in the ATMs as well as balancing cash through the machines. Also provides a asset manager faunction the the ATM fleet.,Application Development,COO~ Payment Services ,Unknown,ProfitStars,,,Third party (financial management??) application Managed by IT Payments~ and used by the Distribution ATM Team. Application used for cash tracking/stocking levels in the ATMs as well as balancing cash through the machines. Also provides a asset manager faunction the the ATM fleet.,,tier_2,,,,,,,,,,,,
-Prognosis,?,enterprise_application,?,?,No information available,Application Development,COO~ Payment Services ,Unknown,Integrated Research Ltd,Integrated Research Ltd,Complete,Postiliion switch monitoring,,unknown,,,,,,,,,,,,
-Prosper,system,enterprise_application,system,Y,"Third party CRM software. Used to create customer notes and contact details. Used by call centres for letter generation.
+The Settlements team use it to monitor the dealer's position.",Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Credit Suisse,Credit Suisse,,,tier_2,,,,,,,,,,,,
+PrimeTrade,actor?,enterprise_application,n/a,PrimeTrade is a web-based system that customers use to buy and sell futures (the sale of financial Instruments or physical commodities for future delivery on a commodity exchange).,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Credit Suisse,Credit Suisse,Complete,Futures Trading,tier_2,Internet dependence,,,,,,,,,,,
+Proactive Risk Manager  (PRM),system_component,enterprise_application,n/a,Component of the Fraud Detection System,Application Development,Risk Management~ Organisational Resilience,Unknown,Software Escrow Guardians Ltd,Software Escrow Guardians Ltd,Complete,Monitoring for Fraud,tier_2,,,,,,,,,,,,
+Proactive,system_component,enterprise_application,n/a,,Application Development,COO~ Enterprise Operations ,Unknown,,,,Reconciliations,tier_2,,,,,,,,,,,,
+ProfitStars,actor,enterprise_application,n/a,Third party (financial management??) application Managed by IT Payments~ and used by the Distribution ATM Team. Application used for cash tracking/stocking levels in the ATMs as well as balancing cash through the machines. Also provides a asset manager faunction the the ATM fleet.,Application Development,COO~ Payment Services ,Unknown,ProfitStars,,,,tier_2,,,,,,,,,,,,
+Prognosis,?,enterprise_application,?,No information available,Application Development,COO~ Payment Services ,Unknown,Integrated Research Ltd,Integrated Research Ltd,Complete,,unknown,,,,,,,,,,,,
+Prosper,system,enterprise_application,Y,"Third party CRM software. Used to create customer notes and contact details. Used by call centres for letter generation.
 DS use prosper for three key functions:
 Letters 
 outbound call queues (managed by Steve Young) 
 Solveit~ logging customer queries for Support  services to action
 Used by Lending Operations for letters and customer notes.
  
-Prosper is dependent on kbpdshares01 for document storage (attachments to notes) - Call Centre Problem Escalation and Letters.",Application Development,Personal Markets~ Customer Service Experience,Unknown,Prosper Business Solutions,Ultradata,,"Third party CRM software. Used to create customer notes and contact details. Used by call centres for letter generation.
-DS use prosper for three key functions:
-Letters 
-outbound call queues (managed by Steve Young) 
-Solveit~ logging customer queries for Support  services to action
-Used by Lending Operations for letters and customer notes.
-",Process Settlement Exceptions,tier_2,,,,,,,,,,,,
-Proview,system,enterprise_application,system,N,"Proview is an ATM Monitoring application that enables Kiwibank to monitor its ATM network for any hardware and/or software failures as well as remotely upload and download files to these ATMs.
+Prosper is dependent on kbpdshares01 for document storage (attachments to notes) - Call Centre Problem Escalation and Letters.",Application Development,Personal Markets~ Customer Service Experience,Unknown,Prosper Business Solutions,Ultradata,,Process Settlement Exceptions,tier_2,,,,,,,,,,,,
+Proview,system,enterprise_application,N,"Proview is an ATM Monitoring application that enables Kiwibank to monitor its ATM network for any hardware and/or software failures as well as remotely upload and download files to these ATMs.
 
 It receives an update of card files from the Data Warehouse (debit cards) and from FDS (credit cards).
-",Application Development,COO~ Payment Services ,Unknown,Wincor Nixdorf,,,"Proview is an ATM Monitoring application that enables Kiwibank to monitor its ATM network for any hardware and/or software failures as well as remotely upload and download files to these ATMs.
-
-",ATM Cash Management,tier_2,,,,,,,,,,,,
-Pulse,system_component,enterprise_application,system_component,n/a,"Pulse is an 'off the shelf' solution provided by Datacom~ built on Microsoft Silverlight v4. It provides the task management User Interface that Secure Mail is built on Ð effectively the ÔinboxÕ for secure mails.
+",Application Development,COO~ Payment Services ,Unknown,Wincor Nixdorf,,,ATM Cash Management,tier_2,,,,,,,,,,,,
+Pulse,system_component,enterprise_application,n/a,"Pulse is an 'off the shelf' solution provided by Datacom~ built on Microsoft Silverlight v4. It provides the task management User Interface that Secure Mail is built on Ð effectively the ÔinboxÕ for secure mails.
 
 Secure Mail also uses the Pulse ÒAct On Behalf OfÓ capability to allow users to cover other users when on leave etc.
-",Application Development,Personal Markets~ Customer Service Experience,Unknown,Datacom,Datacom,Complete,,,unknown,,,,,,,,,,,,
-QRisk,system_component,enterprise_application,system_component,n/a,Component of TMS,Wholesale Application Delivery,Business Markets~ Financial Markets,Finance (Market Risk)~ Business Markets (Financial Markets),Sungard Asia Pacific Inc.,Sungard Asia Pacific Inc.,Partial,"QRisk is used to report and monitor risks and limits. It sits on theÊKBPDTRSAPP02 server.
-Ê
-Ê",Funds mgmt. cash  reporting to MMc (MMc is KiwibankÕs outsourced investment administration service provider in relation to KiwibankÕs Kiwisaver funds),tier_1,Licence expire Sep 2015,,,,,,,,,,,
-RateChanger,?,enterprise_application,?,?,No information available,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),IT,IT,,"AÊsolution that allows interest rates to be changed~ approved and scheduled for update in Ultracs.Ê
-The solution comprises a Sharepoint front end application to view and update rates~ utilisesÊUltracs middleware calls to get and set rates~Êand new tables in the SDT database to hold Ultracs product and rate details.
-Ê
-The application is used by the Core Banking Support team and aÊsmall group of business users responsible for rate changes in Personal Markets~ however any user can access the site to view current~ or historical rates (from 30 June 2011 onward).
-Ê
-ARS Sharepoint Site: http://integrate/sites/AutomatedRateChangeSystem
-Ê
-Ê
-The public internet siteÊis also using the database as itÕs source of rate data.
-Ê
-Public internet site rates pages:http://www.kiwibank.co.nz/personal-banking/rates-and-fees/interest-rates.asphttp://www.kiwibank.co.nz/business-banking/rates-and-fees/interest-rates.asphttp://www.kiwibank.co.nz/personal-banking/international-services/foreign-exchange/fx-calculator.asp
-AMP and NZHLÊinternet banking sites also pull rates from the database.
-Ê",,tier_2,,,,,,,,,,,,
-Reuters,actor,enterprise_application,actor,n/a,"Core Treasury system used in the Treasury Dealer room.
+",Application Development,Personal Markets~ Customer Service Experience,Unknown,Datacom,Datacom,Complete,,unknown,,,,,,,,,,,,
+QRisk,system_component,enterprise_application,n/a,Component of TMS,Wholesale Application Delivery,Business Markets~ Financial Markets,Finance (Market Risk)~ Business Markets (Financial Markets),Sungard Asia Pacific Inc.,Sungard Asia Pacific Inc.,Partial,Funds mgmt. cash  reporting to MMc (MMc is KiwibankÕs outsourced investment administration service provider in relation to KiwibankÕs Kiwisaver funds),tier_1,Licence expire Sep 2015,,,,,,,,,,,
+RateChanger,?,enterprise_application,?,No information available,Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),IT,IT,,,tier_2,,,,,,,,,,,,
+Reuters,actor,enterprise_application,n/a,"Core Treasury system used in the Treasury Dealer room.
  
 Reuters provides information and trading services for FX and money markets. Treasury use Reuters/RMDS for market rates.
  
-At 4.30pm the Reuters EOD market rates are loaded into Quantum and Qrisk via the rate snapper programme - residing on the EOD batch PC. The rate snapper process ensures the EOD market rates are uploaded into the TMS.",Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Reuters New Zealand Limited,Reuters New Zealand Limited,Complete,"Core Treasury system used in the Treasury Dealer room.
- 
-Reuters provides information and trading services for FX and money markets. Treasury use Reuters/RMDS for market rates.
-",Bank Liquidity Management (incl. Cash Forecasting & Funding)~ News~ rates for pricing.  EIKON front end for Dealers.,tier_1,Internet dependence,,,,,,,,,,,
-Rightfax,actor,enterprise_application,actor,n/a,"Application that creates soft copies of incoming faxes. 
+At 4.30pm the Reuters EOD market rates are loaded into Quantum and Qrisk via the rate snapper programme - residing on the EOD batch PC. The rate snapper process ensures the EOD market rates are uploaded into the TMS.",Wholesale Application Delivery,Business Markets~ Financial Markets,Business Markets (Financial Markets),Reuters New Zealand Limited,Reuters New Zealand Limited,Complete,Bank Liquidity Management (incl. Cash Forecasting & Funding)~ News~ rates for pricing.  EIKON front end for Dealers.,tier_1,Internet dependence,,,,,,,,,,,
+Rightfax,actor,enterprise_application,n/a,"Application that creates soft copies of incoming faxes. 
  
 Part of the Gen-i Managed Telephony Service~ the application sits on the Gen-i Rightfax server in Wellington (with a stanby one in Auckland). Amtel are the Third party vendor who Gen-i will deal with directly in resolving any issues.
  
 Faxes come into the Rightfax gateway from a number of sources~ and usually relate to customer requests.
-",N/A,COO~ Enterprise Operations ,Unknown,RightFax,RightFax,,"Application that creates soft copies of incoming faxes. 
- 
-Part of the Gen-i Managed Telephony Service~ the application sits on the Gen-i Rightfax server in Wellington (with a stanby one in Auckland). Amtel are the Third party vendor who Gen-i will deal with directly in resolving any issues.
- 
-Faxes come into the Rightfax gateway from a number of sources~ and usually relate to customer requests.
- 
-The Rightfax gateway checks the fax source and based on pre-determined data~ distributes these into a specified mailbox~ monitored by different KB business teams. eg:
-- SSFaxes@kiwibank.co.nz
-- Priority.Faxes@kiwibank.co.nz
-- Followup@kiwibank.co.nz
-",Keeping critical Post Shops open for KB transactions,tier_2,,,,,,,,,,,,
-Scanning And image Management System (SAMS),system,enterprise_application,system,Y,"A system for managing the scanning of customer forms/document types such as AP's~ AOA's~ and insurance documents~ into Kiwibank IT systems. Provides scanning and uploading functionality~ verification~ reporting~ and viewing of scanned documents (via In Touch).
+",N/A,COO~ Enterprise Operations ,Unknown,RightFax,RightFax,,Keeping critical Post Shops open for KB transactions,tier_2,,,,,,,,,,,,
+Scanning And image Management System (SAMS),system,enterprise_application,Y,"A system for managing the scanning of customer forms/document types such as AP's~ AOA's~ and insurance documents~ into Kiwibank IT systems. Provides scanning and uploading functionality~ verification~ reporting~ and viewing of scanned documents (via In Touch).
  
 This system was designed as a replacement for the Star Wars suite of apps - Gedi~ Yoda~ and DocManager~ and to support  insurance document types in support of project Bancassurance.
  
 Used primarily Support Services and Business Banking staff. Access to the SAMS application is via the Kiwibank desktop~ and In Touch for the document viewer.
-",Application Development,COO~ Enterprise Operations ,Unknown,IT,IT,,"A system for managing the scanning of customer forms/document types such as AP's~ AOA's~ and insurance documents~ into Kiwibank IT systems. Provides scanning and uploading functionality~ verification~ reporting~ and viewing of scanned documents (via In Touch).
-",New loan documentation for Business  loans accepted prior to disruption,tier_2,,,,,,,,,,,,
-SBI Monitor Application,system_component,enterprise_application,system_component,n/a,Component of SBI Processing,Application Development,COO~ Payment Services ,Payments Services,IT,IT,,"Developed by Payments Delivery~ the SBI monitor application displays SBI file alerts and other notifications to facilitate the settlement and liquidity management of the Kiwibank ESAS (Exchange Settlement Account System) account~ and to meet the SBI failure to settle rules and supplementary procedures.
-Ê
-Treasury Operations areÊthe primary users of this monitoring application (Mon-Fri 7am to 3am). The primary purpose of the application is to assist Treasury Operations to monitor their ESAS account.
-
-It should be noted that ESAS is the primary source~ and the monitor is simply a tool to assist.
-Ê
-TechnicalThe application is hosted on an internal Kiwibank SharePoint site:http://integrate/sites/ITPayments/default.aspxThe service and database live on the mirrored pair of kbpdatmrec02 and kbpdatmrec01
-Functionality of the Monitor Application:Displays status of incoming and outgoing SBI files in front-endProvides facility to load business/IT contacts/ Alert rules and mechanism of alertDisplays the SBI file alerts E.g. file remains unsettled~ critical file errors etc.Where applicable generates SBI file alerts to other internal parties~ e.g. Treasury (dealers)~ or various IT departments (shift ops) via email and e-texts.Provides facility to update bank state in front-endDisplays ESAS balances in front-endÐ Current~ forecast and total unsettled files balance
-Throughout the process the incoming and outgoing file states will be updated on the monitor.ÊThe file states are as follows:QueuingValidationReformattingCore ProcessingImplements timeoutsActs on business rules triggering alerts and displays alerts/notifications
-Ê",Process Settlement Exceptions,tier_2,,,,,,,,,,,,
-SecureMail,system_component,enterprise_application,system_component,n/a,"Component of Internet Banking. A secure message system available to customers logged into Internet Banking. It provides a means for the customer to send information and questions directly to a KB staff member within a secure environment. Once the message is received~ Kiwibank commit to responding to the customer within 24 to 48 hours depending on the team and enquiry.
+",Application Development,COO~ Enterprise Operations ,Unknown,IT,IT,,New loan documentation for Business  loans accepted prior to disruption,tier_2,,,,,,,,,,,,
+SBI Monitor Application,system_component,enterprise_application,n/a,Component of SBI Processing,Application Development,COO~ Payment Services ,Payments Services,IT,IT,,Process Settlement Exceptions,tier_2,,,,,,,,,,,,
+SecureMail,system_component,enterprise_application,n/a,"Component of Internet Banking. A secure message system available to customers logged into Internet Banking. It provides a means for the customer to send information and questions directly to a KB staff member within a secure environment. Once the message is received~ Kiwibank commit to responding to the customer within 24 to 48 hours depending on the team and enquiry.
  
-The application is built using Sharepoint and K2 workflows. It replaced an old Secure Mail system on 24 May 2011~ and was delivered under project KS0002A",Application Development,Personal Markets~ Customer Service Experience,Unknown,IT,IT,,"A secure message system available to customers logged into Internet Banking. It provides a means for the customer to send information and questions directly to a KB staff member within a secure environment. Once the message is received~ Kiwibank commit to responding to the customer within 24 to 48 hours depending on the team and enquiry.
-",During crisis~ implement relief package for Business and Retail Customers ,tier_2,,,,,,,,,,,,
-SwiftAllianceAccess,actor,enterprise_application,actor,n/a,,Application Development,Business Markets~ Treasury and Intl Operations,Unknown,Swift,Swift,,"Swift is a telegraphic transfer system used by all banks. Unlike CitiDirect which transfers to overseas accounts~ Swift is mostly used for transfers to NZ banks.
- 
-Swift is used for:
-Processing of batches of financial transactions between NZ banks in support of Settlement and Interchange processing 
-Large payments to other banks 
-Sameday Cleared Payments (SCP) 
-Paying NZ Post 
-Paying CitiDirect 
-Routes messages regarding settlement batches and balances to SBI Monitor Application.
-Swift has internet VPN connectivity via Kiwibank Gateway servers to the Swift network. 
- 
-Biztalk automatically processes SCP messages.
- 
-The International team and Treasury Support interact with Swift directly to send and receive messages..
- 
-Swift acts as a message router~ no processing occurs at Swift except fee charging (to the banks that use the service).
-",Collateral Management,tier_1,,,,,,,,,,,,
-Tabatha,system,enterprise_application,system,Y,"Tabatha is a stand-alone database~ user GUI and periphery processing solutions~ that will contain an extract of customer balances~ calculate the frozen account value and generate financial entries to effect a funds freeze in core systems in the event that Open Bank Resolution is invoked. 
-",Application Development,Risk Management~ Organisational Resilience,Unknown,IT,IT,,"Tabatha is a stand-alone database~ user GUI and periphery processing solutions~ that will contain an extract of customer balances~ calculate the frozen account value and generate financial entries to effect a funds freeze in core systems in the event that Open Bank Resolution is invoked. 
-Ê
-Components and Functionality
-1.ÊDetermine customersÕ account balances~ on a per account basis~ according to specified rules and as of a cut-off time. OBR has introduced or modified the ability to extract customer balances from core system to a new database Ð Tabatha Ð that tracks the balance amount for each customer.
-2.ÊApply funds freeze on customer balances as directed by the statutory manager~ with the de minimis option (funds exempt from freezing)Ê if required~ within a time frame of less than 24 hours. Tabatha will generate financial entries that will be fed back into core systems to debit customer accounts and transfer the frozen value to an account controlled by the Statutory Manager.
-3.ÊRetain the details for each customer of the amount frozen in Tabatha. Tabatha will generate refunds to customers of the frozen funds on advice from the Statutory Manager. This activity would likely occur at some time later than funds freeze~ e.g. months later. Tabatha has the ability to provide multiple refunds. Tabatha will generate financial entries that will be fed back into core systems to credit customer accounts and transfer the frozen value from an account controlled by the Statutory Manager.
-",,tier_1,,,,,,,,,,,,
-Visitor Management System,system,enterprise_application,system,N,"The new 2012 Visitor Management Application~ developed internally~ enables Kiwibank to manage visitors to the buildings where the system is installed. It also allows reception staff to manage temporary access cards for staff or contractors who require one.
+The application is built using Sharepoint and K2 workflows. It replaced an old Secure Mail system on 24 May 2011~ and was delivered under project KS0002A",Application Development,Personal Markets~ Customer Service Experience,Unknown,IT,IT,,During crisis~ implement relief package for Business and Retail Customers ,tier_2,,,,,,,,,,,,
+SwiftAllianceAccess,actor,enterprise_application,n/a,,Application Development,Business Markets~ Treasury and Intl Operations,Unknown,Swift,Swift,,Collateral Management,tier_1,,,,,,,,,,,,
+Tabatha,system,enterprise_application,Y,"Tabatha is a stand-alone database~ user GUI and periphery processing solutions~ that will contain an extract of customer balances~ calculate the frozen account value and generate financial entries to effect a funds freeze in core systems in the event that Open Bank Resolution is invoked. 
+",Application Development,Risk Management~ Organisational Resilience,Unknown,IT,IT,,,tier_1,,,,,,,,,,,,
+Visitor Management System,system,enterprise_application,N,"The new 2012 Visitor Management Application~ developed internally~ enables Kiwibank to manage visitors to the buildings where the system is installed. It also allows reception staff to manage temporary access cards for staff or contractors who require one.
  
 A ÒvisitorÓ refers to a vendor~ guest of any onsite personnel~ service workers~ or anyone who needs to enter the facility for a short duration~ usually not more than one day.
-",Application Development,People and Business Services~ Communications,People and Business Services~ Communications,IT,IT,,"TheÊnew 2012 Visitor Management Application~Êdeveloped internally~Êenables Kiwibank to manage visitors to the buildings where theÊsystem is installed. It also allows reception staff to manage temporary access cards for staff or contractors who require one.
-Ê
-A ÒvisitorÓ refers to a vendor~ guest of any onsite personnel~ service workers~ or anyone who needs to enter the facility for a short duration~ usually not more than one day.
-Ê
-It meetsÊrequirements relating to:PCI - ensuring access to sensitive information is managed appropriately~ and 3 months worth of visitor records available.Physical securityEmergency managementHealth and SafetyBusiness Continuity
-Sign In Process
-Every visitor mustÊsign-in using the screen provided (touch screen capability due soon)~ entering their name~ company~ and the person to whom they are visiting.
-Ê
-A label is then printed out from the laebl printer~ which they need to wear for as long as they remain onsite.
-Ê
-An email is also automatically sent to the host advising them their visitor is waiting at reception. This email also includes an instruction and linkÊtoÊsign the visitor out once they have left.
-Ê
-Sign Out Process
-As soon as theÊvisitor has left the Kiwibank host should follow the link in the original email received to sign them out.ÊThe visitor themself does not have to sign out.
-Ê
-A reminder email is sent at 4pm to those staff who have not signed their visitors out.
-Ê
-At 12am / midnight the system determines which visitors have not been signed out. It builds an email listing details of staff who have not signed out their visitors. The email is then sent to the FIST inbox. All signed in visitors are then automatically signed out. (The system design is based on theÊassumption we will not have visitors onsite at midnight.)
-
-Ê
-Access Card Management
-The admin screen allows reception staff to issue and manage temporary access cards to those staff who have misplaced theirs~ or to contractors working onsite etc. For more info see 'Visitor App Design.docx' (link under more info).
-
-Ê
-Brief Technical
-The Visitor App is a two-tier application consisting of an MVC frontend / business logic layer and a primary database backend. 
-The system relies on other external links out to:Active DirectoryThe Kiwibank SMTP serverThe local label printer
-The frontend is delivered toÊvisitors via a screen connected to a locked down desktop pc. Kioware was purchased to enable ÊReception staff can administer the system using a connection to the application from their own pc's.
-Buildings using the new VMS:NZ Post House:ÊDesktopÊnumber KBCORDFC71E5 (10.6.4.59)~ located at L1 reception under the desk~ and uses aÊDymo Labelwriter 400Êlabel printer.
-",,tier_2,,,,,,,,,,,,
-Voltron,desktop_application,enterprise_application,desktop_application,n/a,"This application is used to reconcile CitiDirect and Travelex transactions.
+",Application Development,People and Business Services~ Communications,People and Business Services~ Communications,IT,IT,,,tier_2,,,,,,,,,,,,
+Voltron,desktop_application,enterprise_application,n/a,"This application is used to reconcile CitiDirect and Travelex transactions.
  
 The International team reconcile the Postshop and Travelex transactions using this application developed by Andrew Olds.
 This is a .NET application with a SQL database.
  
 Files are received from Postlink overnight via FDS. Other files are either emailed or downloaded from the web by The international team~ and loaded into Data warehouse for extraction by the application.
  
-* Schedule to be replaced by end of 2012 by the implementation of 'ProActiv' from Broadridge~ as part of the Reconciliations Project~ KB0303. See Payments Delivery for status updates.",Application Development,COO~ Enterprise Operations ,Unknown,IT,IT,,"This application is used to reconcile CitiDirect and Travelex transactions.
-Ê
-The International team reconcile the Postshop and Travelex transactions using this application developed by Andrew Olds.
-This is a .NET application with a SQL database.
-Ê
-Files are received from Postlink overnight via FDS. Other files are either emailed or downloaded from the web by The international team~ and loaded into Data warehouse for extraction by the application.
-Ê
-* Schedule to be replaced by end of 2012 by the implementation of 'ProActiv' from Broadridge~ as part of the Reconciliations Project~ KB0303. See Payments Delivery for status updates.",,tier_2,,,,,,,,,,,,
-SDT - Core Customer,system,lob_application,system,Y,"","","","","","","","","",tier_1,"","","","","",sor,replace,"","","","",""
-In-Touch,system,lob_application,system,Y,"","","","","","","","","Administer changes to Insurance policies, raise premiums, process dishonours, cancellations etc.",tier_1,"","","","In Touch is an application used by Retail, CSC, and now Business Banking as their main client banking tool. It is also part of the Join Kiwibank online application process.  In Touch also has credit card features including Change the credit card limit, Credit Card transfer balance, Unblock a customer's credit or debit card (an extension of functionality to the Fraud Detection system). The Credit Limit Increase form is submitted to Activate KB via the Middleware for processing.","",sod,replace,"","","","",""
-ActivateKB,system,lob_application,system,Y,"","","","","","","","","personal Markets Loan Origination, CC,OD,HL",tier_1,"","","","Retail Loan application, decisioning and processing","",sor,refactor,"","","","",""
-ActivatePL,system,lob_application,system,Y,"","","","","","","","","",tier_1,"","","","Personal Loan application, decisioning and processing","",sor,replace,"","","","",Not Used
-Base 2000,system,core_application,system,Y,"","","","","","","","",Monitoring for Fraud,core,"","","","Credit Card management system hosted by FIS. Includes transaction authorisation, statement generation, card issuance, customer services etc","",sor,keep,"","","","",""
-Ultracs,system,core_application,system,Y,"","","","","","","","",Bank Liquidity Management (incl. Cash Forecasting & Funding),core,"","","","Ultracs is kiwibanks core banking system. It processes all transactions, accounts, fees and GL functions and is the authoritive source for essential customer information.","",sor,replace,"","","","",""
-Mobile Top Up,external,actor,external,,,,,,,,,,,tier_2,,,,"The Mobile Top-up service enables customers to top-up their Vodafone or Telecom prepay phones or mobile accounts directly from their Kiwibank account, using their mobile phones. Mobile top up is a Vodafone Hotlink service, supported by Vodafone.
+* Schedule to be replaced by end of 2012 by the implementation of 'ProActiv' from Broadridge~ as part of the Reconciliations Project~ KB0303. See Payments Delivery for status updates.",Application Development,COO~ Enterprise Operations ,Unknown,IT,IT,,,tier_2,,,,,,,,,,,,
+SDT - Core Customer,system,lob_application,Y,"","","","","","","","",tier_1,"","","","","",sor,replace,"","","","",""
+In-Touch,system,lob_application,Y,"","","","","","","","Administer changes to Insurance policies, raise premiums, process dishonours, cancellations etc.",tier_1,"","","","In Touch is an application used by Retail, CSC, and now Business Banking as their main client banking tool. It is also part of the Join Kiwibank online application process.  In Touch also has credit card features including Change the credit card limit, Credit Card transfer balance, Unblock a customer's credit or debit card (an extension of functionality to the Fraud Detection system). The Credit Limit Increase form is submitted to Activate KB via the Middleware for processing.","",sod,replace,"","","","",""
+ActivateKB,system,lob_application,Y,"","","","","","","","personal Markets Loan Origination, CC,OD,HL",tier_1,"","","","Retail Loan application, decisioning and processing","",sor,refactor,"","","","",""
+ActivatePL,system,lob_application,Y,"","","","","","","","",tier_1,"","","","Personal Loan application, decisioning and processing","",sor,replace,"","","","",Not Used
+Base 2000,system,core_application,Y,"","","","","","","",Monitoring for Fraud,core,"","","","Credit Card management system hosted by FIS. Includes transaction authorisation, statement generation, card issuance, customer services etc","",sor,keep,"","","","",""
+Ultracs,system,core_application,Y,"","","","","","","",Bank Liquidity Management (incl. Cash Forecasting & Funding),core,"","","","Ultracs is kiwibanks core banking system. It processes all transactions, accounts, fees and GL functions and is the authoritive source for essential customer information.","",sor,replace,"","","","",""
+Mobile Top Up,external,actor,,,,,,,,,,tier_2,,,,"The Mobile Top-up service enables customers to top-up their Vodafone or Telecom prepay phones or mobile accounts directly from their Kiwibank account, using their mobile phones. Mobile top up is a Vodafone Hotlink service, supported by Vodafone.
 To subscribe to mobile top up, the customer supplies their phone number, selects one of their debit cards and supplies a password. Information is passed to the service provider - ETSL.
 
 ETSL (Kiwibank Eftpos service provider) offer a registration service that includes Vodafone and Telecom. Customers subscribe via Internet banking only and subscription information is kept at ETSL.
 
 When making a mobile top up, the customer supplies a password, a dollar amount and selects the account, similar to an Eftpos transaction. The transaction is processed by the Eftpos switch, but without a PIN - the password has been validated by ETSL.",,sod,keep,,,,,
-Landonline,actor,enterprise_application,actor,n/a,Provided by LINZ,N/A,Personal Markets~ Specialist Sales,Unknown,NA,N/A,,"Landonline provides land professionals with secure access to New Zealand's only authoritative titles register and digital cadastre maintained by LINZ. 
-Ê
-The functionally smart system enables registered users to conduct secure electronic title and survey transactions in real time~ automating and speeding up traditional (and sometimes prolonged and complex) manual processes.
-Ê
-Landonline is not designed for public access or use. Its survey and title lodgement and registration functions can only be accessed by authenticated~ registered users to ensure the integrity of the titles register and digital cadastre is maintained at all times.
-Ê
-Kiwibank utilises the e-search function of Landonline~ which connects to LINZ using a verified secure citrix connection.",,tier_2,,,,,,,,,,,,
+Landonline,actor,enterprise_application,n/a,Provided by LINZ,N/A,Personal Markets~ Specialist Sales,Unknown,NA,N/A,,,tier_2,,,,,,,,,,,,
+Quoting Tool,system,lob_application,"","","","","","","","","",tier_2,"","","",Aka DQs (Di’s Quote Service) is an intranet application used by the Priority Banking Team. It is used to determine the rate of change for large Term Deposits. The Priority Banking Team use it to track their quotes which ultimately enables them to collect sales points once or if the quote is accepted. Add to scope; Tier 2,Sharepoint Application,sor,replace,"","","","",""
+Special Answers,system,enterprise_application,Y,"","","","","","","","",tier_2,"","","","","","","","","","","",""
+KBMAC,external,actor,,,,,,,,,"During crisis, implement relief package for Business and Retail Customers ",tier_1,,,,"KBMAC (Kiwibank – Manage Customer).
+KBMAC is an application suite within the NZPost Teller Point of Sale (POS) application called PostLink.
+ 
+It provides the PostShop Teller with all transactional activity relating to Kiwibank Customers accounts including credit cards:
+Deposit
+Print Balance
+Withdrawal
+Transaction Listing
+Fund Transfer
+Maintain Payments
+Order Bank Cheque
+Card Maintenance
+Term Deposit
+Order Statement
+Order Stationery
+View AOA
+Referrals
+Stop Cheque
+Account Maintenance
+Customer Maintenance
+Foreign Cheque Deposits
+International TTs, DCs and Drafts",,sod,replace,,,,,
+Exact Target,system,marketing_application,"","","","","","","","","","","","","","","","","","","","","",""
+Home Hunter,system,lob_application,"","","","","","","","","",tier_2,"","","","","","","","","","","",""
+Excel,not_determined,"","","","","","","","","","","","","","","","","","","","","","",""
+CRM,system,lob_application,"","","","","","","","","","","","","","","",sod,replace,"","","","",""
+SAP,not_determined,core,"","","","","","","","","","","","","","","","","","","","","",""
+DIMS,system,enterprise_application,Y,,Application Development,Personal Markets~ Customer Service Experience,Unknown,IT,IT,,,tier_1,,,,,,,,,,,,
+Propel,system,lob_application,"","","","","","","","",Settle/Discharge existing home loans,tier_2,"","","","Used by Home Loans Operations for Loan Documentation. SaaS web0-based system provided by FMS.
+
+Includes services for doc signing and storage.
+","",sod,replace,"","","","",""
+ActivateBB,not_determined,lob_application,"","","","","","","","","Business Markets loan Origination - Retail, retail SME & Wholesale",tier_1,"","","","Business banking Loan application, decisioning and processing","",sor,refactor,"","","","",""
+360T,component,system_component,"","","","","","","","",Wholesale FX trading,tier_1,"","",TMS,"Integrates various trading systems into one front end view where traders commit to a deal.  Contains connectors; Connector to global 360T platform, passes deals onto Quantum","","","","","","","",""
+Activate-Veda,system,lob_application,"","","","","","","","","","","","","",Customer Credit History from an external bureau (Veda).  Over 300 different properties about credit history.,"","","","","","","",""
+Moodys,system,lob_application,"","","","","","","","","",tier_2,"","","",Moody's Risk-Origins software is used for Loan origination and decisioning processing and loan management. Moodys is used for wholesale and large business loans only whereas Activate is used for all other types of loans.,COTS; Oracle DB  ,sor,keep,"","","","",""

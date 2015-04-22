@@ -1,19 +1,19 @@
 <div class="row">
-   <div class="small-6 columns panel">
+   <div class="small-6 columns panel success">
       <% pos = @quads.position(:top_left) %>
       <%= render partial: 'quad', locals: {pos: pos}%>
    </div>
-   <div class="small-6 columns panel">
+   <div class="small-6 columns panel success">
       <% pos = @quads.position(:top_right) %>
       <%= render partial: 'quad', locals: {pos: pos}%>
    </div>
 </div>
 <div class="row">
-   <div class="small-6 columns panel">
+   <div class="small-6 columns panel success">
       <% pos = @quads.position(:bottom_left) %>
       <%= render partial: 'quad', locals: {pos: pos}%>
    </div>
-   <div class="small-6 columns panel">
+   <div class="small-6 columns panel success">
       <% pos = @quads.position(:bottom_right) %>      
       <%= render partial: 'quad', locals: {pos: pos}%>
    </div>

@@ -52,14 +52,14 @@ class System
   end
   
   def self.to_csv
-    props = self.property_names.map {|n| n.to_s}
+    props = self.all_property_names.map {|n| n}
     CSV.open("lib/tasks/systems_output.csv", 'w') do |csv|
       csv << ["Name", "Type"] + props
       System.each do |sys| 
         row = []
         row << sys.name
         row << sys.type
-        props.each {|p| row << sys.send(p.to_sym)}
+        props.each {|p| row << sys.send(p).try(:value)}
         csv << row
       end
     end
@@ -103,7 +103,7 @@ class System
   #{"name"=>"Quantum", "properties"=>{"asset_type"=>"LOB application", "description"=>"All Financial markets products - FX, MM, Securities, Derivatives", "business_process"=>"Financial Market Trade capture and settlement", "criticality"=>"tier_1", "pace_layer"=>"sor", "tq_fq_quadrant"=>"keep"}}
   
   def create_me(system: nil, properties: nil)
-    self.update_attrs(system: system, properties: nil)
+    self.update_attrs(system: system, properties: properties)
   end
   
   def update_attrs(system: nil, properties: nil)
